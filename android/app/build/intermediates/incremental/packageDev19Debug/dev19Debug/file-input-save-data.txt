@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jan 11 15:42:39 PST 2018
+#Thu Jan 11 15:52:30 PST 2018
 2.path=lib/armeabi-v7a/libglog_abi17_0_0.so
 14.set=NATIVE_RESOURCE
 107.baseType=DIRECTORY

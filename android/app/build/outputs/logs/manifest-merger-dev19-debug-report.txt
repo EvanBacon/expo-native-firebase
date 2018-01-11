@@ -4,6 +4,7 @@ ADDED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/Andro
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml:2:1-262:12
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml:2:1-262:12
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml:2:1-262:12
+MERGED from [:react-native-firebase] /Users/evanbacon/Documents/GitHub/firetest/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-13:12
 MERGED from [host.exp.exponent:expoview:24.0.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/AndroidManifest.xml:2:1-83:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/3b32a689409ffb15704f5c2a488baad2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.4.7] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/f746dfabf92e4c5cdb11e63e16239aba/AndroidManifest.xml:2:1-12:12
@@ -31,6 +32,7 @@ MERGED from [com.google.android.gms:play-services-clearcut:9.8.0] /Users/evanbac
 MERGED from [com.google.android.gms:play-services-vision:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-vision-9.8.0.aar/3d572a912cead5ec9c8f67187d6ed129/AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-identity:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.8.0.aar/00717d78df1bb1af5b9a2c4fc5f0e407/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:2:1-6:12
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/52ff2a9af8ba58dabe3c5a244ccb3c94/AndroidManifest.xml:2:1-13:12
 MERGED from [me.leolin:ShortcutBadger:1.1.4] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/934d6811c3642e7371091d326dec35a1/AndroidManifest.xml:2:1-35:12
 MERGED from [com.yqritc:android-scalablevideoview:1.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/android-scalablevideoview-1.0.1.aar/803680dc3ba8249c6285e85850e4282b/AndroidManifest.xml:2:1-12:12
@@ -40,7 +42,6 @@ MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/evanbacon/.gradle/ca
 MERGED from [com.android.support:exifinterface:26.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exifinterface-26.0.1.aar/e035022cd9f51770440a1d7e0056d026/AndroidManifest.xml:17:1-28:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.0.1.aar/8664891a93574cbcece655dbf5554aa3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/adb68a9566c006b5fe3816d8ae6d3ff2/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:2:1-6:12
 MERGED from [com.stripe:stripe-android:2.1.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/stripe-android-2.1.0.aar/4110ffb5ac5144e2aadb80c699dc41e8/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.8.0.aar/0db40ecd520562946fab6bb4dec55ec0/AndroidManifest.xml:16:1-28:12
 MERGED from [com.google.android.gms:play-services-gass:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.8.0.aar/da3aabba22c92330ca30536e7563acfd/AndroidManifest.xml:2:1-5:12
@@ -161,6 +162,8 @@ MERGED from [com.google.firebase:firebase-iid:9.8.0] /Users/evanbacon/.gradle/ca
 		ADDED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml:14:20-74
 uses-permission#android.permission.INTERNET
 ADDED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml:15:3-65
+MERGED from [:react-native-firebase] /Users/evanbacon/Documents/GitHub/firetest/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] /Users/evanbacon/Documents/GitHub/firetest/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-67
 MERGED from [host.exp.exponent:expoview:24.0.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/AndroidManifest.xml:19:5-67
 MERGED from [host.exp.exponent:expoview:24.0.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/AndroidManifest.xml:19:5-67
 MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/audience-network-sdk-4.26.1.aar/fe41721d77223f5a2ef85df11923e923/AndroidManifest.xml:11:5-67
@@ -373,6 +376,8 @@ MERGED from [com.google.android.gms:play-services-identity:9.8.0] /Users/evanbac
 MERGED from [com.google.android.gms:play-services-identity:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.8.0.aar/00717d78df1bb1af5b9a2c4fc5f0e407/AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:5:5-20
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/52ff2a9af8ba58dabe3c5a244ccb3c94/AndroidManifest.xml:11:5-20
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/52ff2a9af8ba58dabe3c5a244ccb3c94/AndroidManifest.xml:11:5-20
 MERGED from [net.openid:appauth:0.4.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appauth-0.4.1.aar/afae5717e410e7feabe9e25e06cd9fba/AndroidManifest.xml:26:5-44:19
@@ -381,8 +386,6 @@ MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/evanbacon/.gradle/ca
 MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/library-3.2.11.aar/40dd0bb54309860cb61ab10c472f6e15/AndroidManifest.xml:18:5-28:19
 MERGED from [com.android.support:exifinterface:26.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exifinterface-26.0.1.aar/e035022cd9f51770440a1d7e0056d026/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:exifinterface:26.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exifinterface-26.0.1.aar/e035022cd9f51770440a1d7e0056d026/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.8.0.aar/0db40ecd520562946fab6bb4dec55ec0/AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.8.0.aar/0db40ecd520562946fab6bb4dec55ec0/AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-gass:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.8.0.aar/da3aabba22c92330ca30536e7563acfd/AndroidManifest.xml:4:5-19
@@ -785,6 +788,8 @@ uses-sdk
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-firebase] /Users/evanbacon/Documents/GitHub/firetest/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /Users/evanbacon/Documents/GitHub/firetest/node_modules/react-native-firebase/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [host.exp.exponent:expoview:24.0.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/AndroidManifest.xml:7:5-9:41
 MERGED from [host.exp.exponent:expoview:24.0.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:multidex:1.0.2] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/3b32a689409ffb15704f5c2a488baad2/AndroidManifest.xml:20:5-43
@@ -839,6 +844,8 @@ MERGED from [com.google.android.gms:play-services-identity:9.8.0] /Users/evanbac
 MERGED from [com.google.android.gms:play-services-identity:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.8.0.aar/00717d78df1bb1af5b9a2c4fc5f0e407/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-base:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:4:5-42
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/52ff2a9af8ba58dabe3c5a244ccb3c94/AndroidManifest.xml:7:5-9:41
 MERGED from [com.raizlabs.android:DBFlow:2.2.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/DBFlow-2.2.1.aar/52ff2a9af8ba58dabe3c5a244ccb3c94/AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.4] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.4.aar/934d6811c3642e7371091d326dec35a1/AndroidManifest.xml:7:5-9:41
@@ -857,8 +864,6 @@ MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] /Users/evanbacon/.
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.0.1.aar/8664891a93574cbcece655dbf5554aa3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/adb68a9566c006b5fe3816d8ae6d3ff2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/leakcanary-android-no-op-1.4-beta1.aar/adb68a9566c006b5fe3816d8ae6d3ff2/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-core:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/firebase-core-9.8.0.aar/f4cf2a024aa0c656d19249d4ed9c88ce/AndroidManifest.xml:4:5-42
 MERGED from [com.stripe:stripe-android:2.1.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/stripe-android-2.1.0.aar/4110ffb5ac5144e2aadb80c699dc41e8/AndroidManifest.xml:7:5-9:41
 MERGED from [com.stripe:stripe-android:2.1.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/stripe-android-2.1.0.aar/4110ffb5ac5144e2aadb80c699dc41e8/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.8.0.aar/0db40ecd520562946fab6bb4dec55ec0/AndroidManifest.xml:22:5-42
