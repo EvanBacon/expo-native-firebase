@@ -9,7 +9,6 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
-apply plugin: 'com.neenbedankt.android-apt'
 
 repositories {
   maven { url 'https://maven.fabric.io/public' }
@@ -100,7 +99,6 @@ preBuild.dependsOn exponentPrebuildStep
 
 
 dependencies {
-  implementation project(path: ':react-native-firebase')
 
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -129,7 +127,7 @@ dependencies {
   compile 'com.google.android.gms:play-services-ads:11.6.0'
   compile "com.google.android.gms:play-services-base:11.6.0"
   compile "com.google.firebase:firebase-core:11.6.0"
-  apt 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
+  annotationProcessor 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
   compile "com.raizlabs.android:DBFlow-Core:2.2.1"
   compile "com.raizlabs.android:DBFlow:2.2.1"
   compile "com.madgag.spongycastle:core:1.53.0.0"

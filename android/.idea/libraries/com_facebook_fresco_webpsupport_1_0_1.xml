@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.facebook.fresco:webpsupport-1.0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/f54a8310804480374de8bda886529b040083b95e/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/f54a8310804480374de8bda886529b040083b95e/output/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/webpsupport-1.0.1.aar/4e93e32208595972d1a96f7392c9a3bd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/webpsupport-1.0.1.aar/4e93e32208595972d1a96f7392c9a3bd/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

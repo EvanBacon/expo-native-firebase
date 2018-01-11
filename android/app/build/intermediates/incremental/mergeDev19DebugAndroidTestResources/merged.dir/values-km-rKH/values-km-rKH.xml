@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">"ទៅ​មុខ​​​រហ័ស"</string>
+    <string name="exo_controls_next_description">"បទ​បន្ទាប់"</string>
+    <string name="exo_controls_pause_description">"ផ្អាក"</string>
+    <string name="exo_controls_play_description">"ចាក់"</string>
+    <string name="exo_controls_previous_description">"បទ​មុន"</string>
+    <string name="exo_controls_rewind_description">"ខា​ថយក្រោយ"</string>
+    <string name="exo_controls_stop_description">"បញ្ឈប់"</string>
+</resources>

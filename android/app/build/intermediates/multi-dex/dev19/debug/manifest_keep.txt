@@ -1,0 +1,3 @@
+# Referenced at /Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/manifests/full/dev19/debug/AndroidManifest.xml:102
+-keep class host.exp.exponent.MainApplication { <init>(...); }
+
