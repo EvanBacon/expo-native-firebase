@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="expolib_v1.com.squareup.okhttp3:okhttp:3.6.0@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/maven/expolib_v1/com/squareup/okhttp3/okhttp/3.6.0/okhttp-3.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

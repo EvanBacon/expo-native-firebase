@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "firetest",
+    "description": "This project is really great.",
+    "slug": "firetest",
+    "privacy": "public",
+    "sdkVersion": "24.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.evanbacon.firetest",
+      "publishBundlePath": "ios/firetest/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/firetest/Supporting/shell-app-manifest.json"
+    },
+    "android": {
+      "package": "com.evanbacon.firetest"
+    },
+    "isDetached": true,
+    "detach": {
+      "scheme": "expd447290bbddf43c6bae7b80a1b96a919",
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.2.1-sdk24.0.0-36ff2264-629d-44df-a819-8c982454e5e8.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.2.0-sdk24.0.0-16620828-4df4-4e2d-b0af-5dc1352b82cb.tar.gz"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "ExpoKit",
+  "version": "2.2.1",
+  "summary": "ExpoKit",
+  "description": "ExpoKit allows native projects to integrate with the Expo SDK.",
+  "homepage": "http://docs.expo.io",
+  "license": "BSD",
+  "authors": "650 Industries, Inc.",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "default_subspecs": "Core",
+  "source": {
+    "git": "http://github.com/expo/expo.git"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "ios/Exponent/**/*.{h,m}",
+      "preserve_paths": "ios/Exponent/**/*.{h,m}",
+      "exclude_files": [
+        "ios/Exponent/EXAppDelegate.*",
+        "ios/Exponent/EXRootViewController.*",
+        "ios/Exponent/Supporting/**",
+        "ios/UnversionedModules/Payments/**",
+        "ios/Exponent/Versioned/Modules/Api/GL/ARKit/**",
+        "ios/Exponent/Versioned/Modules/Api/Components/FaceDetector/**"
+      ],
+      "dependencies": {
+        "Amplitude-iOS": [
+          "~> 3.8"
+        ],
+        "Analytics": [
+          "~> 3.5"
+        ],
+        "AppAuth": [
+          "~> 0.4"
+        ],
+        "CocoaLumberjack": [
+          "~> 3.2.1"
+        ],
+        "Crashlytics": [
+          "~> 3.8"
+        ],
+        "FBAudienceNetwork": [
+          "~> 4.24"
+        ],
+        "FBSDKCoreKit": [
+          "~> 4.28"
+        ],
+        "FBSDKLoginKit": [
+          "~> 4.28"
+        ],
+        "FBSDKShareKit": [
+          "~> 4.28"
+        ],
+        "Fabric": [
+          "~> 1.6"
+        ],
+        "GoogleSignIn": [
+          "~> 3.0"
+        ],
+        "GoogleMaps": [
+          "~> 2.2.0"
+        ],
+        "lottie-ios": [
+          "~> 2.1.3"
+        ],
+        "GPUImage": [
+          "~> 0.1.7"
+        ],
+        "Branch": [
+          "~> 0.14.12"
+        ],
+        "Google-Mobile-Ads-SDK": [
+          "~> 7.22.0"
+        ]
+      }
+    },
+    {
+      "name": "CPP",
+      "dependencies": {
+        "ExpoKit/Core": [
+
+        ]
+      },
+      "source_files": [
+        "cpp/*.{h,c,cpp,m,mm}",
+        "cpp/**/*.{h,c,cpp,m,mm}"
+      ]
+    },
+    {
+      "name": "Payments",
+      "dependencies": {
+        "ExpoKit/Core": [
+
+        ],
+        "Stripe": [
+          "~> 10.1.0"
+        ]
+      },
+      "source_files": "ios/UnversionedModules/Payments/*.{h,m}"
+    },
+    {
+      "name": "AR",
+      "dependencies": {
+        "ExpoKit/Core": [
+
+        ]
+      },
+      "source_files": "ios/Exponent/Versioned/Modules/Api/GL/ARKit/**"
+    },
+    {
+      "name": "FaceDetector",
+      "dependencies": {
+        "ExpoKit/Core": [
+
+        ],
+        "GoogleMobileVision/FaceDetector": [
+          "~> 1.1.0"
+        ],
+        "GoogleMobileVision/MVDataOutput": [
+          "~> 1.1.0"
+        ]
+      },
+      "source_files": "ios/Exponent/Versioned/Modules/Api/Components/FaceDetector/**"
+    }
+  ]
+}

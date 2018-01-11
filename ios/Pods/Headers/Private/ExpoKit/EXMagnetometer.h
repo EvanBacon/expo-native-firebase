@@ -1,0 +1,1 @@
+../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Sensors/EXMagnetometer.h
