@@ -1,24 +1,31 @@
 {
   "project_info": {
-    "project_id": "exponent-5dd6d",
-    "project_number": "367315174693",
-    "name": "Exponent Play Services"
+    "project_number": "628588079444",
+    "firebase_url": "https://keira-knightley-51df6.firebaseio.com",
+    "project_id": "keira-knightley-51df6",
+    "storage_bucket": "keira-knightley-51df6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:367315174693:android:f968efbb41d1fa7a",
-        "client_id": "android:host.exp.exponent",
-        "client_type": 1,
+        "mobilesdk_app_id": "1:628588079444:android:b1fe07df634af189",
         "android_client_info": {
           "package_name": "com.evanbacon.firetest",
           "certificate_hash": ""
-        }
+        },
+        "client_id": "android:host.exp.exponent",
+        "client_type": 1
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id":
+            "628588079444-0383ss2jlcmhnrvgk69ptrjedhk88olo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY"
         }
       ],
       "services": {
@@ -40,7 +47,7 @@
           "status": 1
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
