@@ -99,6 +99,9 @@ preBuild.dependsOn exponentPrebuildStep
 
 
 dependencies {
+    compile(project(':react-native-firebase')) {
+        transitive = false
+    }
 
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
