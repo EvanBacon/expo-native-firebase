@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Sdílet pomocí"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Sdílet pomocí %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sbalit"</string>
+    <string msgid="5835639618285370804" name="accept">"Přijmout"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">Přejděte na &lt;b>facebook.com/device&lt;/b> a zadejte nahoře uvedený kód.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">Neočekávaná chyba při stahování obrázku.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView vyžaduje oprávnění pro INTERNET</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Otevřít v telefonu"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Přihlásit se"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Přihlásit se k účtu Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Povolit reklamě, aby vytvořila událost kalendáře?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Vytvoření události kalendáře"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Informace o reklamě"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Náhled kreativy"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Vybrat režim ladění"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Odstraňování problémů"</string>
+    <string msgid="6099173376375995052" name="decline">"Odmítnout"</string>
     <string name="exo_controls_fastforward_description">"Přetočit vpřed"</string>
     <string name="exo_controls_next_description">"Další skladba"</string>
     <string name="exo_controls_pause_description">"Pozastavit"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"Předchozí skladba"</string>
     <string name="exo_controls_rewind_description">"Přetočit zpět"</string>
     <string name="exo_controls_stop_description">"Zastavit"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Různé"</string>
-    <string msgid="368094699078615544" name="s1">"Uložení obrázku"</string>
-    <string msgid="4550830452390689489" name="s2">"Povolit reklamě, aby uložila obrázek do galerie fotek?"</string>
-    <string msgid="2435407834265420668" name="s3">"Přijmout"</string>
-    <string msgid="9167523597401839819" name="s4">"Odmítnout"</string>
-    <string msgid="1566682516266724847" name="s5">"Vytvoření události kalendáře"</string>
-    <string msgid="5996672174517137271" name="s6">"Povolit reklamě, aby vytvořila událost kalendáře?"</string>
-    <string msgid="7163549807207034258" name="s7">"Zkušební reklama"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Hledat"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Povolit reklamě uložení obrázku do galerie fotek?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Uložit obrázek"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Koupit pomocí Googlu"</string>
 </resources>

@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Бөлісу"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s бөлісу"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Тасалау"</string>
+    <string msgid="5835639618285370804" name="accept">"Қабылдау"</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Қосу"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play қызметтерін қоспасаңыз, <ns1:g id="APP_NAME">%1$s</ns1:g> жұмыс істемейді."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play қызметтерін қосу"</string>
@@ -36,14 +37,15 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Телефонда ашу"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Кіру"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google арқылы кіру"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Өзге"</string>
-    <string msgid="368094699078615544" name="s1">"Кескінді сақтау"</string>
-    <string msgid="4550830452390689489" name="s2">"Жарнамаға кескінді сурет галереясында сақтауға рұқсат берілсін бе?"</string>
-    <string msgid="2435407834265420668" name="s3">"Қабылдау"</string>
-    <string msgid="9167523597401839819" name="s4">"Қабылдамау"</string>
-    <string msgid="1566682516266724847" name="s5">"Күнтізбе оқиғасын жасау"</string>
-    <string msgid="5996672174517137271" name="s6">"Жарнамаға күнтізбе оқиғасын жасауға рұқсат берілсін бе?"</string>
-    <string msgid="7163549807207034258" name="s7">"Сынақ жарнама"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Жарнамаға күнтізбе оқиғасын жасауға рұқсат берілсін бе?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Күнтізбе оқиғасын жасау"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Жарнама ақпараты"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Жарнаманы алдын ала қарау"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Түзету режимін таңдаңыз"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Ақауларды жою"</string>
+    <string msgid="6099173376375995052" name="decline">"Қабылдамау"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Іздеу"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Жарнамаға кескінді сурет галереясында сақтауға рұқсат берілсін бе?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Кескінді сақтау"</string>
 </resources>

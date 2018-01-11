@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dela med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dela med %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Komprimera"</string>
+    <string msgid="5835639618285370804" name="accept">"Godkänn"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">Gå till &lt;b>facebook.com/device&lt;/b> och skriv in koden som visas ovan.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">Ett oväntat fel inträffade när en bild skulle laddas ned.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView-inloggning kräver INTERNET-åtkomst</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Öppna på mobilen"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Logga in"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Logga in med Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Tillåter du att annonsen skapar en kalenderhändelse?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Skapa kalenderhändelse"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Annonsinformation"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Förhandsgranskning av annonsmaterial"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Välj ett felsökningsläge"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Felsökning"</string>
+    <string msgid="6099173376375995052" name="decline">"Godkänn inte"</string>
     <string name="exo_controls_fastforward_description">"Snabbspola framåt"</string>
     <string name="exo_controls_next_description">"Nästa spår"</string>
     <string name="exo_controls_pause_description">"Pausa"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"Föregående spår"</string>
     <string name="exo_controls_rewind_description">"Spola tillbaka"</string>
     <string name="exo_controls_stop_description">"Avbryt"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Diverse"</string>
-    <string msgid="368094699078615544" name="s1">"Spara bild"</string>
-    <string msgid="4550830452390689489" name="s2">"Tillåter du att annonsen sparar bilden i Bildgalleriet?"</string>
-    <string msgid="2435407834265420668" name="s3">"Godkänn"</string>
-    <string msgid="9167523597401839819" name="s4">"Godkänn inte"</string>
-    <string msgid="1566682516266724847" name="s5">"Skapa kalenderhändelse"</string>
-    <string msgid="5996672174517137271" name="s6">"Tillåter du att annonsen skapar en kalenderhändelse?"</string>
-    <string msgid="7163549807207034258" name="s7">"Testannons"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Sök"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Tillåter du att annonsen sparar bilden i Bildgalleriet?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Spara bild"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Köp med Google"</string>
 </resources>

@@ -27,8 +27,8 @@ public final class R {
         public static final int text_size = 0x7f040175;
     }
     public static final class color {
-        public static final int null_color = 0x7f06006d;
-        public static final int text_helper_color = 0x7f060084;
+        public static final int null_color = 0x7f06006c;
+        public static final int text_helper_color = 0x7f060083;
     }
     public static final class drawable {
         public static final int background_white = 0x7f080053;
@@ -53,14 +53,14 @@ public final class R {
         public static final int text_helper = 0x7f090118;
     }
     public static final class string {
-        public static final int CreditCardNumberHelp = 0x7f0e0000;
-        public static final int ExpirationDateHelp = 0x7f0e0001;
-        public static final int SecurityCodeHelp = 0x7f0e0002;
-        public static final int ZipHelp = 0x7f0e0003;
+        public static final int CreditCardNumberHelp = 0x7f0f0000;
+        public static final int ExpirationDateHelp = 0x7f0f0001;
+        public static final int SecurityCodeHelp = 0x7f0f0002;
+        public static final int ZipHelp = 0x7f0f0003;
     }
     public static final class style {
-        public static final int AppBaseTheme = 0x7f0f0006;
-        public static final int AppTheme = 0x7f0f0007;
+        public static final int AppBaseTheme = 0x7f100006;
+        public static final int AppTheme = 0x7f100007;
     }
     public static final class styleable {
         public static final int[] CreditCardForm = { 0x7f04002f, 0x7f040060, 0x7f0400ae, 0x7f0400b1, 0x7f0400dd, 0x7f0400df, 0x7f0400e9, 0x7f0400ea, 0x7f0400eb, 0x7f0400ec, 0x7f0400ef, 0x7f040174, 0x7f040175 };

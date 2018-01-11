@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
+    <string msgid="5835639618285370804" name="accept">"Aceptar"</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará a menos que habilites los servicios de Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilitar servicios de Google Play"</string>
@@ -36,6 +37,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en el teléfono"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Acceder"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Acceder con Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"¿Quieres permitir que el anuncio cree un evento de calendario?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Crear un evento de calendario"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Información del anuncio"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Vista previa de creatividad"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Seleccionar un modo de depuración"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Solución de problemas"</string>
+    <string msgid="6099173376375995052" name="decline">"Rechazar"</string>
     <string name="exo_controls_fastforward_description">"Avanzar"</string>
     <string name="exo_controls_next_description">"Siguiente pista"</string>
     <string name="exo_controls_pause_description">"Pausar"</string>
@@ -43,15 +51,9 @@
     <string name="exo_controls_previous_description">"Pista anterior"</string>
     <string name="exo_controls_rewind_description">"Retroceder"</string>
     <string name="exo_controls_stop_description">"Detener"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Varios"</string>
-    <string msgid="368094699078615544" name="s1">"Guardar imagen"</string>
-    <string msgid="4550830452390689489" name="s2">"¿Quieres permitir que el anuncio guarde la imagen en la galería de imágenes?"</string>
-    <string msgid="2435407834265420668" name="s3">"Aceptar"</string>
-    <string msgid="9167523597401839819" name="s4">"Rechazar"</string>
-    <string msgid="1566682516266724847" name="s5">"Crear un evento de calendario"</string>
-    <string msgid="5996672174517137271" name="s6">"¿Quieres permitir que el anuncio cree un evento de calendario?"</string>
-    <string msgid="7163549807207034258" name="s7">"Anuncio de prueba"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"¿Quieres permitir que el anuncio guarde la imagen en la galería de imágenes?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Guardar imagen"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Comprar con Google"</string>
 </resources>

@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string>
+    <string msgid="5835639618285370804" name="accept">"接受"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">前往&lt;b>facebook.com/device&lt;/b&amp;gt，並輸入上方顯示的代碼。</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">下載圖像時無預警發生錯誤。</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView 登入需要網路使用權限</string>
@@ -43,22 +44,29 @@
     <string gender="unknown" name="com_facebook_smart_login_confirmation_title">確認登入</string>
     <string gender="unknown" name="com_facebook_tooltip_default">一切操之在你：自行選擇要分享給應用程式的資訊種類。</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"啟用"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"你必須啟用 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"您必須啟用 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"啟用 Google Play 服務"</string>
     <string msgid="9115728400623041681" name="common_google_play_services_install_button">"安裝"</string>
-    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"你的裝置並未安裝 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"您的裝置並未安裝 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
     <string msgid="7442193194585196676" name="common_google_play_services_install_title">"取得 Google Play 服務"</string>
     <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play 服務發生錯誤"</string>
     <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」無法存取 Google Play 服務，請再試一次。"</string>
-    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"你的裝置不支援 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"您的裝置不支援 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
     <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"你必須更新 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"您必須更新 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
     <string msgid="8706675115216073244" name="common_google_play_services_update_title">"更新 Google Play 服務"</string>
     <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」所需的 Google Play 服務正在更新。"</string>
     <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"必須使用新版 Google Play 服務。該服務稍後就會自動更新。"</string>
     <string msgid="5201977337835724196" name="common_open_on_phone">"在手機上開啟"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"登入"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帳戶登入"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"要允許廣告建立日曆活動嗎？"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"建立日曆活動"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"廣告資訊"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"廣告素材預覽"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"選取偵錯模式"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"疑難排解"</string>
+    <string msgid="6099173376375995052" name="decline">"拒絕"</string>
     <string name="exo_controls_fastforward_description">"快轉"</string>
     <string name="exo_controls_next_description">"下一首曲目"</string>
     <string name="exo_controls_pause_description">"暫停"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"上一首曲目"</string>
     <string name="exo_controls_rewind_description">"倒轉"</string>
     <string name="exo_controls_stop_description">"停止"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"其他"</string>
-    <string msgid="368094699078615544" name="s1">"儲存圖片"</string>
-    <string msgid="4550830452390689489" name="s2">"要允許廣告將圖片儲存在相片庫中嗎？"</string>
-    <string msgid="2435407834265420668" name="s3">"接受"</string>
-    <string msgid="9167523597401839819" name="s4">"拒絕"</string>
-    <string msgid="1566682516266724847" name="s5">"建立日曆活動"</string>
-    <string msgid="5996672174517137271" name="s6">"要允許廣告建立日曆活動嗎？"</string>
-    <string msgid="7163549807207034258" name="s7">"測試廣告"</string>
     <string msgid="146198913615257606" name="search_menu_title">"搜尋"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"要允許廣告將圖片儲存在「相片庫」中嗎？"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"儲存圖片"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"透過 Google 購物"</string>
 </resources>

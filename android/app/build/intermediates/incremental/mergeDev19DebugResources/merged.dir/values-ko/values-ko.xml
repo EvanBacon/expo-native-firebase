@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s와(과) 공유"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"접기"</string>
+    <string msgid="5835639618285370804" name="accept">"동의"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b>에 방문하여 위 코드를 입력하세요.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView 로그인에 인터넷 권한이 필요합니다</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"스마트폰에서 열기"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"로그인"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"광고에서 캘린더 일정을 만들도록 허용하시겠습니까?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"캘린더 일정 만들기"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"광고 정보"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"광고 소재 미리보기"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"디버그 모드 선택"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"문제해결"</string>
+    <string msgid="6099173376375995052" name="decline">"거부"</string>
     <string name="exo_controls_fastforward_description">"빨리 감기"</string>
     <string name="exo_controls_next_description">"다음 트랙"</string>
     <string name="exo_controls_pause_description">"일시중지"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"이전 트랙"</string>
     <string name="exo_controls_rewind_description">"되감기"</string>
     <string name="exo_controls_stop_description">"중지"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"기타"</string>
-    <string msgid="368094699078615544" name="s1">"이미지 저장"</string>
-    <string msgid="4550830452390689489" name="s2">"광고에서 사진 갤러리에 이미지를 저장하도록 허용하시겠습니까?"</string>
-    <string msgid="2435407834265420668" name="s3">"동의"</string>
-    <string msgid="9167523597401839819" name="s4">"거부"</string>
-    <string msgid="1566682516266724847" name="s5">"캘린더 일정 만들기"</string>
-    <string msgid="5996672174517137271" name="s6">"광고에서 캘린더 일정을 만들도록 허용하시겠습니까?"</string>
-    <string msgid="7163549807207034258" name="s7">"테스트 광고"</string>
     <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"광고에서 사진 갤러리에 이미지를 저장하도록 허용하시겠습니까?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"이미지 저장"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google로 구매"</string>
 </resources>

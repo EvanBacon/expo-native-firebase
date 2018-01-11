@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"שתף עם"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"‏שתף עם %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"כווץ"</string>
+    <string msgid="5835639618285370804" name="accept">"מסכים"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">יש לבקר בכתובת facebook.com/device&lt;/b&amp;gt ולהזין את הקוד המוצג למעלה</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">שגיאה לא צפויה במהלך הורדת תמונה.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">התחברות WebView דורשת הרשאת אינטרנט</string>
@@ -57,8 +58,15 @@
     <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"‏האפליקציה <ns1:g id="APP_NAME">%1$s</ns1:g> לא תפעל ללא שירותי Google Play, שמתעדכנים כרגע."</string>
     <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"‏דרושה גרסה חדשה של שירותי Google Play. הגרסה תתעדכן בעצמה תוך זמן קצר."</string>
     <string msgid="5201977337835724196" name="common_open_on_phone">"פתח בטלפון"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"כניסה"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"היכנס"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"‏היכנס באמצעות Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"האם לאפשר למודעה ליצור אירוע ביומן?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"צור אירוע יומן"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"פרטי המודעה"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"תצוגה מקדימה של קריאייטיב"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"בחר מצב של ניפוי באגים"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"פתרון בעיות"</string>
+    <string msgid="6099173376375995052" name="decline">"דחה"</string>
     <string name="exo_controls_fastforward_description">"הרץ קדימה"</string>
     <string name="exo_controls_next_description">"הרצועה הבאה"</string>
     <string name="exo_controls_pause_description">"השהה"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"הרצועה הקודמת"</string>
     <string name="exo_controls_rewind_description">"הרץ אחורה"</string>
     <string name="exo_controls_stop_description">"הפסק"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"שונות"</string>
-    <string msgid="368094699078615544" name="s1">"שמור את התמונה"</string>
-    <string msgid="4550830452390689489" name="s2">"האם לאפשר למודעה לאחסן תמונה בגלריית התמונות?"</string>
-    <string msgid="2435407834265420668" name="s3">"קבל"</string>
-    <string msgid="9167523597401839819" name="s4">"דחה"</string>
-    <string msgid="1566682516266724847" name="s5">"צור אירוע ביומן"</string>
-    <string msgid="5996672174517137271" name="s6">"האם לאפשר למודעה ליצור אירוע ביומן?"</string>
-    <string msgid="7163549807207034258" name="s7">"מודעת בדיקה"</string>
     <string msgid="146198913615257606" name="search_menu_title">"חפש"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"‎999+‎"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"האם לאפשר למודעה לאחסן תמונה בגלריית התמונות?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"שמור תמונה"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"קנה בעזרת Google"</string>
 </resources>

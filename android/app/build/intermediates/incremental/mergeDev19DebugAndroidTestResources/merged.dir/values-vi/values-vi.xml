@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Chia sẻ với %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Thu gọn"</string>
+    <string msgid="5835639618285370804" name="accept">"Chấp nhận"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">Truy cập &lt;b>facebook.com/device&lt;/b> và nhập mã được hiển thị bên trên.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">Lỗi không mong muốn khi tải hình ảnh xuống.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">Đăng nhập chế độ xem web yêu cầu quyền INTERNET</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Mở trên điện thoại"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Đăng nhập"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Đăng nhập bằng Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Cho phép Quảng cáo tạo sự kiện lịch?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Tạo sự kiện lịch"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Thông tin quảng cáo"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Xem trước quảng cáo"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Chọn chế độ gỡ lỗi"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Khắc phục sự cố"</string>
+    <string msgid="6099173376375995052" name="decline">"Từ chối"</string>
     <string name="exo_controls_fastforward_description">"Tua đi"</string>
     <string name="exo_controls_next_description">"Bản nhạc tiếp theo"</string>
     <string name="exo_controls_pause_description">"Tạm dừng"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"Bản nhạc trước"</string>
     <string name="exo_controls_rewind_description">"Tua lại"</string>
     <string name="exo_controls_stop_description">"Ngừng"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Khác"</string>
-    <string msgid="368094699078615544" name="s1">"Lưu hình ảnh"</string>
-    <string msgid="4550830452390689489" name="s2">"Cho phép Quảng cáo lưu trữ hình ảnh trong thư viện Ảnh?"</string>
-    <string msgid="2435407834265420668" name="s3">"Chấp nhận"</string>
-    <string msgid="9167523597401839819" name="s4">"Từ chối"</string>
-    <string msgid="1566682516266724847" name="s5">"Tạo sự kiện lịch"</string>
-    <string msgid="5996672174517137271" name="s6">"Cho phép Quảng cáo tạo sự kiện lịch?"</string>
-    <string msgid="7163549807207034258" name="s7">"Quảng cáo thử nghiệm"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Tìm kiếm"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Cho phép Quảng cáo lưu trữ hình ảnh trong thư viện Ảnh?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Lưu hình ảnh"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Mua hàng bằng Google"</string>
 </resources>

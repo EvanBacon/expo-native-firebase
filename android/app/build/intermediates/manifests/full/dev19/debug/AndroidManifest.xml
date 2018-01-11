@@ -106,7 +106,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="host.exp.exponent.LauncherActivity"
             android:exported="true"
@@ -238,8 +239,7 @@
 
         <receiver
             android:name="com.google.android.gms.analytics.AnalyticsReceiver"
-            android:enabled="true"
-            android:exported="false" >
+            android:enabled="true" >
             <intent-filter>
                 <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
             </intent-filter>
@@ -335,12 +335,6 @@
             android:name="android.support.VERSION"
             android:value="26.0.1" />
 
-        <service
-            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
@@ -373,7 +367,14 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:exported="false" />
         <service
             android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-            android:exported="false" />
+            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -383,7 +384,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
             android:enabled="true"
-            android:exported="true"
             android:permission="android.permission.INSTALL_PACKAGES" >
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
@@ -394,11 +394,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -406,10 +401,18 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="com.evanbacon.firetest" />
             </intent-filter>
         </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
         <!--
  FirebaseInstanceIdService performs security checks at runtime,
              no need for explicit permissions despite exported="true"
@@ -426,12 +429,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.evanbacon.firetest.firebaseinitprovider"
             android:exported="false"
-            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent" />
+            android:initOrder="100" />
 
         <meta-data
             android:name="com.google.android.gms.version"

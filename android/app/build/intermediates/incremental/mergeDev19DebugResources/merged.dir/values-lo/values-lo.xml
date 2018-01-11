@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"ແບ່ງປັນກັບ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"ແບ່ງ​ປັນ​ກັບ​ %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ຫຍໍ້"</string>
+    <string msgid="5835639618285370804" name="accept">"ຍອມຮັບ"</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"ເປີດນຳໃຊ້"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> ຈະບໍ່ສາມາດໃຊ້ງານໄດ້ຈົນກວ່າທ່ານຈະເປີດໃຊ້ງານ​ການ​ບໍ​ລິ​ການ Google Play."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"ເປີດໃຊ້ການ​ບໍ​ລິ​ການ Google Play"</string>
@@ -36,15 +37,16 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"​ເປີດ​ໃນ​ໂທ​ລະ​ສັບ"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ລົງຊື່ເຂົ້າໃຊ້"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"ລົງຊື່ເຂົ້າໃຊ້ດ້ວຍ Google"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"ອື່ນໆ"</string>
-    <string msgid="368094699078615544" name="s1">"ບັນທຶກຮູບພາບ"</string>
-    <string msgid="4550830452390689489" name="s2">"ອະນຸຍາດໃຫ້ໂຄສະນາບັນທຶກຮູບພາບໃສ່ຫ້ອງສະໝຸດພາບໄດ້ບໍ່?"</string>
-    <string msgid="2435407834265420668" name="s3">"ຍອມຮັບ"</string>
-    <string msgid="9167523597401839819" name="s4">"ປະຕິເສດ"</string>
-    <string msgid="1566682516266724847" name="s5">"ສ້າງນັດໝາຍປະຕິທິນ"</string>
-    <string msgid="5996672174517137271" name="s6">"ອະນຸຍາດໃຫ້ໂຄສະນາສ້າງນັດໝາຍປະຕິທິນໄດ້ບໍ?"</string>
-    <string msgid="7163549807207034258" name="s7">"ໂຄສະນາທົດສອບ"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"ອະນຸຍາດໃຫ້ໂຄສະນາສ້າງນັດໝາຍປະຕິທິນໄດ້ບໍ?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"ສ້າງນັດໝາຍປະຕິທິນ"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"ຂໍ້ມູນໂຄສະນາ"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"ຕົວຢ່າງໂຄສະນາ"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"ເລືອກໂໝດດີບັກ"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"ການແກ້ໄຂບັນຫາ"</string>
+    <string msgid="6099173376375995052" name="decline">"ປະຕິເສດ"</string>
     <string msgid="146198913615257606" name="search_menu_title">"ຊອກຫາ"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"ອະນຸຍາດໃຫ້ໂຄສະນາບັນທຶກຮູບພາບໃສ່ຫ້ອງສະໝຸດພາບໄດ້ບໍ່?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"ບັນທຶກຮູບພາບ"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"ຊື້ໂດຍໃຊ້ Google"</string>
 </resources>

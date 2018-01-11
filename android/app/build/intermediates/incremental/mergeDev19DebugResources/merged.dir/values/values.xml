@@ -792,7 +792,7 @@
     <integer name="card_flip_time_full">700</integer>
     <integer name="card_flip_time_half">350</integer>
     <integer name="config_tooltipAnimTime">150</integer>
-    <integer name="google_play_services_version">11717000</integer>
+    <integer name="google_play_services_version">9877000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="CreditCardNumberHelp"/>
     <string name="ExpirationDateHelp">Expiration date (MM/YY)</string>
@@ -829,6 +829,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="accept">Accept</string>
     <string name="android_pay_unavaliable">Android Pay unavailable on your device.</string>
     <string name="app_name">firetest</string>
     <string name="cardNumber">Card Number</string>
@@ -854,7 +855,7 @@
     <string name="catalyst_report_button" project="catalyst" translatable="false">Report</string>
     <string name="catalyst_settings" project="catalyst" translatable="false">Dev Settings</string>
     <string name="catalyst_settings_title" project="catalyst" translatable="false">Catalyst Dev Settings</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">086fc104-6e00-4182-8d65-8fbbbd376d54</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">e6181a9d-a857-4f8e-a000-befd2575fa93</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
     <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
@@ -895,6 +896,8 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
     <string name="crop_image_activity_title"/>
     <string name="crop_image_menu_crop">Crop</string>
     <string name="crop_image_menu_flip">Flip</string>
@@ -903,6 +906,11 @@
     <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
     <string name="crop_image_menu_rotate_right">Rotate</string>
     <string name="cvc">CVC</string>
+    <string name="debug_menu_ad_information">Ad Information</string>
+    <string name="debug_menu_creative_preview">Creative Preview</string>
+    <string name="debug_menu_title">Select a Debug Mode</string>
+    <string name="debug_menu_troubleshooting">Troubleshooting</string>
+    <string name="decline">Decline</string>
     <string name="default_web_client_id" translatable="false">628588079444-0383ss2jlcmhnrvgk69ptrjedhk88olo.apps.googleusercontent.com</string>
     <string name="dev_activity_name">Exponent Dev</string>
     <string name="error_default">Something went wrong. Sorry about that.</string>
@@ -917,7 +925,6 @@
     <string name="firebase_database_url" translatable="false">https://keira-knightley-51df6.firebaseio.com</string>
     <string name="ga_trackingId" translatable="false">UA-76673608-1</string>
     <string name="gcm_defaultSenderId" translatable="false">628588079444</string>
-    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="google_api_key" translatable="false">AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY</string>
     <string name="google_app_id" translatable="false">1:628588079444:android:b1fe07df634af189</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY</string>
@@ -926,16 +933,11 @@
     <string name="pick_image_intent_chooser_title">Select source</string>
     <string name="preference_file_key">host.exp.exponent.SharedPreferences</string>
     <string name="project_id" translatable="false">keira-knightley-51df6</string>
-    <string name="s1">Save image</string>
-    <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
-    <string name="s3">Accept</string>
-    <string name="s4">Decline</string>
-    <string name="s5">Create calendar event</string>
-    <string name="s6">Allow Ad to create a calendar event?</string>
-    <string name="s7">Test Ad</string>
     <string name="save">Save</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="store_picture_title">Save image</string>
     <string name="user_cancel_dialog">User cancel dialog. No card added!</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

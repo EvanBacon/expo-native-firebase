@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Udostępnij dla"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Udostępnij dla %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zwiń"</string>
+    <string msgid="5835639618285370804" name="accept">"Akceptuj"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">Odwiedź stronę &lt;b>facebook.com/device&lt;/b> i wprowadź powyższy kod.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">Nieoczekiwany błąd podczas pobierania obrazu.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">Logowanie WebView wymaga uprawnienia INTERNET</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Otwórz na telefonie"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Zaloguj się"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Zaloguj się przez Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Zezwolić reklamie na utworzenie wydarzenia w kalendarzu?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Utwórz wydarzenie w kalendarzu"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Informacje o reklamie"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Podgląd kreacji"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Wybierz tryb debugowania"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Rozwiązywanie problemów"</string>
+    <string msgid="6099173376375995052" name="decline">"Odrzuć"</string>
     <string name="exo_controls_fastforward_description">"Przewiń do przodu"</string>
     <string name="exo_controls_next_description">"Następny utwór"</string>
     <string name="exo_controls_pause_description">"Wstrzymaj"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"Poprzedni utwór"</string>
     <string name="exo_controls_rewind_description">"Przewiń do tyłu"</string>
     <string name="exo_controls_stop_description">"Zatrzymaj"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Inne"</string>
-    <string msgid="368094699078615544" name="s1">"Zapisz obraz"</string>
-    <string msgid="4550830452390689489" name="s2">"Zezwolić reklamie na zapisanie obrazu w galerii zdjęć?"</string>
-    <string msgid="2435407834265420668" name="s3">"Zaakceptuj"</string>
-    <string msgid="9167523597401839819" name="s4">"Odrzuć"</string>
-    <string msgid="1566682516266724847" name="s5">"Utwórz wydarzenie w kalendarzu"</string>
-    <string msgid="5996672174517137271" name="s6">"Zezwolić reklamie na utworzenie wydarzenia w kalendarzu?"</string>
-    <string msgid="7163549807207034258" name="s7">"Reklama testowa"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Szukaj"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Zezwolić reklamie na zapisanie obrazu w galerii zdjęć?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Zapisz obraz"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Kup to z Google"</string>
 </resources>

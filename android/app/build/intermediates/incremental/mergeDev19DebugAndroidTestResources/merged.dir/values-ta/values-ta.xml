@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"இதனுடன் பகிர்"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s உடன் பகிர்"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"சுருக்கு"</string>
+    <string msgid="5835639618285370804" name="accept">"ஏற்கிறேன்"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> ஐப் பார்வையிட்டு, மேலே காட்டப்பட்ட குறியீட்டை உள்ளிடவும்.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">படத்தைப் பதிவிறக்கும்போது எதிர்பாராத பிழை ஏற்பட்டது.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView உள்நுழைவுக்கு இணைய அனுமதித் தேவை</string>
@@ -59,15 +60,16 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"மொபைலில் திற"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"உள்நுழைக"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google மூலம் உள்நுழைக"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"மற்றவை"</string>
-    <string msgid="368094699078615544" name="s1">"படத்தைச் சேமி"</string>
-    <string msgid="4550830452390689489" name="s2">"பட கேலரியில் படத்தைச் சேமிக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
-    <string msgid="2435407834265420668" name="s3">"அனுமதி"</string>
-    <string msgid="9167523597401839819" name="s4">"நிராகரி"</string>
-    <string msgid="1566682516266724847" name="s5">"கேலெண்டர் நிகழ்வை உருவாக்கு"</string>
-    <string msgid="5996672174517137271" name="s6">"கேலெண்டர் நிகழ்வை உருவாக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
-    <string msgid="7163549807207034258" name="s7">"சோதனை விளம்பரம்"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"கேலெண்டர் நிகழ்வை உருவாக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"கேலெண்டர் நிகழ்வை உருவாக்கு"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"விளம்பரத் தகவல்"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"க்ரியேடிவ் பிரிவியூ"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"பிழைத் திருத்தப் பயன்முறையைத் தேர்ந்தெடுக்கவும்"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"பிழைகாண்"</string>
+    <string msgid="6099173376375995052" name="decline">"நிராகரி"</string>
     <string msgid="146198913615257606" name="search_menu_title">"தேடு"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"பட கேலரியில் படத்தைச் சேமிக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"படத்தைச் சேமி"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google மூலம் வாங்கு"</string>
 </resources>

@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Share with"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Share with %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Collapse"</string>
+    <string msgid="5835639618285370804" name="accept">"Accept"</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView login requires Internet permission</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest error</string>
     <string gender="unknown" name="com_facebook_loading">Loading…</string>
@@ -40,6 +41,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Open on phone"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Sign In"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Sign in with Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Allow Ad to create a calendar event?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Create calendar event"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Ad Information"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Creative Preview"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Select a Debug Mode"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Troubleshooting"</string>
+    <string msgid="6099173376375995052" name="decline">"Decline"</string>
     <string name="exo_controls_fastforward_description">"Fast-forward"</string>
     <string name="exo_controls_next_description">"Next track"</string>
     <string name="exo_controls_pause_description">"Pause"</string>
@@ -47,15 +55,9 @@
     <string name="exo_controls_previous_description">"Previous track"</string>
     <string name="exo_controls_rewind_description">"Rewind"</string>
     <string name="exo_controls_stop_description">"Stop"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Miscellaneous"</string>
-    <string msgid="368094699078615544" name="s1">"Save image"</string>
-    <string msgid="4550830452390689489" name="s2">"Allow Ad to store image in Picture gallery?"</string>
-    <string msgid="2435407834265420668" name="s3">"Accept"</string>
-    <string msgid="9167523597401839819" name="s4">"Decline"</string>
-    <string msgid="1566682516266724847" name="s5">"Create calendar event"</string>
-    <string msgid="5996672174517137271" name="s6">"Allow Ad to create a calendar event?"</string>
-    <string msgid="7163549807207034258" name="s7">"Test Ad"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Search"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Save image"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Buy with Google"</string>
 </resources>

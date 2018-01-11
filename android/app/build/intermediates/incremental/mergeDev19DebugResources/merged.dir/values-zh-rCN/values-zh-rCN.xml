@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <string msgid="5835639618285370804" name="accept">"接受"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">请访问&lt;b>facebook.com/device&lt;/b>并输入以上验证码。</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView 登录需要访问网络</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"在手机上打开"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"登录"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帐号登录"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"允许广告创建日历活动吗？"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"创建日历活动"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"广告信息"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"广告素材预览"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"选择调试模式"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"问题排查"</string>
+    <string msgid="6099173376375995052" name="decline">"拒绝"</string>
     <string name="exo_controls_fastforward_description">"快进"</string>
     <string name="exo_controls_next_description">"下一曲"</string>
     <string name="exo_controls_pause_description">"暂停"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"上一曲"</string>
     <string name="exo_controls_rewind_description">"快退"</string>
     <string name="exo_controls_stop_description">"停止"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"其他"</string>
-    <string msgid="368094699078615544" name="s1">"保存图片"</string>
-    <string msgid="4550830452390689489" name="s2">"允许广告将图片存储在图库中吗？"</string>
-    <string msgid="2435407834265420668" name="s3">"接受"</string>
-    <string msgid="9167523597401839819" name="s4">"拒绝"</string>
-    <string msgid="1566682516266724847" name="s5">"创建日历活动"</string>
-    <string msgid="5996672174517137271" name="s6">"允许广告创建日历活动吗？"</string>
-    <string msgid="7163549807207034258" name="s7">"测试广告"</string>
     <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"允许广告将图片存储在图库中吗？"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"保存图片"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"通过 Google 购买"</string>
 </resources>

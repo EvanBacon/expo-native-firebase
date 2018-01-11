@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartilhar com %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string msgid="5835639618285370804" name="accept">"Aceitar"</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ativar"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com o Google Play Services ativado."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ativar o Google Play Services"</string>
@@ -36,6 +37,8 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no smartphone"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Fazer login"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Fazer login com o Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Permitir que os anúncios criem um evento na agenda?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Criar evento na agenda"</string>
     <string name="crop_image_activity_title"/>
     <string name="crop_image_menu_crop">Cortar</string>
     <string name="crop_image_menu_flip">Espelhar</string>
@@ -43,6 +46,11 @@
     <string name="crop_image_menu_flip_vertically">Espelhar na vertifcal</string>
     <string name="crop_image_menu_rotate_left">Girar para a esquerda</string>
     <string name="crop_image_menu_rotate_right">Girar para a direita</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Informações do anúncio"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Visualização criativa"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Selecione um modo de depuração"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Solução de problemas"</string>
+    <string msgid="6099173376375995052" name="decline">"Recusar"</string>
     <string name="exo_controls_fastforward_description">"Avançar"</string>
     <string name="exo_controls_next_description">"Próxima faixa"</string>
     <string name="exo_controls_pause_description">"Pausar"</string>
@@ -50,16 +58,10 @@
     <string name="exo_controls_previous_description">"Faixa anterior"</string>
     <string name="exo_controls_rewind_description">"Retroceder"</string>
     <string name="exo_controls_stop_description">"Parar"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Diversos"</string>
     <string name="pick_image_intent_chooser_title">Escolher foto a partir de</string>
-    <string msgid="368094699078615544" name="s1">"Salvar imagem"</string>
-    <string msgid="4550830452390689489" name="s2">"Permitir que os anúncios armazenem imagens na galeria de imagens?"</string>
-    <string msgid="2435407834265420668" name="s3">"Aceitar"</string>
-    <string msgid="9167523597401839819" name="s4">"Recusar"</string>
-    <string msgid="1566682516266724847" name="s5">"Criar evento na agenda"</string>
-    <string msgid="5996672174517137271" name="s6">"Permitir que os anúncios criem um evento na agenda?"</string>
-    <string msgid="7163549807207034258" name="s7">"Anúncio de teste"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Permitir que os anúncios armazenem imagens na galeria de imagens?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Salvar imagem"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Comprar com o Google"</string>
 </resources>

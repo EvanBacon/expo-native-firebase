@@ -30,22 +30,22 @@ public final class R {
         public static final int messenger_button_send_white_small = 0x7f0b0030;
     }
     public static final class string {
-        public static final int messenger_send_button_text = 0x7f0e0080;
+        public static final int messenger_send_button_text = 0x7f0f0087;
     }
     public static final class style {
-        public static final int MessengerButton = 0x7f0f00c0;
-        public static final int MessengerButtonText = 0x7f0f00c7;
-        public static final int MessengerButtonText_Blue = 0x7f0f00c8;
-        public static final int MessengerButtonText_Blue_Large = 0x7f0f00c9;
-        public static final int MessengerButtonText_Blue_Small = 0x7f0f00ca;
-        public static final int MessengerButtonText_White = 0x7f0f00cb;
-        public static final int MessengerButtonText_White_Large = 0x7f0f00cc;
-        public static final int MessengerButtonText_White_Small = 0x7f0f00cd;
-        public static final int MessengerButton_Blue = 0x7f0f00c1;
-        public static final int MessengerButton_Blue_Large = 0x7f0f00c2;
-        public static final int MessengerButton_Blue_Small = 0x7f0f00c3;
-        public static final int MessengerButton_White = 0x7f0f00c4;
-        public static final int MessengerButton_White_Large = 0x7f0f00c5;
-        public static final int MessengerButton_White_Small = 0x7f0f00c6;
+        public static final int MessengerButton = 0x7f1000c0;
+        public static final int MessengerButtonText = 0x7f1000c7;
+        public static final int MessengerButtonText_Blue = 0x7f1000c8;
+        public static final int MessengerButtonText_Blue_Large = 0x7f1000c9;
+        public static final int MessengerButtonText_Blue_Small = 0x7f1000ca;
+        public static final int MessengerButtonText_White = 0x7f1000cb;
+        public static final int MessengerButtonText_White_Large = 0x7f1000cc;
+        public static final int MessengerButtonText_White_Small = 0x7f1000cd;
+        public static final int MessengerButton_Blue = 0x7f1000c1;
+        public static final int MessengerButton_Blue_Large = 0x7f1000c2;
+        public static final int MessengerButton_Blue_Small = 0x7f1000c3;
+        public static final int MessengerButton_White = 0x7f1000c4;
+        public static final int MessengerButton_White_Large = 0x7f1000c5;
+        public static final int MessengerButton_White_Small = 0x7f1000c6;
     }
 }

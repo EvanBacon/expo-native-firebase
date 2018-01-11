@@ -31,10 +31,10 @@ public final class R {
         public static final int abc_action_bar_embed_tabs = 0x7f050000;
     }
     public static final class color {
-        public static final int notification_action_color_filter = 0x7f06006a;
-        public static final int notification_icon_bg_color = 0x7f06006b;
-        public static final int ripple_material_light = 0x7f060077;
-        public static final int secondary_text_default_material_light = 0x7f060079;
+        public static final int notification_action_color_filter = 0x7f060069;
+        public static final int notification_icon_bg_color = 0x7f06006a;
+        public static final int ripple_material_light = 0x7f060076;
+        public static final int secondary_text_default_material_light = 0x7f060078;
     }
     public static final class dimen {
         public static final int compat_button_inset_horizontal_material = 0x7f07005f;
@@ -118,16 +118,16 @@ public final class R {
         public static final int notification_template_part_time = 0x7f0b0041;
     }
     public static final class string {
-        public static final int status_bar_notification_info_overflow = 0x7f0e008d;
+        public static final int status_bar_notification_info_overflow = 0x7f0f008d;
     }
     public static final class style {
-        public static final int TextAppearance_Compat_Notification = 0x7f0f012b;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f0f012c;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f012e;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f0f0131;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0133;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f0f01b0;
-        public static final int Widget_Compat_NotificationActionText = 0x7f0f01b1;
+        public static final int TextAppearance_Compat_Notification = 0x7f10012b;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f10012c;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f10012e;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f100131;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f100133;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f1001b0;
+        public static final int Widget_Compat_NotificationActionText = 0x7f1001b1;
     }
     public static final class styleable {
         public static final int[] FontFamily = { 0x7f0400d0, 0x7f0400d1, 0x7f0400d2, 0x7f0400d3, 0x7f0400d4, 0x7f0400d5 };

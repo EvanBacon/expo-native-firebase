@@ -19,6 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partilhar com %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Reduzir"</string>
+    <string msgid="5835639618285370804" name="accept">"Aceitar"</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">Visita &lt;b>facebook.com/device&lt;/b> e insere o código apresentado abaixo.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">Ocorreu um erro inesperado ao descarregar uma imagem.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">O início de sessão WebView requer a permissão INTERNET</string>
@@ -59,6 +60,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no telemóvel"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sessão"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sessão com o Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Pretende permitir ao anúncio criar um evento de calendário?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Criar evento de calendário"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Informações do anúncio"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Pré-visualização do criativo"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Selecionar um modo de depuração"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Resolução de problemas"</string>
+    <string msgid="6099173376375995052" name="decline">"Recusar"</string>
     <string name="exo_controls_fastforward_description">"Avançar"</string>
     <string name="exo_controls_next_description">"Faixa seguinte"</string>
     <string name="exo_controls_pause_description">"Interromper"</string>
@@ -66,15 +74,9 @@
     <string name="exo_controls_previous_description">"Faixa anterior"</string>
     <string name="exo_controls_rewind_description">"Rebobinar"</string>
     <string name="exo_controls_stop_description">"Parar"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Diversas"</string>
-    <string msgid="368094699078615544" name="s1">"Guardar imagem"</string>
-    <string msgid="4550830452390689489" name="s2">"Pretende permitir ao anúncio armazenar uma imagem na galeria de imagens?"</string>
-    <string msgid="2435407834265420668" name="s3">"Aceitar"</string>
-    <string msgid="9167523597401839819" name="s4">"Recusar"</string>
-    <string msgid="1566682516266724847" name="s5">"Criar evento de calendário"</string>
-    <string msgid="5996672174517137271" name="s6">"Pretende permitir ao anúncio criar um evento de calendário?"</string>
-    <string msgid="7163549807207034258" name="s7">"Anúncio de teste"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Pretende permitir ao anúncio armazenar uma imagem na galeria de imagens?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Guardar imagem"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Comprar com a Google"</string>
 </resources>

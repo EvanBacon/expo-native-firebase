@@ -1,0 +1,4 @@
+#Thu Jan 11 15:42:35 PST 2018
+base.0=/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/transforms/dexMerger/dev19/debug/2
+path.0=classes.dex
+renamed.0=classes.dex

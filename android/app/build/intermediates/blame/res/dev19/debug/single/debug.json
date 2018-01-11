@@ -20,6 +20,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_messenger_button_send_round_shadow.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/4bfa9c45295c72f3deee4046e5f030f1/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
     },
@@ -82,6 +86,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_ratingbar_material.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -160,6 +168,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/layout/abc_screen_toolbar.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_messenger_bubble_small_blue.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/4bfa9c45295c72f3deee4046e5f030f1/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
     },
@@ -204,8 +216,24 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_shell_launch_background_image.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/res/drawable-xxxhdpi-v4/shell_launch_background_image.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_crop_image_menu_flip.png.flat",
@@ -278,6 +306,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -365,7 +397,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_abc_screen_simple.xml.flat",
@@ -374,6 +406,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_com_facebook_auth_dialog_background.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/1bcf46faee6aea9d8abfd6304796b11e/res/drawable/com_facebook_auth_dialog_background.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_list_selector_holo_dark.xml.flat",
@@ -436,6 +472,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/1bcf46faee6aea9d8abfd6304796b11e/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -469,7 +509,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
@@ -597,7 +637,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -670,6 +710,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_exo_controls_previous.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/47203ac862076fb1086c98503b5581e7/res/drawable-xxhdpi-v4/exo_controls_previous.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/raw_gtm_analytics.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-9.8.0.aar/e3dea3cb9a16100c1b141aab308059b6/res/raw/gtm_analytics"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
@@ -780,12 +824,20 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_notification_bg.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/7aeed6e251df164f842a62f29a419d48/res/drawable/notification_bg.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -832,6 +884,10 @@
         "source": "/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_ic_card_visa.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/4b9ccc7bfc1c046a6081a967f452220f/res/drawable-xxhdpi-v4/ic_card_visa.png"
     },
@@ -846,6 +902,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_text_cursor_material.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -882,6 +942,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/14b320ba79095fae6029b43b2c60c667/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-ldpi-v4_exo_controls_pause.png.flat",
@@ -942,6 +1006,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/animator_card_flip_left_out.xml.flat",
@@ -1020,6 +1088,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1061,7 +1133,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1217,7 +1289,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_messenger_bubble_large_white.png.flat",
@@ -1240,6 +1312,10 @@
         "source": "/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/res/mipmap-xxxhdpi/dev_icon.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -1252,6 +1328,10 @@
         "source": "/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/res/drawable-xxxhdpi/ic_refresh_white_36dp.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/7aeed6e251df164f842a62f29a419d48/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
@@ -1262,6 +1342,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_btn_default_normal_holo_dark.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/res/drawable-hdpi-v4/btn_default_normal_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1348,6 +1432,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
@@ -1384,6 +1472,10 @@
         "source": "/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/res/drawable-xxxhdpi/big_logo_filled.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_messenger_button_send_blue_round.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/4bfa9c45295c72f3deee4046e5f030f1/res/layout/messenger_button_send_blue_round.xml"
     },
@@ -1405,7 +1497,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_text_light.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1458,6 +1550,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi_ic_home_white_36dp.png.flat",
@@ -1544,6 +1640,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_btn_default_holo_dark.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/res/drawable/btn_default_holo_dark.xml"
     },
@@ -1609,7 +1709,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_text_dark.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1618,6 +1718,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_crop_image_menu_rotate_right.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/f746dfabf92e4c5cdb11e63e16239aba/res/drawable-xxxhdpi-v4/crop_image_menu_rotate_right.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_crop_image_menu_flip.png.flat",
@@ -1632,8 +1736,12 @@
         "source": "/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/res/drawable-xxhdpi/ic_home_white_36dp.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/color_common_google_signin_btn_text_dark.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/color/common_google_signin_btn_text_dark.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_list_selector_holo_light.xml.flat",
@@ -1700,6 +1808,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
@@ -1721,7 +1833,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat",
@@ -1864,6 +1976,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/color/switch_thumb_material_light.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_exo_controls_fastforward.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/47203ac862076fb1086c98503b5581e7/res/drawable-xhdpi-v4/exo_controls_fastforward.png"
     },
@@ -1888,6 +2004,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_exo_controls_previous.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/47203ac862076fb1086c98503b5581e7/res/drawable-hdpi-v4/exo_controls_previous.png"
     },
@@ -1908,6 +2028,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable/abc_item_background_holo_light.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
@@ -1922,6 +2046,14 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.1.aar/7aeed6e251df164f842a62f29a419d48/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_exo_controls_next.png.flat",
@@ -1946,6 +2078,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
@@ -1997,7 +2133,7 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_icon_light.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_com_facebook_button_login_silver_background.xml.flat",
@@ -2036,6 +2172,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/14b320ba79095fae6029b43b2c60c667/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_crop_image_menu_rotate_left.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.4.7.aar/f746dfabf92e4c5cdb11e63e16239aba/res/drawable-xhdpi-v4/crop_image_menu_rotate_left.png"
     },
@@ -2050,6 +2190,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/3168dc6ff960cdfd09556593faf7d634/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -2176,6 +2320,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/3168dc6ff960cdfd09556593faf7d634/res/drawable/com_facebook_button_login_background.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
@@ -2212,6 +2360,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/reactandroid-abi22-1.0.0.aar/10a480faa51c7035de8268c43718af0e/res/anim/fade_out.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -2233,7 +2385,11 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/color_common_google_signin_btn_text_light.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/color/common_google_signin_btn_text_light.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_messenger_button_send_blue_large.xml.flat",
@@ -2246,6 +2402,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2266,6 +2426,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_btn_check_material.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -2328,6 +2492,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/expoview-24.0.0.aar/48e4823ffa7b41986b3c165dc0e809c0/res/drawable-hdpi-v4/btn_default_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -2354,6 +2522,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_messenger_button_send_blue_small.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/4bfa9c45295c72f3deee4046e5f030f1/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -2418,6 +2590,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_com_facebook_tooltip_bubble.xml.flat",
@@ -2493,15 +2669,23 @@
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.0.aar/0b3c39178f5c42ebdf21d097420d9e40/res/drawable/common_google_signin_btn_text_light_focused.xml"
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/14b320ba79095fae6029b43b2c60c667/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/layout_notification_template_big_media.xml.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.1.aar/4bbbd193d8de7d80c9914a3dd782cf95/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -2544,6 +2728,10 @@
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/anim/tooltip_exit.xml"
     },
     {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/3168dc6ff960cdfd09556593faf7d634/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
@@ -2562,6 +2750,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -2654,6 +2846,10 @@
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal.9.png.flat",
+        "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/res/merged/dev19/debug/mipmap-hdpi_ic_launcher.png.flat",

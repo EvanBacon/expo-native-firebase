@@ -18,6 +18,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Səsli axtarış"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Bununla paylaşın"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Dağıt"</string>
+    <string msgid="5835639618285370804" name="accept">"Qəbul edin"</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktiv edin"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play xidmətlərini aktiv edənə kimi işləməyəcək."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play xidmətlərini aktiv edin"</string>
@@ -35,15 +36,16 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Telefonda açın"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Daxil olun"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ilə daxil olun"</string>
-    <string msgid="9521340570209730" name="gcm_fallback_notification_channel_label">"Müxtəlif"</string>
-    <string msgid="368094699078615544" name="s1">"Şəkli yadda saxlayın"</string>
-    <string msgid="4550830452390689489" name="s2">"Reklama təsvirləri Şəkil qalereyasında saxlamağa icazə verilsin?"</string>
-    <string msgid="2435407834265420668" name="s3">"Qəbul edin"</string>
-    <string msgid="9167523597401839819" name="s4">"Rədd edin"</string>
-    <string msgid="1566682516266724847" name="s5">"Təqvim tədbiri yaradın"</string>
-    <string msgid="5996672174517137271" name="s6">"Təqvim tədbiri yaratmaq üçün Reklama icazə verilsin?"</string>
-    <string msgid="7163549807207034258" name="s7">"Test Reklamı"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Təqvim tədbiri yaratmaq üçün Reklama icazə verilsin?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Təqvim tədbiri yaradın"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Reklam Məlumatı"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Kreativ Önizləmə"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Debaq Rejimi seçin"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Problem Həlli"</string>
+    <string msgid="6099173376375995052" name="decline">"Rədd edin"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Axtarış"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Reklama təsvirləri Şəkil qalereyasında yadda saxlamağa icazə verilsin?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Şəkil yadda saxlayın"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google ilə alın"</string>
 </resources>
