@@ -65,3 +65,62 @@ The following will not be available even with Blob Support:
 * https://expo.canny.io/feature-requests/p/blob-support
 
 
+
+## How to recreate this template
+
+```
+exp init
+```
+Give your app a name (firetest is mine) & choose a template (I went with blank)!
+
+```
+cd firetest
+```
+
+open the project in your favorite IDE, I use VSCode
+
+open your `app.json` and add the following keys:
+`expo.ios.bundleIdentifier: "com.yourcompany.yourappname"`
+`expo.android.package: "com.yourcompany.yourappname"`
+
+> Note: This would be a good time to commit your project 😄
+
+### Detaching
+This is very scary, but it's all part of growing up!
+
+```
+exp:detach
+```
+
+Then add [`react-native-firebase`](https://rnfirebase.io/docs/v3.2.x/getting-started)
+```
+yarn add react-native-firebase
+```
+
+If you are cool like me, you probably don't have the react-native-cli.
+You need it now, so download it like this:
+```
+npm i -g react-native-cli
+```
+
+Now we can use it to link up react-native-firebase with our ios and android projects
+```
+react-native link react-native-firebase
+```
+
+### iOS Setup
+This one is pretty easy (sorry android users... Write Google a letter or something 💌)
+
+Go into your `/ios` directory and install the pods.
+
+> Cocoapods are like NPM but for schlubbs who native code
+> For more info [watch this tutorial](https://www.youtube.com/watch?v=lm1d2Pe1Mqw) I made when I was a schlubb!
+> Give it a dislike! 😄 👎
+
+```
+cd ios && pod install
+```
+
+
+
+
