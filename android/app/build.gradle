@@ -9,6 +9,8 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: "com.android.application"
+apply plugin: "com.google.firebase.firebase-perf"
 
 repositories {
   maven { url 'https://maven.fabric.io/public' }
@@ -129,6 +131,16 @@ dependencies {
   compile 'com.google.android.gms:play-services-ads:9.8.0'
   compile "com.google.android.gms:play-services-base:9.8.0"
   compile "com.google.firebase:firebase-core:9.8.0"
+  compile "com.google.firebase:firebase-analytics:9.8.0"
+  compile "com.google.firebase:firebase-auth:9.8.0"
+  compile "com.google.firebase:firebase-messaging:9.8.0"
+  compile "com.google.firebase:firebase-crash:9.8.0"
+  compile "com.google.firebase:firebase-database:9.8.0"
+  compile "com.google.firebase:firebase-invites:9.8.0"
+  compile "com.google.firebase:firebase-config:9.8.0"
+  compile "com.google.firebase:firebase-storage:9.8.0"
+
+
 
   annotationProcessor 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
   compile "com.raizlabs.android:DBFlow-Core:2.2.1"

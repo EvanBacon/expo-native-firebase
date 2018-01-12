@@ -9,6 +9,14 @@ import java.util.List;
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
 import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.analytics.RNFirebaseAnalyticsPackage;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+import io.invertase.firebase.config.RNFirebaseRemoteConfigPackage;
+import io.invertase.firebase.crash.RNFirebaseCrashPackage;
+import io.invertase.firebase.database.RNFirebaseDatabasePackage;
+import io.invertase.firebase.links.RNFirebaseLinksPackage;
+import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
+import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 public class MainApplication extends ExpoApplication {
 
@@ -25,7 +33,18 @@ public class MainApplication extends ExpoApplication {
 
         // Needed for `react-native link`
         // new MainReactPackage(),
-            new RNFirebasePackage()
+            new RNFirebasePackage(),
+            new RNFirebaseAnalyticsPackage(),
+            new RNFirebaseAuthPackage(),
+            new RNFirebaseMessagingPackage(),
+            new RNFirebaseCrashPackage(),
+            new RNFirebaseDatabasePackage(),
+            new RNFirebaseLinksPackage(),
+            new RNFirebaseRemoteConfigPackage(),
+            new RNFirebaseStoragePackage()
+//            new RNFirebaseFirestorePackage(),
+//            new RNFirebasePerformancePackage()
+
     );
   }
 

@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "expo": "^24.0.0",
+    "expo-asset-utils": "^0.0.0",
     "react": "16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
     "react-native-firebase": "^3.2.2"

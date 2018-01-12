@@ -78,7 +78,7 @@ package-lock.json
 .idea/*
 .vscode/*
 ios/firetest.xcworkspace/xcuserdata/*
-ios/Pods
+ios/Pods/
 ios/firetest/Supporting/EXBuildConstants.*
 ios/firetest/Supporting/shell-app*
 ios/fastlane/report.xml
