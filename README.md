@@ -67,6 +67,9 @@ The following will not be available even with Blob Support:
 
 
 ## How to recreate this template
+Video tutorial will be coming soon to an expo enabled device near you!
+Until then here is a little explaination of how I put this together.
+It took ~5 hours 😮 but I'm not as good at coding as you are 😅❤️
 
 ```
 exp init
@@ -108,19 +111,151 @@ Now we can use it to link up react-native-firebase with our ios and android proj
 react-native link react-native-firebase
 ```
 
+### Setup the firebase project
+You could checkout [this setup tutorial](https://rnfirebase.io/docs/v3.2.x/installation/initial-setup), but I found it to be pretty confusing! Mine isn't any better, and theirs has pictures, so this tutorial is basically is the worst. 😅 😭
+
+[Go to the firebase place and make a new app](https://console.firebase.google.com/)
+
+Give it a cool name and continue.
+
+You should be looking at a page with three icon buttons on it, if you don't know what these are I would recommend throwing your computer away.
+
+Click the iOS or Android one (you can pick the other one later 😍)
+
+Follow their little modal thing, remember to use the same bundleIdentifier / package that you entered into the app.json earlier.
+
+Download the `GoogleService-Info.plist` (iOS) or `google-services.json` (Android)
+
+Then skip adding all that code they recommend. 
+In android it's almost all there already (💙 Expo) and in iOS I'll just walk you through it.
+
 ### iOS Setup
 This one is pretty easy (sorry android users... Write Google a letter or something 💌)
 
-Go into your `/ios` directory and install the pods.
+Go into your `/ios` directory
+```
+cd ios
+```
+
+Open the Podfile in an IDE (don't use a text editor because it will mess up the quotes 🤢)
+
+```ruby
+pod 'GLog',
+    :podspec => "../node_modules/react-native/third-party-podspecs/GLog.podspec",
+    :inhibit_warnings => true
+    
+# Add the pods after this GLog thing 
+  
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'Firebase/Messaging'
+pod 'Firebase/Crash'
+pod 'Firebase/DynamicLinks'
+pod 'Firebase/RemoteConfig'
+pod 'Firebase/Storage'
+pod 'Firebase/Performance'
+
+# Whoa there, don't add any pods after this post_install (you can, but just be warned!)
+
+post_install do |installer|
+```
+
+Now you can install the pods...
 
 > Cocoapods are like NPM but for schlubbs who native code
-> For more info [watch this tutorial](https://www.youtube.com/watch?v=lm1d2Pe1Mqw) I made when I was a schlubb!
+> For more info [watch this tutorial](https://www.youtube.com/watch?v=lm1d2Pe1Mqw) I made when I was a schlubb! 🙃
 > Give it a dislike! 😄 👎
 
+In the `/ios` directory run this:
 ```
-cd ios && pod install
+pod install
 ```
 
+Open the `.xcworkspace` file (the white one) from now on. **DO NOT USE THE BLUE ONE**
 
+Now verify that you have the correct code in your AppDelegate (This is the part I said I'd walk you through 😜)
+
+**`AppDelegate.m`**
+```
+#import "AppDelegate.h"
+#import "ExpoKit.h"
+#import "EXViewController.h"
+#import <Firebase.h> /// Import this thing
+//@import Firebase; /// Google recommends you use this, but Evan doesn’t! 
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [FIRApp configure]; /// Add this at the beginning of the function
+ … 
+  return YES;
+}
+```
+
+And then drag the `GoogleService-Info.plist` into your project (I recommend putting it by the `info.plist`)
+Check the box "Copy Bundle Resources" and continue.
+
+Now the last thing you need to do for iOS is go back into terminal, go into your projects root directory and start the expo project!
+
+```
+exp start
+```
+
+With the Expo project running you can build and run your iOS app, you should see the Expo experience! 🎉🎉🎉
+
+Now go out there and create the next Snapchat! 😍
+
+### Android Setup
+
+Ok here we go... 😩
+
+Go grab the `google-services.json` you downloaded when you made the Android Expo app you made in the firebase console when you clicked the green button with the bug robot icon. (I'm over explaining because I don't want to restructure the tutorial (I'm very lazy))
+
+Now you cannot just take this json and move it into your `expo-app-name/android/app/`. 
+Because there is already one there! 
+So now we merge the two! Basically just favor the Expo keys instead of the firebase keys...
+
+
+Now open the `android/app/build.gradle`, scroll down to the dependencies, and add this:
+```
+  compile "com.google.android.gms:play-services-base:9.8.0" /// This one should already be here
+
+  compile "com.google.firebase:firebase-core:9.8.0"
+  compile "com.google.firebase:firebase-analytics:9.8.0"
+  compile "com.google.firebase:firebase-auth:9.8.0"
+  compile "com.google.firebase:firebase-messaging:9.8.0"
+  compile "com.google.firebase:firebase-crash:9.8.0"
+  compile "com.google.firebase:firebase-database:9.8.0"
+  compile "com.google.firebase:firebase-invites:9.8.0"
+  compile "com.google.firebase:firebase-config:9.8.0"
+  compile "com.google.firebase:firebase-storage:9.8.0"
+  
+```
+
+I had a problem running version 11.6.0 of firebase stuff, so for right now we are just going to downgrade! 
+Anywhere you see a `11.6.0`, drop that sucka down to `9.8.0`.
+
+Only downside is this prevents you from using the coolest lib (Firestore) and some other random lib (Performance)
+
+Again make sure the expo app is running **before** you run the project (this is because expo saves the link in the code before it bundles it onto the device)
+
+Now go ahead and run the project!! 🎉 ( most likely you will have errors, open an issue, spam my twitter @baconbrix ) 🤷‍♀️
+
+This should be enough to get things going, if you have some more problems here are a few things you can try:
+
+* In the `android/app/build.gradle`, replace `apt` with `annotationProcessor`, remove the apt plugin
+
+* At the top of `android/app/build.gradle`, in the android object, after the `compileSdkVersion` you can add `flavorDimensions 'default'`
+
+
+### Conclusion
+
+At this point if your computer isn't on fire 🔥 you should feel pretty proud! 
+We at Expo are actively working on finding a solution to integrating this. There are many little things that prevent these two libraries from fitting together perfectly, and then there are lots of people who don't want all the extra code in their non-firebase project! 
+
+Best place for questions -> [forums.expo.io](https://forums.expo.io/)
 
 
