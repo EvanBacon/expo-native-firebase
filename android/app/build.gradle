@@ -9,7 +9,6 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
-apply plugin: 'com.neenbedankt.android-apt'
 
 repositories {
   maven { url 'https://maven.fabric.io/public' }
@@ -17,8 +16,8 @@ repositories {
 
 android {
   compileSdkVersion 26
-  buildToolsVersion '26.0.1'
-
+  buildToolsVersion '26.0.2'
+  flavorDimensions 'default'
   defaultConfig {
     applicationId 'com.evanbacon.firetest'
     targetSdkVersion 25
@@ -103,6 +102,7 @@ dependencies {
     compile(project(':react-native-firebase')) {
         transitive = false
     }
+
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
   compile 'com.android.support:multidex:1.0.1'
@@ -118,7 +118,6 @@ dependencies {
     exclude module: 'play-services-ads'
   }
   provided 'org.glassfish:javax.annotation:3.1.1'
-  compile 'com.jakewharton:butterknife:7.0.1'
   compile 'de.greenrobot:eventbus:2.4.0'
   compile 'com.amplitude:android-sdk:2.9.2' // Be careful when upgrading! Upgrading might break experience scoping. Check with Jesse. See Analytics.resetAmplitudeDatabaseHelper
   compile 'com.squareup.picasso:picasso:2.5.2'
@@ -128,7 +127,10 @@ dependencies {
   compile 'com.google.android.gms:play-services-auth:9.8.0'
   compile 'com.google.android.gms:play-services-location:9.8.0'
   compile 'com.google.android.gms:play-services-ads:9.8.0'
-  apt 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
+  compile "com.google.android.gms:play-services-base:9.8.0"
+  compile "com.google.firebase:firebase-core:9.8.0"
+
+  annotationProcessor 'com.raizlabs.android:DBFlow-Compiler:2.2.1'
   compile "com.raizlabs.android:DBFlow-Core:2.2.1"
   compile "com.raizlabs.android:DBFlow:2.2.1"
   compile "com.madgag.spongycastle:core:1.53.0.0"

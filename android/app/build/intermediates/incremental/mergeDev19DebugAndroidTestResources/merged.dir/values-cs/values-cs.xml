@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Přejít na plochu"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s – %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s – %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Přejít nahoru"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Více možností"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Hotovo"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Zobrazit vše"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Vybrat aplikaci"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"VYPNUTO"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ZAPNUTO"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Vyhledat…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Smazat dotaz"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Vyhledávací dotaz"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Hledat"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Odeslat dotaz"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hlasové vyhledávání"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Sdílet pomocí"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Sdílet pomocí %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sbalit"</string>
+    <string msgid="5835639618285370804" name="accept">"Přijmout"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Přejděte na &lt;b>facebook.com/device&lt;/b> a zadejte nahoře uvedený kód.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Neočekávaná chyba při stahování obrázku.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView vyžaduje oprávnění pro INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">Chyba AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">To se mi už líbí</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">To se mi líbí</string>
+    <string gender="unknown" name="com_facebook_loading">Načítání...</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Zrušit</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Přihlášení</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Pokračovat přes Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Přihlásit se přes Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Odhlásit se</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Odhlásit se</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Přihlášen(a) jako: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Přihlášení přes Facebook</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Odeslat</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Sdílet</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">Pokud chcete připojit svůj účet, spusťte aplikaci Facebook ve svém mobilním zařízení a zkontrolujte upozornění.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- NEBO -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Nejste to vy?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Pokračovat jako %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Potvrďte přihlášení</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Je to jen na vás – nastavte si, které informace chcete s aplikacemi sdílet.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Povolit"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Ke spuštění aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> je třeba aktivovat služby Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktivace služeb Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalovat"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"Ke spuštění aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> jsou potřeba služby Google Play, které v zařízení nemáte."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Instalace služeb Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Chyba služeb Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> má potíže se službami Google Play. Zkuste to prosím znovu."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"Ke spuštění aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> jsou potřeba služby Google Play, které v tomto zařízení nejsou podporovány."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Aktualizovat"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Ke spuštění aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> je třeba aktualizovat služby Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Aktualizace služeb Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Ke spuštění aplikace <ns1:g id="APP_NAME">%1$s</ns1:g> jsou potřeba služby Google Play, které jsou právě aktualizovány."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Je vyžadována nová verze služeb Google Play. Nová verze se brzy sama nainstaluje."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Otevřít v telefonu"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Přihlásit se"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Přihlásit se k účtu Google"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"Povolit reklamě, aby vytvořila událost kalendáře?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"Vytvoření události kalendáře"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"Informace o reklamě"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"Náhled kreativy"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"Vybrat režim ladění"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"Odstraňování problémů"</string>
+    <string msgid="6099173376375995052" name="decline">"Odmítnout"</string>
+    <string name="exo_controls_fastforward_description">"Přetočit vpřed"</string>
+    <string name="exo_controls_next_description">"Další skladba"</string>
+    <string name="exo_controls_pause_description">"Pozastavit"</string>
+    <string name="exo_controls_play_description">"Přehrát"</string>
+    <string name="exo_controls_previous_description">"Předchozí skladba"</string>
+    <string name="exo_controls_rewind_description">"Přetočit zpět"</string>
+    <string name="exo_controls_stop_description">"Zastavit"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Hledat"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"Povolit reklamě uložení obrázku do galerie fotek?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"Uložit obrázek"</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Koupit pomocí Googlu"</string>
+</resources>

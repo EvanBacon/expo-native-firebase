@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/incremental/mergeDev19DebugAndroidTestResources/merged.dir/values-hy-rAM/values-hy-rAM.xml",
+            "map": [
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/47203ac862076fb1086c98503b5581e7/res/values-hy-rAM/values-hy-rAM.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,139,207,279,349,421,495",
+                        "endColumns": "83,67,71,69,71,73,70",
+                        "endOffsets": "134,202,274,344,416,490,561"
+                    }
+                }
+            ]
+        }
+    ]
+}

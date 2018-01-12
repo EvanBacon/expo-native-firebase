@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"హోమ్‌కు నావిగేట్ చేయండి"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"పైకి నావిగేట్ చేయండి"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"మరిన్ని ఎంపికలు"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"పూర్తయింది"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"అన్నీ చూడండి"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"అనువర్తనాన్ని ఎంచుకోండి"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"ఆఫ్ చేయి"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ఆన్ చేయి"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"శోధించు..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"ప్రశ్నను క్లియర్ చేయి"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"ప్రశ్న శోధించండి"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"శోధించు"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"ప్రశ్నని సమర్పించు"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"వాయిస్ శోధన"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"వీరితో భాగస్వామ్యం చేయి"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sతో భాగస్వామ్యం చేయి"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"కుదించండి"</string>
+    <string msgid="5835639618285370804" name="accept">"ఆమోదించు"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b>ని సందర్శించి ఎగువన చూపిన కోడ్‌ను నమోదు చేయండి.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">ఒక చిత్రాన్ని డౌన్‌లోడ్ చేయడంలో అనుకోని లోపం సంభవించింది.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView లాగిన్ కోసం ఇంటర్నెట్ అనుమతి అవసరమవుతుంది</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest లోపం</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">ఇష్టపడ్డారు</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">ఇష్టం</string>
+    <string gender="unknown" name="com_facebook_loading">లోడ్ చేస్తోంది…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">రద్దు చేయి</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">లాగిన్</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Facebookతో కొనసాగించు</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Facebookతో లాగిన్ చేయండి</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">లాగ్ అవుట్ చేయండి</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">లాగ్ అవుట్ చేయండి</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">వీరి వలె లాగిన్ చేసారు: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Facebookని ఉపయోగించి లాగిన్ చేసారు</string>
+    <string gender="unknown" name="com_facebook_send_button_text">పంపండి</string>
+    <string gender="unknown" name="com_facebook_share_button_text">భాగస్వామ్యం చేయి</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">మీ ఖాతాను అనుసంధానించేందుకు, మీ మొబైల్ పరికరంలో Facebook అనువర్తనాన్ని తెరిచి నోటిఫికేషన్‌లను తనిఖీ చేయండి.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- లేదా -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">మీరు కాదా?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">%1$sగా కొనసాగండి</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">లాగిన్‌ను నిర్ధారించండి</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">మీరు నియంత్రణలో ఉన్నారు - మీరు ఏ సమాచారాన్ని అనువర్తనాలతో పంచుకోవాలనుకుంటున్నారో ఎంచుకోండి.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"ప్రారంభించు"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"మీరు Google Play సేవలను ప్రారంభిస్తే మినహా <ns1:g id="APP_NAME">%1$s</ns1:g> పని చేయదు."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play సేవలను ప్రారంభించండి"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"ఇన్‌స్టాల్ చేయి"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు మీ పరికరంలో లేవు."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play సేవలను పొందండి"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play సేవల లోపం"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play సేవలతో సమస్య కలిగి ఉంది. దయచేసి మళ్లీ ప్రయత్నించండి."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play సేవలు లేకుండా అమలు కాదు, ఈ సేవలకు మీ పరికరంలో మద్దతు లేదు."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"నవీకరించు"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"మీరు Google Play సేవలను నవీకరిస్తే మినహా <ns1:g id="APP_NAME">%1$s</ns1:g> అమలు కాదు."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play సేవలను నవీకరించండి"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play సేవలు లేకుండా అమలు కాదు, ఆ సేవలు ప్రస్తుతం నవీకరించబడుతున్నాయి."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"కొత్త Google Play సేవల సంస్కరణ అవసరం. అది కొద్ది సేపట్లో దానంతట అదే నవీకరించబడుతుంది."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"ఫోన్‌లో తెరువు"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"సైన్ ఇన్ చేయి"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleతో సైన్ ఇన్ చేయి"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"క్యాలెండర్ ఈవెంట్‌ను సృష్టించడానికి ప్రకటనను అనుమతించాలా?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"క్యాలెండర్ ఈవెంట్‌ను సృష్టించండి"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"ప్రకటన సమాచారం"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"సృజనాత్మక పరిదృశ్యం"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"డీబగ్ మోడ్‌ను ఎంచుకోండి"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"సమస్య పరిష్కారం"</string>
+    <string msgid="6099173376375995052" name="decline">"తిరస్కరించు"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"శోధించు"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"చిత్ర గ్యాలరీలో చిత్రాన్ని నిల్వ చేయడానికి ప్రకటనను అనుమతించాలా?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"చిత్రాన్ని సేవ్ చేయండి"</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Googleతో కొనుగోలు చేయి"</string>
+</resources>

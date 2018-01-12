@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ホームへ移動"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s、%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s、%2$s、%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"上へ移動"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完了"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"OFF"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ON"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"検索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"折りたたむ"</string>
+    <string msgid="5835639618285370804" name="accept">"同意する"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b>にアクセスして、上のコードを入力してください。</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">画像のダウンロードで何らかのエラーが発生しました。</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebViewにログインするには、インターネットへのアクセスが必要です</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifestエラー</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">「いいね！」しました</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">いいね！</string>
+    <string gender="unknown" name="com_facebook_loading">読み込み中です…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">キャンセル</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">ログイン</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Facebookでログイン</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Facebookでログイン</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">ログアウト</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">ログアウト</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">%1$sとしてログイン中</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Facebookでログイン中</string>
+    <string gender="unknown" name="com_facebook_send_button_text">送信</string>
+    <string gender="unknown" name="com_facebook_share_button_text">シェアする</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">アカウントをリンクするには、モバイル機器でFacebookアプリを開いて、お知らせをご確認ください。</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- または -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">別のアカウントでログイン</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">%1$sとしてログイン</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">ログインを実行</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">アプリと共有する情報をコントロールすることができます。</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"有効にする"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行には、Google Play開発者サービスの有効化が必要です。"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play開発者サービスの有効化"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"インストール"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末にはインストールされていません。"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play開発者サービスの入手"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play開発者サービスのエラー"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末ではサポートされていません。"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスの更新が必要です。"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play開発者サービスの更新"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"広告がカレンダーの予定を作成することを許可しますか？"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"カレンダーの予定の作成"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"広告の情報"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"クリエイティブのプレビュー"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"デバッグモードの選択"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"困ったときに"</string>
+    <string msgid="6099173376375995052" name="decline">"同意しない"</string>
+    <string name="exo_controls_fastforward_description">"早送り"</string>
+    <string name="exo_controls_next_description">"次のトラック"</string>
+    <string name="exo_controls_pause_description">"一時停止"</string>
+    <string name="exo_controls_play_description">"再生"</string>
+    <string name="exo_controls_previous_description">"前のトラック"</string>
+    <string name="exo_controls_rewind_description">"巻き戻し"</string>
+    <string name="exo_controls_stop_description">"停止"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"検索"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"広告が画像ギャラリーに画像を保存することを許可しますか？"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"画像の保存"</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Googleで購入"</string>
+</resources>

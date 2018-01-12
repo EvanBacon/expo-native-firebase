@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"关闭"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"开启"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"搜索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <string msgid="5835639618285370804" name="accept">"接受"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">请访问&lt;b>facebook.com/device&lt;/b>并输入以上验证码。</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">下载图片时出现意外错误。</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView 登录需要访问网络</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest 错误</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">赞了</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">赞</string>
+    <string gender="unknown" name="com_facebook_loading">正在加载...</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">取消</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">登录</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">前往 Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">使用 Facebook 登录</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">退出</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">退出</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">登录身份：%1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">已通过 Facebook 登录</string>
+    <string gender="unknown" name="com_facebook_send_button_text">发送</string>
+    <string gender="unknown" name="com_facebook_share_button_text">分享</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">要关联帐户，请在移动设备上打开 Facebook 应用并查看通知。</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- 或 -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">不是你？</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">以%1$s的身份继续</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">确认登录</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">应用分享内容由你掌控。</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"启用"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"您必须先启用 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"启用 Google Play 服务"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"安装"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"您的设备没有安装 Google Play 服务，因此无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"获取 Google Play 服务"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play服务出错"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>无法访问 Google Play 服务，请重试。"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"您的设备不支持 Google Play 服务，因此无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"您必须先更新 Google Play 服务，然后才能运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"更新 Google Play 服务"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Google Play 服务当前正在更新，因此您无法运行<ns1:g id="APP_NAME">%1$s</ns1:g>。"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"必须使用新版 Google Play 服务。该服务很快就会自行更新。"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"在手机上打开"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"登录"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帐号登录"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"允许广告创建日历活动吗？"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"创建日历活动"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"广告信息"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"广告素材预览"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"选择调试模式"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"问题排查"</string>
+    <string msgid="6099173376375995052" name="decline">"拒绝"</string>
+    <string name="exo_controls_fastforward_description">"快进"</string>
+    <string name="exo_controls_next_description">"下一曲"</string>
+    <string name="exo_controls_pause_description">"暂停"</string>
+    <string name="exo_controls_play_description">"播放"</string>
+    <string name="exo_controls_previous_description">"上一曲"</string>
+    <string name="exo_controls_rewind_description">"快退"</string>
+    <string name="exo_controls_stop_description">"停止"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"允许广告将图片存储在图库中吗？"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"保存图片"</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"通过 Google 购买"</string>
+</resources>

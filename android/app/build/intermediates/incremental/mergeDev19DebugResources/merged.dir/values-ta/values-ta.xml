@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"முகப்பிற்கு வழிசெலுத்து"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"மேலே வழிசெலுத்து"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"மேலும் விருப்பங்கள்"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"முடிந்தது"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"எல்லாம் காட்டு"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"பயன்பாட்டைத் தேர்வுசெய்க"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"முடக்கு"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"இயக்கு"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"தேடு..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"வினவலை அழி"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"தேடல் வினவல்"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"தேடு"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"வினவலைச் சமர்ப்பி"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"குரல் தேடல்"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"இதனுடன் பகிர்"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s உடன் பகிர்"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"சுருக்கு"</string>
+    <string msgid="5835639618285370804" name="accept">"ஏற்கிறேன்"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b> ஐப் பார்வையிட்டு, மேலே காட்டப்பட்ட குறியீட்டை உள்ளிடவும்.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">படத்தைப் பதிவிறக்கும்போது எதிர்பாராத பிழை ஏற்பட்டது.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView உள்நுழைவுக்கு இணைய அனுமதித் தேவை</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest பிழை</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">விரும்பியவை</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">பிடித்திருக்கிறது</string>
+    <string gender="unknown" name="com_facebook_loading">ஏற்றுகிறது…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">ரத்துசெய்</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">உள்நுழையவும்</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Facebook மூலம் தொடரவும்</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Facebook மூலம் உள்நுழையவும்</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">வெளியேறு</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">வெளியேறு</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">%1$s ஆக உள்நுழைந்துள்ளீர்கள்</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Facebook ஐப் பயன்படுத்தி உள்நுழைந்துள்ளீர்கள்</string>
+    <string gender="unknown" name="com_facebook_send_button_text">அனுப்பு</string>
+    <string gender="unknown" name="com_facebook_share_button_text">பகிர்</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">உங்கள் கணக்கை இணைக்க, உங்கள் மொபைல் சாதனத்தில் Facebook பயன்பாட்டைத் திறந்து, அறிவிப்புகளைப் பார்க்கவும்.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- அல்லது -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">நீங்கள் அல்ல?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">%1$s ஆகத் தொடர்</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">உள்நுழைதலை உறுதிப்படுத்தவும்</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">கட்டுப்பாடு உங்களிடம் உள்ளது. பயன்பாடுகளுடன் நீங்கள் பகிர விரும்பும் தகவல்களைத் தேர்வுசெய்யவும்.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"இயக்கு"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play சேவைகளை இயக்கினால் மட்டுமே, <ns1:g id="APP_NAME">%1$s</ns1:g> செயல்படும்."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play சேவைகளை இயக்கவும்"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"நிறுவு"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"Google Play சேவைகள் இருந்தால் மட்டுமே, <ns1:g id="APP_NAME">%1$s</ns1:g> இயங்கும். அவை உங்கள் சாதனத்தில் இல்லை."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play சேவைகளைப் பெறவும்"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play சேவைகள் பிழை"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Google Play சேவைகளில் சிக்கல் ஏற்பட்டதால், <ns1:g id="APP_NAME">%1$s</ns1:g> பயன்பாட்டை அணுக முடியவில்லை. மீண்டும் முயலவும்."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"Google Play சேவைகள் இருந்தால் மட்டுமே <ns1:g id="APP_NAME">%1$s</ns1:g> பயன்பாடு இயங்கும். ஆனால், உங்கள் சாதனத்தில் அவை ஆதரிக்கப்படவில்லை."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"புதுப்பி"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Google Play சேவைகளை இயக்கினால் மட்டுமே, <ns1:g id="APP_NAME">%1$s</ns1:g> செயல்படும்."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play சேவைகளைப் புதுப்பிக்கவும்"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"தற்போது புதுப்பிக்கப்படும், Google Play சேவைகள் இருந்தால் மட்டுமே, <ns1:g id="APP_NAME">%1$s</ns1:g> செயல்படும்."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play சேவைகளின் புதிய பதிப்பு தேவை. அது விரைவில் தானாகவே புதுப்பிக்கப்படும்."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"மொபைலில் திற"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"உள்நுழைக"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google மூலம் உள்நுழைக"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"கேலெண்டர் நிகழ்வை உருவாக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"கேலெண்டர் நிகழ்வை உருவாக்கு"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"விளம்பரத் தகவல்"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"க்ரியேடிவ் பிரிவியூ"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"பிழைத் திருத்தப் பயன்முறையைத் தேர்ந்தெடுக்கவும்"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"பிழைகாண்"</string>
+    <string msgid="6099173376375995052" name="decline">"நிராகரி"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"தேடு"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"பட கேலரியில் படத்தைச் சேமிக்க, விளம்பரத்தை அனுமதிக்கவா?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"படத்தைச் சேமி"</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google மூலம் வாங்கு"</string>
+</resources>

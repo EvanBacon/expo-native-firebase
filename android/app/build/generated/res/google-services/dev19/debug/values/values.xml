@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">628588079444-0383ss2jlcmhnrvgk69ptrjedhk88olo.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://keira-knightley-51df6.firebaseio.com</string>
+    <string name="ga_trackingId" translatable="false">UA-76673608-1</string>
+    <string name="gcm_defaultSenderId" translatable="false">628588079444</string>
+    <string name="google_api_key" translatable="false">AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY</string>
+    <string name="google_app_id" translatable="false">1:628588079444:android:b1fe07df634af189</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY</string>
+    <string name="google_storage_bucket" translatable="false">keira-knightley-51df6.appspot.com</string>
+    <string name="project_id" translatable="false">keira-knightley-51df6</string>
+</resources>

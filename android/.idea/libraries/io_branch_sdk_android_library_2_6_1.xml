@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="io.branch.sdk.android:library-2.6.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/cb0f5476a20c201021ab96fba56e12f56d3586e1/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/cb0f5476a20c201021ab96fba56e12f56d3586e1/output/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.6.1.aar/9b84a76fdaa004bfb38cd89b3ae48bdc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-2.6.1.aar/9b84a76fdaa004bfb38cd89b3ae48bdc/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5705C2AE368F4C4697BB5B16 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B11590409B94CFBB017955C /* libRNFirebase.a */; };
+		05C4FE72633C43D6A7A09BC8 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5E5FCB6EA64424A598A106 /* libRNFirebase.a */; };
 		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
 		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
 		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
@@ -25,9 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD38BA9D2007F07100A0FA6F /* PBXContainerItemProxy */ = {
+		CD38BAA720082EC600A0FA6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5028067AD4DB45A9A199B3BB /* RNFirebase.xcodeproj */;
+			containerPortal = 4C63EF3D20F64BA4B35B7DC1 /* RNFirebase.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
@@ -36,8 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2C1548D9E4CB1AEFA5CCAE6D /* Pods-firetest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firetest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firetest/Pods-firetest.debug.xcconfig"; sourceTree = "<group>"; };
-		5028067AD4DB45A9A199B3BB /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
-		5B11590409B94CFBB017955C /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
+		4C63EF3D20F64BA4B35B7DC1 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		A47FE4D7F70906B7DC8CE39B /* Pods-firetest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firetest.release.xcconfig"; path = "Pods/Target Support Files/Pods-firetest/Pods-firetest.release.xcconfig"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
 		B56386411DB9693800A0598C /* firetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
 		C4A88D15726AD99E8A257BC7 /* libPods-firetest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firetest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD38BAA02007F1A400A0FA6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC5E5FCB6EA64424A598A106 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB8117C1BFA0514F79CAF74 /* libPods-firetest.a in Frameworks */,
-				5705C2AE368F4C4697BB5B16 /* libRNFirebase.a in Frameworks */,
+				05C4FE72633C43D6A7A09BC8 /* libRNFirebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,15 +141,15 @@
 		CD38BA992007F07100A0FA6F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5B11590409B94CFBB017955C /* libRNFirebase.a */,
+				EC5E5FCB6EA64424A598A106 /* libRNFirebase.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		CD38BA9A2007F07100A0FA6F /* Products */ = {
+		CD38BAA420082EC600A0FA6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD38BA9E2007F07100A0FA6F /* libRNFirebase.a */,
+				CD38BAA820082EC600A0FA6F /* libRNFirebase.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 		CF5DE883A58F444A870AA17A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				5028067AD4DB45A9A199B3BB /* RNFirebase.xcodeproj */,
+				4C63EF3D20F64BA4B35B7DC1 /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -215,8 +215,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CD38BA9A2007F07100A0FA6F /* Products */;
-					ProjectRef = 5028067AD4DB45A9A199B3BB /* RNFirebase.xcodeproj */;
+					ProductGroup = CD38BAA420082EC600A0FA6F /* Products */;
+					ProjectRef = 4C63EF3D20F64BA4B35B7DC1 /* RNFirebase.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -227,11 +227,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CD38BA9E2007F07100A0FA6F /* libRNFirebase.a */ = {
+		CD38BAA820082EC600A0FA6F /* libRNFirebase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNFirebase.a;
-			remoteRef = CD38BA9D2007F07100A0FA6F /* PBXContainerItemProxy */;
+			remoteRef = CD38BAA720082EC600A0FA6F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

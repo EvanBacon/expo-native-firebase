@@ -1,0 +1,111 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/incremental/mergeDev19DebugAndroidTestResources/merged.dir/values-es-rUS/values-es-rUS.xml",
+            "map": [
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/values-es-rUS/values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,175,283,406,515,623,708,809,932,1017,1099,1181,1293,1393,1494,1602,1709,1816,1938,2038,2120",
+                        "endColumns": "119,107,122,108,107,84,100,122,84,81,81,111,99,100,107,106,106,121,99,81,100",
+                        "endOffsets": "170,278,401,510,618,703,804,927,1012,1094,1176,1288,1388,1489,1597,1704,1811,1933,2033,2115,2216"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,225,333,456,565,673,758,859,982,1067,1149,1231,1343,1443,1544,1652,1759,1866,1988,6104,6186",
+                        "endColumns": "119,107,122,108,107,84,100,122,84,81,81,111,99,100,107,106,106,121,99,81,100",
+                        "endOffsets": "220,328,451,560,668,753,854,977,1062,1144,1226,1338,1438,1539,1647,1754,1861,1983,2083,6181,6282"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/77ec0f260bdb5e51c5c14539b317be69/res/values-es-rUS/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "241,310,451,557,661,771,876,979,1050,1203",
+                        "endColumns": "68,140,105,103,109,104,102,70,152,88",
+                        "endOffsets": "309,450,556,660,770,875,978,1049,1202,1291"
+                    },
+                    "to": {
+                        "startLines": "21,39,40,41,42,43,44,45,55,56",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2088,4826,4971,5081,5189,5303,5412,5519,6287,6444",
+                        "endColumns": "72,144,109,107,113,108,106,74,156,92",
+                        "endOffsets": "2156,4966,5076,5184,5298,5407,5514,5589,6439,6532"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/56056a2f6b78a117e0e3dc8e079f40ee/res/values-es-rUS/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "287,393,591,721,827,1047,1176,1307,1537,1644,1845,1976,2212,2416,2512,2600",
+                        "endColumns": "105,197,129,105,219,128,130,229,106,200,130,235,203,95,87,102",
+                        "endOffsets": "392,590,720,826,1046,1175,1306,1536,1643,1844,1975,2211,2415,2511,2599,2702"
+                    },
+                    "to": {
+                        "startLines": "22,23,24,25,26,27,28,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2161,2271,2469,2603,2713,2933,3066,3406,3636,3747,3948,4083,4319,4527,4627,4719",
+                        "endColumns": "109,197,133,109,219,132,134,229,110,200,134,235,207,99,91,106",
+                        "endOffsets": "2266,2464,2598,2708,2928,3061,3196,3631,3742,3943,4078,4314,4522,4622,4714,4821"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/0ab10ab86b9b893ad30030e0a4ae0024/res/values-es-rUS/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "289",
+                        "endColumns": "204",
+                        "endOffsets": "493"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3201",
+                        "endColumns": "204",
+                        "endOffsets": "3401"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.8.0.aar/195f77fc2aaee7723e98e6dd47253927/res/values-es-rUS/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "244",
+                        "endColumns": "102",
+                        "endOffsets": "346"
+                    },
+                    "to": {
+                        "startLines": "57",
+                        "startColumns": "4",
+                        "startOffsets": "6537",
+                        "endColumns": "106",
+                        "endOffsets": "6639"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/exoplayer-r2.0.3.aar/47203ac862076fb1086c98503b5581e7/res/values-es-rUS/values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,206,274,345,424,497",
+                        "endColumns": "74,75,67,70,78,72,67",
+                        "endOffsets": "125,201,269,340,419,492,560"
+                    },
+                    "to": {
+                        "startLines": "46,47,48,49,50,51,52",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5594,5669,5745,5813,5884,5963,6036",
+                        "endColumns": "74,75,67,70,78,72,67",
+                        "endOffsets": "5664,5740,5808,5879,5958,6031,6099"
+                    }
+                }
+            ]
+        }
+    ]
+}

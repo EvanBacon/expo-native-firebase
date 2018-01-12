@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"હોમ પર નેવિગેટ કરો"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"ઉપર નેવિગેટ કરો"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"વધુ વિકલ્પો"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"થઈ ગયું"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"બધું જુઓ"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"એક ઍપ્લિકેશન પસંદ કરો"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"બંધ"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ચાલુ"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"શોધો…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"ક્વેરી સાફ કરો"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"શોધ ક્વેરી"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"શોધો"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"ક્વેરી સબમિટ કરો"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"વૉઇસ શોધ"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"આની સાથે શેર કરો"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s સાથે શેર કરો"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"સંકુચિત કરો"</string>
+    <string msgid="5835639618285370804" name="accept">"સ્વીકારો"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b&amp;gt ની મુલકાત લો; અને ઉપર આપેલો કોડ દાખલ કરો.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">છબી ડાઉનલોડ કરતી વખતે એક અનપેક્ષિત ભૂલ આવી.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView લૉગિનને ઇન્ટરનેટ પરવાનગીની જરૂર છે</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">AndroidManifest ભૂલ</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">ગમ્યું</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">પસંદ કરો</string>
+    <string gender="unknown" name="com_facebook_loading">લોડ થઈ રહ્યું છે…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">રદ કરો</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">લૉગ ઇન કરો</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Facebook સાથે ચાલુ રાખો</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Facebook થી લૉગિન કરો</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">લૉગ આઉટ કરો</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">લૉગ આઉટ કરો</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">%1$s: તરીકે લૉગ ઇન છે</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">તમે Facebook નો ઉપયોગ કરીને લોગ ઇન કર્યું છે</string>
+    <string gender="unknown" name="com_facebook_send_button_text">મોકલો</string>
+    <string gender="unknown" name="com_facebook_share_button_text">શેર કરો</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">તમારા એકાઉન્ટ સાથે કનેક્ટ કરવા માટે, તમારા મોબાઇલ ઉપકરણ પર Facebook એપ્લિકેશન ખોલો અને સૂચનાઓ માટે તપાસો.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- અથવા -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">તમે નથી?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">%1$s તરીકે ચાલુ રાખો</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">લૉગિનની પુષ્ટિ કરો</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">તમે નિયંત્રણમાં છો - તમે એપ્લિકેશન્સ સાથે શું માહિતી શેર કરવા માંગો પસંદ કરો.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"સક્ષમ કરો"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"તમે Google Play સેવાઓ સક્ષમ કરશો નહીં ત્યાં સુધી <ns1:g id="APP_NAME">%1$s</ns1:g> કાર્ય કરશે નહીં."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play સેવાઓ સક્ષમ કરો"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"ઇન્સ્ટૉલ કરો"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play સેવાઓ વગર ચાલશે નહીં, જે તમારા ઉપકરણમાંથી ખૂટે છે."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play સેવાઓ મેળવો"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play સેવાઓની ભૂલ"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> ને Google Play સેવાઓમાં મુશ્કેલી આવી રહી છે. કૃપા કરીને ફરી પ્રયાસ કરો."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play સેવાઓ વગર ચાલશે નહીં, જે તમારા ઉપકરણ દ્વારા સમર્થિત નથી."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"અપડેટ કરો"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"તમે Google Play સેવાઓ અપડેટ કરશો નહીં ત્યાં સુધી <ns1:g id="APP_NAME">%1$s</ns1:g> શરૂ થશે નહીં."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play સેવાઓ અપડેટ કરો"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play સેવાઓ વગર શરૂ થશે નહીં, જે વર્તમાનમાં અપડેટ થઈ રહી છે."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play સેવાઓના નવા સંસ્કરણની જરૂર છે. તે ટૂંક સમયમાં પોતાને અપડેટ કરશે."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"ફોનમાં ખોલો"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"સાઇન ઇન કરો"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google માં સાઇન ઇન કરો"</string>
+    <string msgid="6155048007205742679" name="create_calendar_message">"જાહેરાતને કૅલેન્ડર ઇવેન્ટ બનાવવાની મંજૂરી આપીએ?"</string>
+    <string msgid="7967007864778154790" name="create_calendar_title">"કૅલેન્ડર ઇવેન્ટ બનાવો"</string>
+    <string msgid="4722375419392727435" name="debug_menu_ad_information">"જાહેરાત માહિતી"</string>
+    <string msgid="1605938743055376690" name="debug_menu_creative_preview">"સર્જનાત્મક પૂર્વાવલોકન"</string>
+    <string msgid="2039274714455389140" name="debug_menu_title">"ડીબગ મોડ પસંદ કરો"</string>
+    <string msgid="1173358804935285568" name="debug_menu_troubleshooting">"સમસ્યા નિવારણ"</string>
+    <string msgid="6099173376375995052" name="decline">"નકારો"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"શોધો"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="8020323581538738027" name="store_picture_message">"જાહેરાતને ચિત્ર ગૅલેરી છબીઓ સંગ્રહિત કરવાની મંજૂરી આપીએ?"</string>
+    <string msgid="4180630057627064606" name="store_picture_title">"છબી સાચવો"</string>
+</resources>
