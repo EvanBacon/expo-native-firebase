@@ -29,6 +29,9 @@ The following will not be available even with Blob Support:
 * Performance Monitoring
 
 
+> Expo FileSystem prevents external libs from reading local files, so use CameraRoll to retrieve photos! 
+
+
 ### The need: 
 
 * https://forums.expo.io/t/firebase-in-expo/46
