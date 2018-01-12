@@ -40,6 +40,16 @@ target 'firetest' do
     :inhibit_warnings => true
 
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Crash'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Performance'
+
 
   post_install do |installer|
     installer.pods_project.main_group.tab_width = '2';
