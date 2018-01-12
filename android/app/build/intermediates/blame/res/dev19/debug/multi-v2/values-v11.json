@@ -4,7 +4,7 @@
             "outputFile": "/Users/evanbacon/Documents/GitHub/firetest/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/4b9ccc7bfc1c046a6081a967f452220f/res/values-v11/values-v11.xml",
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/CreditCardEntry-1.4.8.4.aar/3d370b0e4d9a69d9caa35b4b99f23587/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/50a89ed0e0cc81d842ecf7bd695f43e4/res/values-v11/values-v11.xml",
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.1.aar/8304424877b2b3a1e553ce2130f7d891/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -31,6 +31,25 @@
                         "endLines": "10,16,22,28,34,40,41,45,49,50,54,58,59,63,68,73,78,80,82,83,84,138,193,194",
                         "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
                         "endOffsets": "606,1031,1459,1885,2312,2737,2826,3072,3321,3422,3674,3929,4032,4285,4693,5113,5535,5642,5771,5842,5925,9950,14118,14209"
+                    }
+                },
+                {
+                    "source": "/Users/evanbacon/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-9.8.0.aar/388a0cbc4056c2cc80c93366796e1f21/res/values-v11/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "195",
+                        "startColumns": "4",
+                        "startOffsets": "14214",
+                        "endLines": "196",
+                        "endColumns": "8",
+                        "endOffsets": "14335"
                     }
                 }
             ]
