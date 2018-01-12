@@ -1413,6 +1413,10 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
+expo-asset-utils@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/expo-asset-utils/-/expo-asset-utils-0.0.0.tgz#f0fc66fc084f8c641ef461deccf1c3e11479c03f"
+
 expo@^24.0.0:
   version "24.0.2"
   resolved "https://registry.yarnpkg.com/expo/-/expo-24.0.2.tgz#3ff9784afd9efbb8eb739289aa53290ddf31a5a5"

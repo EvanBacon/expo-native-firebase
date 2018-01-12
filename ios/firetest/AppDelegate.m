@@ -3,8 +3,8 @@
 #import "AppDelegate.h"
 #import "ExpoKit.h"
 #import "EXViewController.h"
-@import Firebase; /// Add this: From Firebase
-//#import <Firebase.h> /// Add this: From react-native-firebase
+//@import Firebase; /// Add this: From Firebase
+#import <Firebase.h> /// Add this: From react-native-firebase
 
 @interface AppDelegate ()
 
