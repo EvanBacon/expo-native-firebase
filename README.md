@@ -242,7 +242,7 @@ Only downside is this prevents you from using the coolest lib (Firestore) and so
 
 Again make sure the expo app is running **before** you run the project (this is because expo saves the link in the code before it bundles it onto the device)
 
-Now go ahead and run the project!! 🎉 ( most likely you will have errors, open an issue, spam my twitter @baconbrix ) 🤷‍♀️
+Now go ahead and run the project!! 🎉 ( most likely you will have errors, open an issue, spam my twitter [@baconbrix](https://twitter.com/Baconbrix) ) 🤷‍♀️
 
 This should be enough to get things going, if you have some more problems here are a few things you can try:
 
