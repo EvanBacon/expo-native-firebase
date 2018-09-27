@@ -1,6 +1,6 @@
 # expo-firebase example
 
-Detached ExpoKit app with Expo Firebase modules installed.
+This is a **detached ExpoKit** app with Expo Firebase modules installed. Tutorial below 👇👇👇
 
 ![Hey there](https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif)
 
@@ -34,6 +34,22 @@ Detached ExpoKit app with Expo Firebase modules installed.
       * [`expo-firebase-remote-config`](https://www.npmjs.com/package/expo-firebase-remote-config)
       * [`expo-firebase-functions`](https://www.npmjs.com/package/expo-firebase-functions)
     * Remember to import the services before using them. ex: `import 'expo-firebase-database';`
- 6. Advanced services can be used by following the setup in [`AppDelegate.m`](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
+ 6. Setup advanced services
+    * On iOS: Follow the setup in [`AppDelegate.m`](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
+    * On Android
+    * [`settings.gradle`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/settings.gradle#L6-L49)
+    * [`app/build.gradle`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/app/build.gradle#L188-L203)
+    * [`app/src/main/AndroidManifest.xml`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/app/src/main/AndroidManifest.xml#L274-L286)
+    * [`MainActivity.java`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/app/src/main/java/host/exp/exponent/MainActivity.java#L54-L75)
+    * Complex libraries:
+      * [`expo-firebase-crashlytics`](https://www.npmjs.com/package/expo-firebase-crashlytics)
+      * [`expo-firebase-invites`](https://www.npmjs.com/package/expo-firebase-invites)
+      * [`expo-firebase-links`](https://www.npmjs.com/package/expo-firebase-links)
+      * [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
+      * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
+# Bugs
+
+* Dynamic Linking API requires a newer version of Google than is in `ExpoKit` by default.
+* Dynamic Linking / Invites - inital URL is disabled.
    
