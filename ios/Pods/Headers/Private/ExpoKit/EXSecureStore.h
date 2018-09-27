@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXSecureStore.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXSecureStore.h

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGLine.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Shapes/RNSVGLine.h

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGPathParser.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Utils/RNSVGPathParser.h

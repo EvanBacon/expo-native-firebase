@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXUtil.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXUtil.h

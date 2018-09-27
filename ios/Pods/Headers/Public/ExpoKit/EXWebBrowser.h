@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXWebBrowser.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXWebBrowser.h

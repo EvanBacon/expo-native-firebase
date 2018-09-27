@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Represents the ad size.
 struct FBAdSize {
+    /// Internal size
     CGSize size;
 };
 

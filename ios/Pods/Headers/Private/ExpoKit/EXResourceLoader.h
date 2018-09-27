@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXResourceLoader.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXResourceLoader.h

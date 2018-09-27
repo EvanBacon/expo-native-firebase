@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Kernel/Errors/EXLog.h
+../../../ExpoKit/ios/Exponent/Kernel/Environment/EXLog.h

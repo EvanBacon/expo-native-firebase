@@ -20,6 +20,7 @@
 
 #import "FBSDKCoreKit+Internal.h"
 #import "FBSDKHashtag.h"
+#import "FBSDKShareError.h"
 #import "FBSDKSharePhoto.h"
 #import "FBSDKShareUtility.h"
 #import "FBSDKShareVideo.h"
@@ -30,6 +31,8 @@
 #define FBSDK_SHARE_MEDIA_CONTENT_MEDIA_KEY @"media"
 #define FBSDK_SHARE_MEDIA_CONTENT_PLACE_ID_KEY @"placeID"
 #define FBSDK_SHARE_MEDIA_CONTENT_REF_KEY @"ref"
+#define FBSDK_SHARE_MEDIA_CONTENT_PAGE_ID_KEY @"pageID"
+#define FBSDK_SHARE_MEDIA_CONTENT_UUID_KEY @"uuid"
 
 @implementation FBSDKShareMediaContent
 
@@ -40,6 +43,21 @@
 @synthesize peopleIDs = _peopleIDs;
 @synthesize placeID = _placeID;
 @synthesize ref = _ref;
+@synthesize pageID = _pageID;
+@synthesize shareUUID = _shareUUID;
+
+#pragma mark - Initializer
+
+- (instancetype)init
+{
+  self = [super init];
+  if (self) {
+    _shareUUID = [NSUUID UUID].UUIDString;
+  }
+  return self;
+}
+
+#pragma mark - Setters
 
 - (void)setPeopleIDs:(NSArray *)peopleIDs
 {
@@ -57,6 +75,63 @@
   }
 }
 
+#pragma mark - FBSDKSharingContent
+
+- (void)addToParameters:(NSMutableDictionary<NSString *, id> *)parameters
+          bridgeOptions:(FBSDKShareBridgeOptions)bridgeOptions
+{
+  // FBSDKShareMediaContent is currently available via the Share extension only (thus no parameterization implemented at this time)
+}
+
+#pragma mark - FBSDKSharingValidation
+
+- (BOOL)validateWithOptions:(FBSDKShareBridgeOptions)bridgeOptions error:(NSError *__autoreleasing *)errorRef
+{
+  if (![FBSDKShareUtility validateArray:_media minCount:1 maxCount:20 name:@"photos" error:errorRef]) {
+    return NO;
+  }
+  int videoCount = 0;
+  for (id media in _media) {
+    if ([media isKindOfClass:[FBSDKSharePhoto class]]) {
+      FBSDKSharePhoto *photo = (FBSDKSharePhoto *)media;
+      if (![photo validateWithOptions:bridgeOptions error:NULL]) {
+        if (errorRef != NULL) {
+          *errorRef = [FBSDKShareError invalidArgumentErrorWithName:@"media"
+                                                              value:media
+                                                            message:@"photos must have UIImages"];
+        }
+        return NO;
+      }
+    } else if ([media isKindOfClass:[FBSDKShareVideo class]]) {
+      if (videoCount > 0) {
+        if (errorRef != NULL) {
+          *errorRef = [FBSDKShareError invalidArgumentErrorWithName:@"media"
+                                                              value:media
+                                                            message:@"Only 1 video is allowed"];
+          return NO;
+        }
+      }
+      videoCount++;
+      FBSDKShareVideo *video = (FBSDKShareVideo *)media;
+      if (![FBSDKShareUtility validateRequiredValue:video name:@"video" error:errorRef]) {
+        return NO;
+      }
+      if (![video validateWithOptions:bridgeOptions error:errorRef]) {
+        return NO;
+      }
+
+    } else {
+      if (errorRef != NULL) {
+        *errorRef = [FBSDKShareError invalidArgumentErrorWithName:@"media"
+                                                            value:media
+                                                          message:@"Only FBSDKSharePhoto and FBSDKShareVideo are allowed in `media` property"];
+      }
+      return NO;
+    }
+  }
+  return YES;
+}
+
 #pragma mark - Equality
 
 - (NSUInteger)hash
@@ -68,6 +143,8 @@
     [_media hash],
     [_placeID hash],
     [_ref hash],
+    [_pageID hash],
+    [_shareUUID hash],
   };
   return [FBSDKMath hashWithIntegerArray:subhashes count:sizeof(subhashes) / sizeof(subhashes[0])];
 }
@@ -91,7 +168,9 @@
           [FBSDKInternalUtility object:_peopleIDs isEqualToObject:content.peopleIDs] &&
           [FBSDKInternalUtility object:_media isEqualToObject:content.media] &&
           [FBSDKInternalUtility object:_placeID isEqualToObject:content.placeID] &&
-          [FBSDKInternalUtility object:_ref isEqualToObject:content.ref]);
+          [FBSDKInternalUtility object:_ref isEqualToObject:content.ref] &&
+          [FBSDKInternalUtility object:_shareUUID isEqualToObject:content.shareUUID] &&
+          [FBSDKInternalUtility object:_pageID isEqualToObject:content.pageID]);
 }
 
 #pragma mark - NSCoding
@@ -111,6 +190,8 @@
     _media = [decoder decodeObjectOfClasses:classes forKey:FBSDK_SHARE_MEDIA_CONTENT_MEDIA_KEY];
     _placeID = [decoder decodeObjectOfClass:[NSString class] forKey:FBSDK_SHARE_MEDIA_CONTENT_PLACE_ID_KEY];
     _ref = [decoder decodeObjectOfClass:[NSString class] forKey:FBSDK_SHARE_MEDIA_CONTENT_REF_KEY];
+    _pageID = [decoder decodeObjectOfClass:[NSString class] forKey:FBSDK_SHARE_MEDIA_CONTENT_PAGE_ID_KEY];
+    _shareUUID = [decoder decodeObjectOfClass:[NSString class] forKey:FBSDK_SHARE_MEDIA_CONTENT_UUID_KEY];
   }
   return self;
 }
@@ -123,6 +204,8 @@
   [encoder encodeObject:_media forKey:FBSDK_SHARE_MEDIA_CONTENT_MEDIA_KEY];
   [encoder encodeObject:_placeID forKey:FBSDK_SHARE_MEDIA_CONTENT_PLACE_ID_KEY];
   [encoder encodeObject:_ref forKey:FBSDK_SHARE_MEDIA_CONTENT_REF_KEY];
+  [encoder encodeObject:_pageID forKey:FBSDK_SHARE_MEDIA_CONTENT_PAGE_ID_KEY];
+  [encoder encodeObject:_shareUUID forKey:FBSDK_SHARE_MEDIA_CONTENT_UUID_KEY];
 }
 
 #pragma mark - NSCopying
@@ -136,6 +219,8 @@
   copy->_media = [_media copy];
   copy->_placeID = [_placeID copy];
   copy->_ref = [_ref copy];
+  copy->_pageID = [_pageID copy];
+  copy->_shareUUID = [_shareUUID copy];
   return copy;
 }
 

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Api/EXFileDownloader.h
+../../../ExpoKit/ios/Exponent/Kernel/AppLoader/EXFileDownloader.h

@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Headers/GMSGeocoder.h
+../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h

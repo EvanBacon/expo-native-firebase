@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/Test/EXTest.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/Test/EXTest.h

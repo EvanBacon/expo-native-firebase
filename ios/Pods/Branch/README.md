@@ -28,8 +28,8 @@ ___
   + [Library installation](#installation)
   + [Register for Branch key](#register-your-app)
   + [Add your Branch key](#add-your-branch-key-to-your-project)
-  + [Register a URI scheme](#register-a-uri-scheme-direct-deep-linking-optional-but-recommended)
-  + [Support Universal Links](#support-universal-linking-ios-9)
+  + [Register a URI scheme](#register-a-uri-scheme)
+  + [Support Universal Links](#support-universal-linking)
 
 3. Branch general methods
   + [Get a Branch singleton](#get-a-singleton-branch-instance)
@@ -39,12 +39,13 @@ ___
   + [Retrieve the user's first deep linking params](#retrieve-install-install-only-parameters)
   + [Setting the user id for tracking influencers](#persistent-identities)
   + [Logging a user out](#logout)
-  + [Tracking custom events](#register-custom-events)
-  + [Tracking Apple Search Ad Attribution](#apple-search-ads)
+  + [Tracking user actions and events](#tracking-user-actions-and-events)
+  + [Apple Search Ad Attribution](#apple-search-ads)
+  + [Enable or Disable User Tracking](#enable-or-disable-user-tracking)
 
 4. Branch Universal Objects
   + [Instantiate a Branch Universal Object](#branch-universal-object)
-  + [Register user actions on an object](#register-user-actions-on-an-object)
+  + [Tracking user interactions with an object](#tracking-user-interactions-with-an-object)
   + [List content on Spotlight](#list-content-on-spotlight)
   + [Configuring link properties](link-properties-parameters)
   + [Creating a short link referencing the object](#shortened-links)
@@ -63,7 +64,7 @@ There's a full demo app embedded in this repository, but you can also check out 
 
 ## Installation
 
-**The compiled iOS SDK footprint is 180kb**
+_The iOS SDK footprint is 220kb by itself._
 
 ### Available in CocoaPods
 
@@ -102,6 +103,33 @@ You can also install by downloading the raw files below.
 * The testbed project:
 [https://s3-us-west-1.amazonaws.com/branchhost/Branch-iOS-TestBed.zip](https://s3-us-west-1.amazonaws.com/branchhost/Branch-iOS-TestBed.zip)
 
+##### Adding the Raw Files Branch SDK to Your Project
+
+If you want to add the Branch SDK directly without using Cocoapods or Carthage, add Branch as a dynamic framework dependency to your project.
+
+I'll add Branch to the project 'BareBones' as an example:
+
+1. Download or git clone the Branch SDK files to your computer.
+
+2. If you've already added Branch to your project, remove it.
+
+3. In the Xcode project navigator view, select your project, right click, and select 'Add files to "\<your project name\>"...'
+
+    ![Add Files...](docs/images/AddBranchProject-1-AddFiles.png "Add Files...")
+
+4. The 'Add' file chooser will open.  Navigate to your 'ios-branch-deep-linking > carthage-files' directory and select the BranchSDK.xcodeproj project.
+
+    ![Add BranchSDK.xcodeproj](docs/images/AddBranchProject-2-Choose-BranchSDK.png "Add BranchSDK.xcodeproj")
+
+    Xcode will add BranchSDK.xcodeproj to your project.
+
+5. In your project, reveal the 'BranchSDK.xcodeproj > Products' hierarchy. Then drag the Branch.framework product to the 'Embedded Binaries' section of your build product.
+
+    ![Embed Binary](docs/images/AddBranchProject-3-Add-Framework.gif "Embed Binary")
+
+6. Done! You can click on Build Phases of your project to make sure that Branch was added as a Target Dependency and is copied as an Embedded Framework.
+
+    ![Check Build Phase](docs/images/AddBranchProject-4-BuildPhase.png "Check Build Phase")
 
 ### Register Your App
 
@@ -127,15 +155,20 @@ Note: If you used Fabric to install Branch as a kit, your Branch keys will be in
 
 ![Branch Fabric Keys](docs/images/branch-fabric-key-plist.png)
 
-### Register a URI Scheme Direct Deep Linking (Optional but Recommended)
+### Register a URI Scheme
 
-You can register your app to respond to direct deep links (yourapp:// in a mobile browser) by adding a URI scheme in the YourProject-Info.plist file. Make sure to change **yourapp** to a unique string that represents your app name.
+Register your app to respond to direct deep links (yourapp:// in a mobile browser) by adding a URI scheme in the YourProject-Info.plist file. Make sure to change **yourapp** to a unique string that represents your app name.
 
 1. In Xcode, click on YourProject-Info.plist on the left.
 1. Find URL Types and click the right arrow. (If it doesn't exist, right click anywhere and choose Add Row. Scroll down and choose URL Types).
-1. Add "yourapp," where yourapp is a unique string for your app, as an item in URL Schemes as below:
+1. Add "yourapp," where yourapp is a unique string for your app, as an item in URL Schemes as below.
+
+   _Caution: Your apps URI scheme must be the first scheme defined (item 0) in the list._
+
+   If you have multiple schemes defined, such as a Facebook login URI, make your app's URI scheme the first one in the list so the Branch SDK knows the URI specific to your app.
 
 ![URL Scheme Demo](https://s3-us-west-1.amazonaws.com/branchhost/urlScheme.png)
+
 
 Alternatively, you can add the URI scheme in your project's Info page.
 
@@ -146,7 +179,7 @@ Alternatively, you can add the URI scheme in your project's Info page.
 
 ![URL Scheme Demo](https://s3-us-west-1.amazonaws.com/branchhost/urlType.png)
 
-### Support Universal Linking (iOS 9)
+### Support Universal Linking (iOS 9 and Above)
 
 With iOS 9, Apple has added the ability to allow http links to directly open your app, rather than using the URI Schemes. This can be a pain to set up, as it involves a complicated process on your server. The good news is that Branch does this work for you with just two steps!
 
@@ -166,11 +199,19 @@ With iOS 9, Apple has added the ability to allow http links to directly open you
 
 ![Dashboard Enable UL](docs/images/dashboard-ul-enable.png)
 
+#### Custom Domain Name Configuration (Required if you don't use the Branch provided xxxx.app.link domain)
+
+Branch provides a xxxx.app.link domain for your app, but you can use your own custom domain for app links instead. If you _do_ use your own custom domain for your universal app links, you need to add it to your Info.plist.
+
+Add the `branch_universal_link_domains` key with your custom domain as a string value:
+
+![Custom Domain Info.plist](docs/images/custom-domain.png)
+
 #### URI Scheme Considerations
 
 The Branch SDK will pull the first URI Scheme from your list that is not one of `fb`, `db`, or `pin`. This value will be used one time to set the iOS URI Scheme under your Link Settings in the Branch Dashboard.
 
-For additional help configuring the SDK, including step-by-step instructions, please see the [iOS Quickstart Guide](https://github.com/BranchMetrics/Branch-Integration-Guides/blob/master/ios-quickstart.md).
+For additional help configuring the SDK, including step-by-step instructions, please see the [iOS Quickstart Guide](https://docs.branch.io/pages/apps/ios/).
 
 ### Get a Singleton Branch Instance
 
@@ -190,18 +231,20 @@ Branch *branch = [Branch getInstance];
 let branch: Branch = Branch.getInstance()
 ```
 
+##### Testing
+
 ###### Objective-C
 
 ```objc
 #warning Remove for launch
-Branch *branch = [Branch getTestInstance];
+[Branch setUseTestBranchKey:YES];
 ```
 
 ###### Swift
 
 ```swift
 //TODO: Remove for launch
-let branch: Branch = Branch.getTestInstance();
+Branch.useTestBranchKey = true
 ```
 
 #### Parameters
@@ -227,7 +270,15 @@ To deep link, Branch must initialize a session to check if the user originated f
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    if (![[Branch getInstance] handleDeepLink:url]) {
+
+    BOOL branchHandled =
+        [[Branch getInstance]
+            application:application
+                openURL:url
+      sourceApplication:sourceApplication
+             annotation:annotation];
+
+    if (!branchHandled) {
         // do other deep link routing for the Facebook SDK, Pinterest SDK, etc
     }
     return YES;
@@ -258,8 +309,17 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 
 func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-    // pass the url to the handle deep link call
-    Branch.getInstance().handleDeepLink(url)
+
+    // Pass the url to the handle deep link call
+    let branchHandled = Branch.getInstance().application(application,
+        open: url,
+        sourceApplication: sourceApplication,
+        annotation: annotation
+    )
+    if (!branchHandled) {
+        // If not handled by Branch, do other deep link routing for the
+        // Facebook SDK, Pinterest SDK, etc
+    }
 
     return true
 }
@@ -359,6 +419,8 @@ Nothing
 
 **BOOL** continueUserActivity will return a boolean indicating whether Branch has handled the Universal Link. If Universal Link is powered by Branch, then continueUserActivity will return YES because the Branch click object is present.
 
+If you use your own custom universal link domain, make sure you add it your Info.plist under the `branch_universal_link_domains` key as described [here](#custom-domain-name-configuration) or this method may erroneously return `NO` when in fact the universal link will be opened.
+
 ### Register a Deep Link Controller
 
 Register a controller for Branch to show when specific keys are present in the Branch open / install dictionary. This is the mechanism to handle auto deep linking and should be called before `initSession`.
@@ -368,13 +430,13 @@ Register a controller for Branch to show when specific keys are present in the B
 ###### Objective-C
 
 ```objc
-[[Branch getInstance] registerDeepLinkController:myController forKey:@"my-key"];
+[[Branch getInstance] registerDeepLinkController:myController forKey:@"my-key" withPresentation:BNCViewControllerOptionShow];
 ```
 
 ###### Swift
 
 ```swift
-Branch.getInstance().registerDeepLinkController(myController forKey:"my-key")
+Branch.getInstance().registerDeepLinkController(myController forKey:"my-key" withPresentation: .optionShow)
 ```
 
 #### Parameters
@@ -384,6 +446,13 @@ Branch.getInstance().registerDeepLinkController(myController forKey:"my-key")
 
 **key** (NSString *) _required_
 : The key checked for in open / install dictionaries.
+
+**Option** (BNCViewControllerPresentationOption) _required_
+| **Option** | **Meaning**
+| --- | ---
+| BNCViewControllerOptionShow | This option pushes view controller onto the navigation stack in a similar way as the showViewController
+| BNCViewControllerOptionPush | This option pushes view controller onto the navigation stack in a similar way as the pushViewController
+| BNCViewControllerOptionPresent | This option presents view controller onto the root view controller of window in a similar way as the presentViewController
 
 #### Returns
 
@@ -429,7 +498,9 @@ None
 
 #### Returns
 
-**NSDictionary *** When initSession returns a parameter set in the deep link callback, we store it in NSUserDefaults for the duration of the session in case you want to retrieve it later. Careful, once the app is minimized and the session ends, this will be cleared.
+`NSDictionary*`
+
+When initSession returns a parameter set in the deep link callback, we store it in NSUserDefaults for the duration of the session in case you want to retrieve it later. Careful, once the app is minimized and the session ends, this will be cleared.
 
 ### Retrieve Install (Install Only) Parameters
 
@@ -504,17 +575,101 @@ Branch.getInstance().logout()   // previously clearUser
 
 None
 
-### Register Custom Events
+### Tracking User Actions and Events
+
+Use the `BranchEvent` interface to track special user actions or application specific events beyond app installs, opens, and sharing. You can track events such as when a user adds an item to an on-line shopping cart, or searches for a keyword, among others.
+
+The `BranchEvent` interface provides an interface to add contents represented by BranchUniversalObject in order to associate app contents with events.
+
+Analytics about your app's BranchEvents can be found on the Branch dashboard, and BranchEvents also provide tight integration with many third party analytics providers.
+
+The `BranchEvent` class can be simple to use. For example:
+
+###### Objective-C
+
+```objc
+[BranchEvent.standardEvent(BranchStandardEventAddToCart) logEvent];
+```
+
+###### Swift
+
+```swift
+BranchEvent.standardEvent(.addToCart).logEvent()
+```
+
+For best results use the Branch standard event names defined in `BranchEvent.h`. But you can use your own custom event names too:
+
+###### Objective-C
+
+```objc
+[BranchEvent.customEventWithName(@"User_Scanned_Item") logEvent];
+```
+
+###### Swift
+
+```swift
+BranchEvent.customEventWithName("User_Scanned_Item").logEvent()
+```
+
+Extra event specific data can be tracked with the event as well:
+
+###### Objective-C
+
+```objc
+BranchEvent *event    = [BranchEvent standardEvent:BranchStandardEventPurchase];
+event.transactionID   = @"tx-12344555";
+event.currency        = BNCCurrencyUSD;
+event.revenue         = [NSDecimalNumber decimalNumberWithString:@"12.70"];
+event.shipping        = [NSDecimalNumber decimalNumberWithString:@"10.20"];
+event.tax             = [NSDecimalNumber decimalNumberWithString:@"2.50"];
+event.coupon          = @"coupon_code";
+event.affiliation     = @"store_affiliation";
+event.eventDescription= @"Shopper made a purchase.";
+event.searchQuery     = @"Fashion Scarf";
+event.contentItems    = @[ branchUniversalObject ];
+event.customData      = (NSMutableDictionary*) @{
+    @"Item_Color": @"Red",
+    @"Item_Size":  @"Large"
+};
+[event logEvent];
+```
+
+###### Swift
+
+```
+let event = BranchEvent.standardEvent(.purchase)
+event.transactionID    = "tx-12344555"
+event.currency         = .USD
+event.revenue          = 12.70
+event.shipping         = 10.20
+event.tax              = 2.50
+event.coupon           = "coupon_code"
+event.affiliation      = "store_affiliation"
+event.eventDescription = "Shopper made a purchase."
+event.searchQuery      = "Fashion Scarf"
+event.contentItems     = [ branchUniversalObject ]
+event.customData       = [
+    "Item_Color": "Red",
+    "Item_Size":  "Large"
+]
+event.logEvent()
+```
+
+### Register Custom Events (Deprecated)
+
+The old `userCompletedAction:` methods of tracking user actions and events are deprecated and will go away eventually. Use the new `BranchEvent` to track user actions instead, as described above.
+
+Here is the legacy documentation:
 
 #### Methods
 
-###### Objective-C
+###### Objective-C (Deprecated)
 
 ```objc
 [[Branch getInstance] userCompletedAction:@"your_custom_event"]; // your custom event name should not exceed 63 characters
 ```
 
-###### Swift
+###### Swift (Deprecated)
 
 ```swift
 Branch.getInstance().userCompletedAction("your_custom_event") // your custom event name should not exceed 63 characters
@@ -522,13 +677,13 @@ Branch.getInstance().userCompletedAction("your_custom_event") // your custom eve
 
 OR if you want to store some state with the event:
 
-###### Objective-C
+###### Objective-C (Deprecated)
 
 ```objc
 [[Branch getInstance] userCompletedAction:@"your_custom_event" withState:(NSDictionary *)appState]; // same 63 characters max limit
 ```
 
-###### Swift
+###### Swift (Deprecated)
 
 ```swift
 Branch.getInstance().userCompletedAction("your_custom_action", withState: [String: String]()) // same 63 characters max limit; replace [String: String]() with params dictionary
@@ -542,13 +697,13 @@ Some example events you might want to track:
 @"finished_level_ten"
 ```
 
-####Parameters
+#### Parameters
 
 
-**event** (NSString *) _required_
+**event** `(NSString *)` _required_
 : This is the event string you'd like to send to Branch. You can view the attribution of which links drove events to occur in the analytics.
 
-**state** (NSDictionary *) _optional_
+**state** `(NSDictionary *)` _optional_
 : If you'd like to pass additional metadata along with the event, you should use this dictionary. For example, this is how you pass revenue into Branch using the BNCPurchaseAmount constant as a key.
 
 ### Apple Search Ads
@@ -602,6 +757,20 @@ Warning: This should not be used in production.
 Branch.getInstance().setAppleSearchAdsDebugMode
 ```
 
+### Enable or Disable User Tracking
+In order to comply with tracking requirements, you can disable tracking at the SDK level. Simply call:
+
+```objc
+[Branch setTrackingDisabled:YES];
+```
+
+```swift
+Branch.setTrackingDisabled(true)
+```
+
+This will prevent any Branch network requests from being sent, except when deep linking. If someone clicks a Branch link, but does not want to be tracked, we will return the deep linking data back to the app but without capturing any tracking information.
+
+In do-not-track mode, you will still be able to create & share links. The links will not have identifiable information and will be long format links. Event tracking won’t pass data back to the server if a user has expressed to not be tracked. You can change this behavior at any time by calling the above function. The trackingDisabled state is saved and persisted across app runs.
 
 ## Branch Universal Object (for deep links, content analytics and indexing)
 
@@ -616,16 +785,19 @@ Here are a set of best practices to ensure that your analytics are correct, and 
 3. Initialize the Branch Universal Object and call `userCompletedAction` with the `BNCRegisterViewEvent` **on page load**
 4. Call `showShareSheet` and `createShortLink` later in the life cycle, when the user takes an action that needs a link
 5. Call the additional object events (purchase, share completed, etc) when the corresponding user action is taken
+6. Set the `contentIndexMode` to `ContentIndexModePublic` or `ContentIndexModePrivate`. If BranchUniversalObject is set to `ContentIndexModePublic`, then content would indexed using `NSUserActivity`, or else content would be index using `CSSearchableIndex` on Spotlight.
+
+Note: Content indexed using `CSSearchableItem` could be removed from Spotlight but cannot be removed if indexed using `NSUserActivity`.
 
 Practices to _avoid_:
-1. Don't set the same `title`, `contentDescription` and `imageUrl` across all objects
-2. Don't wait to initialize the object and register views until the user goes to share
-3. Don't wait to initialize the object until you conveniently need a link
+1. Don't set the same `title`, `contentDescription` and `imageUrl` across all objects.
+2. Don't wait to initialize the object and register views until the user goes to share.
+3. Don't wait to initialize the object until you conveniently need a link.
 4. Don't create many objects at once and register views in a `for` loop.
 
 ### Branch Universal Object
 
-#### Methods
+#### Methods and Properties
 
 ###### Objective-C
 
@@ -638,8 +810,9 @@ BranchUniversalObject *branchUniversalObject = [[BranchUniversalObject alloc] in
 branchUniversalObject.title = @"My Content Title";
 branchUniversalObject.contentDescription = @"My Content Description";
 branchUniversalObject.imageUrl = @"https://example.com/mycontent-12345.png";
-[branchUniversalObject addMetadataKey:@"property1" value:@"blue"];
-[branchUniversalObject addMetadataKey:@"property2" value:@"red"];
+branchUniversalObject.contentMetadata.contentSchema = BranchContentSchemaCommerceProduct;
+branchUniversalObject.contentMetadata.customMetadata[@"property1"] = @"blue";
+branchUniversalObject.contentMetadata.customMetadata[@"property2"] = @"red";
 ```
 
 ###### Swift
@@ -649,60 +822,92 @@ let branchUniversalObject: BranchUniversalObject = BranchUniversalObject(canonic
 branchUniversalObject.title = "My Content Title"
 branchUniversalObject.contentDescription = "My Content Description"
 branchUniversalObject.imageUrl = "https://example.com/mycontent-12345.png"
-branchUniversalObject.addMetadataKey("property1", value: "blue")
-branchUniversalObject.addMetadataKey("property2", value: "red")
+branchUniversalObject.contentMetadata.contentSchema = .product;
+branchUniversalObject.contentMetadata.customMetadata["property1"] = "blue"
+branchUniversalObject.contentMetadata.customMetadata["property2"] = "red"
 ```
 
-#### Parameters
+#### Properties
 
 **canonicalIdentifier**: This is the unique identifier for content that will help Branch de-dupe across many instances of the same thing. If you have a website with pathing, feel free to use that. Or if you have database identifiers for entities, use those.
 
-**title**: This is the name for the content and will automatically be used for the OG tags. It will insert $og_title into the data dictionary of any link created.
+**title**: This is the name for the content and will automatically be used for the OG tags. It will insert `$og_title` into the data dictionary of any link created.
 
-**contentDescription**: This is the description for the content and will automatically be used for the OG tags. It will insert $og_description into the data dictionary of any link created.
+**contentDescription**: This is the description for the content and will automatically be used for the OG tags. It will insert `$og_description` into the data dictionary of any link created.
 
-**imageUrl**: This is the image URL for the content and will automatically be used for the OG tags. It will insert $og_image_url into the data dictionary of any link created.
+**imageUrl**: This is the image URL for the content and will automatically be used for the OG tags. It will insert `$og_image_url` into the data dictionary of any link created.
 
-**metadata**: These are any extra parameters you'd like to associate with the Branch Universal Object. These will be made available to you after the user clicks the link and opens up the app. To add more keys/values, just use the method `addMetadataKey`.
+**keywords**: Key words that describe the object. These are used for Spotlight search and web scraping so that users can find your content.
 
-**price**: The price of the item to be used in conjunction with the commerce related events below.
+**locallyIndex**: If set to true, Branch will index this content on Spotlight on the user's phone.
 
-**currency**: The currency representing the price in [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217). Default is USD.
-
-**contentIndexMode**: Can be set to the ENUM of either `ContentIndexModePublic` or `ContentIndexModePrivate`. Public indicates that you'd like this content to be discovered by other apps. Currently, this is only used for Spotlight indexing but will be used by Branch in the future.
+**publiclyIndex**: If set to true, Branch will index this content on Google, Branch, etc.
 
 **expirationDate**: The date when the content will not longer be available or valid. Currently, this is only used for Spotlight indexing but will be used by Branch in the future.
 
-#### Returns
+**contentMetadata**: Details that further describe your content. Set the properties of this sub-object depending on the type of content that is relevant to your content:
 
-None
+#### BranchUniversalObject.contentMetadata
 
-### Register User Actions On An Object
+The `BranchUniversalObject.contentMetadata` properties further describe  your content. These properties are trackable in the Branch dashboard and will be automatically exported to your connected third-party app intelligence partners like Adjust or Mixpanel.
+
+Set the properties of this sub-object depending on the type of content that is relevant to your content. The `BranchUniversalObject.contentMetadata.contentSchema` property describes the type of object content. Set other properties as is relevant to the type.
+
+**contentMetadata.contentSchema**: Set this property to a `BranchContentSchema` enum that best describes the content type. It accepts values like `BranchContentSchemaCommerceProduct` and `BranchContentSchemaMediaImage`.
+
+**contentMetadata.customMetadata**: This dictionary contains any extra parameters you'd like to associate with the Branch Universal Object. These will be made available to you after the user clicks the link and opens up the app.
+
+**contentMetadata.price**: The price of the item to be used in conjunction with the commerce related events below.
+
+**contentMetadata.currency**: The currency representing the price in [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217). The default is USD.
+
+**contentMetadata.quantity**: The quantity.
+
+**contentMetadata.sku**: The vendor SKU.
+
+**contentMetadata.productName**: Product name.
+
+**contentMetadata.productBrand**: Product brand.
+
+**contentMetadata.productCategory**: The `BNCProductCategory` value, such as `BNCProductCategoryAnimalSupplies` or `BNCProductCategoryFurniture`.
+
+**contentMetadata.productVariant**: The product variant.
+
+**contentMetadata.condition**: The `BranchCondition` value, such as `BranchConditionNew` or `BranchConditionRefurbished`.
+
+**ratingAverage, ratingCount, ratingMax**: The rating for your content.
+
+**addressStreet, addressCity, addressRegion, addressCountry, addressPostalCode**: The address of your content.
+
+**latitude, longitude**: The longitude and latitude of your content.
+
+**imageCaptions**: Image captions for the content's images.
+
+### Tracking User Interactions With An Object
 
 We've added a series of custom events that you'll want to start tracking for rich analytics and targeting. Here's a list below with a sample snippet that calls the register view event.
 
 | Key | Value
 | --- | ---
-| BNCRegisterViewEvent | User viewed the object
-| BNCAddToWishlistEvent | User added the object to their wishlist
-| BNCAddToCartEvent | User added object to cart
-| BNCPurchaseInitiatedEvent | User started to check out
-| BNCPurchasedEvent | User purchased the item
-| BNCShareInitiatedEvent | User started to share the object
-| BNCShareCompletedEvent | User completed a share
+| BranchStandardEventViewItem | User viewed the object
+| BranchStandardEventAddToWishlist | User added the object to their wishlist
+| BranchStandardEventAddToCart | User added object to cart
+| BranchStandardEventInitiatePurchase | User started to check out
+| BranchStandardEventPurchase | User purchased the item
+| BranchStandardEventShare | User completed a share
 
 #### Methods
 
 ###### Objective-C
 
 ```objc
-[branchUniversalObject userCompletedAction:BNCRegisterViewEvent];
+[branchUniversalObject userCompletedAction:BranchStandardEventViewItem];
 ```
 
 ###### Swift
 
 ```swift
-branchUniversalObject.userCompletedAction(BNCRegisterViewEvent)
+branchUniversalObject.userCompletedAction(BranchStandardEventViewItem)
 ```
 
 #### Parameters
@@ -879,6 +1084,62 @@ The majority of share options only include one string of text, except email, whi
 linkProperties.addControlParam("$email_subject", withValue: "Therapists hate him.")
 ```
 
+You can also optionally add HTML to the email option and customize the link text. If the link text is left out, the url itself is used
+
+```objc
+[linkProperties addControlParam:@"$email_html_header" withValue:@"<style>your awesome CSS</style>\nOr Dear Friend,"];
+[linkProperties addControlParam:@"$email_html_footer" withValue:@"Thanks!"];
+[linkProperties addControlParam:@"$email_html_link_text" withValue:@"Tap here"];
+```
+
+```swift
+linkProperties.addControlParam("$email_html_header", withValue: "<style>your awesome CSS</style>\nOr Dear Friend,")
+linkProperties.addControlParam("$email_html_footer", withValue: "Thanks!")
+linkProperties.addControlParam("$email_html_link_text", withValue: "Tap here")
+```
+
+#### Changing share text on the fly
+
+You can change the link shareText and other link parameters based on the choice the user makes on the sharesheet activity.  First, set the `BranchShareLink` delegate with an object that follows the `BranchShareLinkDelegate` protocol.
+
+The optional `- (void) branchShareLinkWillShare:` delegate method will be called just after the user selects a share action, like share by email for instance, and before the share action is shown to the user, like when the email composer is shown to the user with the share text. This is an ideal time to change the share text based on the user action.
+
+The optional `- (void) branchShareLink:didComplete:withError:` delegate method will be called after the user has completed the share action.  The `didComplete` boolean will be `YES` if the user shared the item, and `NO` if the user cancelled.  The `error` value will indicate any errors that may have occurred.
+
+###### Objective-C
+```objc
+@interface ViewController () <BranchShareLinkDelegate>
+```
+Override the branchShareLinkWillShare function to change your shareText
+
+```objc
+- (void) branchShareLinkWillShare:(BranchShareLink*)shareLink {
+    // Link properties, such as alias or channel can be overridden here based on the users'
+    // choice stored in shareSheet.activityType.
+    shareLink.shareText = [NSString stringWithFormat:
+        @"Shared through '%@'\nfrom Branch's Branch-TestBed\nat %@.",
+        shareLink.linkProperties.channel,
+        [self.dateFormatter stringFromDate:[NSDate date]]];
+}
+```
+###### Swift
+
+```swift
+class ViewController: UITableViewController, BranchShareLinkDelegate
+```
+
+Override the branchShareLinkWillShare function to change your shareText
+
+```swift
+func branchShareLinkWillShare(_ shareLink: BranchShareLink) {
+	// Link properties, such as alias or channel can be overridden here based on the users'
+	// choice stored in shareSheet.activityType.
+	shareLink.shareText =
+	    "Shared through '\(shareLink.linkProperties.channel!)'\nfrom Branch's TestBed-Swift" +
+	    "\nat \(self.dateFormatter().string(from: Date()))."
+}
+```
+
 #### Returns
 
 None
@@ -893,19 +1154,196 @@ If you'd like to list your Branch Universal Object in Spotlight local and cloud 
 
 ```objc
 branchUniversalObject.automaticallyListOnSpotlight = YES;
-[branchUniversalObject userCompletedAction:BNCRegisterViewEvent];
+[branchUniversalObject userCompletedAction:BranchStandardEventViewItem];
 ```
 
 ###### Swift
 
 ```swift
 branchUniversalObject.automaticallyListOnSpotlight = true
-branchUniversalObject.userCompletedAction(BNCRegisterViewEvent)
+branchUniversalObject.userCompletedAction(BranchStandardEventViewItem)
 ```
 
 #### Parameters
 
 **callback**: Will return the URL that was used to list the content in Spotlight if you'd like to store it for your own records.
+
+#### Returns
+
+None
+
+### List Content On Spotlight with Link properties
+
+If you'd like to list your Branch Universal Object with link properties in Spotlight local and cloud index, this is the method you'll call. You'll want to register views every time the page loads as this contributes to your global ranking in search.
+
+#### Methods
+
+###### Objective-C
+
+```objc
+[universalObject listOnSpotlightWithLinkProperties:linkProperties callback:^(NSString * _Nullable url, NSError * _Nullable error) {
+    if (!error) {
+         NSLog(@"Successfully indexed on spotlight");
+    }
+}];
+```
+
+###### Swift
+
+```swift
+universalObject.listOnSpotlight(with: linkProperty) { (url, error) in
+    if (error == nil) {
+        print("Successfully indexed on spotlight")
+    }
+}
+```
+
+#### Parameters
+
+**callback**: Will return the URL that was used to list the content in Spotlight if you'd like to store it for your own records.
+
+#### Returns
+
+None
+
+### List Multiple Branch Universal Objects On Spotlight using CSSearchableIndex
+
+Call this method on the Branch shared instance to list multiple Branch Universal Objects in Spotlight:
+
+#### Methods
+
+###### Objective-C
+
+```objc
+[[Branch getInstance] indexOnSpotlightUsingSearchableItems:universalObjects
+                                                    completion:^(NSArray<BranchUniversalObject *> *universalObjects,
+                                                                 NSError *error) {
+        if (!error) {
+            // Successfully able to index all the BUO on spotloght
+        }
+    }];
+```
+
+###### Swift
+
+```swift
+Branch.getInstance().indexOnSpotlight(usingSearchableItems: universalObjects,
+                                                completion: { (universalObjects, error) in
+      if (error) {
+           // Successfully able to index all the BUO on spotloght
+      }
+})
+```
+
+#### Parameters
+
+**universalObjects**: An array of all the Branch Universal Object that would indexed using `CSSearchableIdex`
+
+**completion**: Will return Branch Universal Object with dynamic urls as Spotlight identifier when indexing completes.
+
+#### Returns
+
+None
+
+### Remove Branch Universal Object from Spotlight if privately indexed
+
+Privately indexed Branch Universal Object can be removed from spotlight
+
+#### Methods
+
+###### Objective-C
+
+```objc
+[universalObject removeFromSpotlightWithCallback:^(NSError * _Nullable error) {
+        if (!error) {
+            NSLog(@"universal Object removed from spotlight");
+        }
+    }];
+```
+
+###### Swift
+
+```swift
+universalObject.removeFromSpotlight { (error) in
+            if(error == nil) {
+                print("BUO successfully removed")
+            }
+        }
+```
+
+#### Parameters
+
+**Callback**: Will return once Branch Universal Object is removed from spotlight. If spotlight is removed, the spotlightIdentifier variable of Branch Universal Object would be nil.
+
+#### Returns
+
+None
+
+### Remove multiple Branch Universal Objects from Spotlight if privately indexed
+
+Privately indexed multiple Branch Universal Objects can be removed from spotlight
+
+#### Methods
+
+###### Objective-C
+
+```objc
+[[Branch getInstance] removeSearchableItemsWithBranchUniversalObjects:@[BUO1,BUO2] callback:^(NSError *error) {
+    if (!error) {
+        NSLog(@"An array of BUOs removed from spotlight");
+    }
+}]
+
+```
+
+###### Swift
+
+```swift
+Branch.getInstance().removeSearchableItems(with: [BUO1,BUO2]) { (error) in
+    if (error == nil) {
+        print("An array of BUOs removed from spotlight")
+    }
+}
+```
+
+#### Parameters
+
+**Callback**: Will return once all Branch Universal Object is removed from spotlight. If spotlight is removed, the spotlightIdentifier variable of all Branch Universal Object would be nil.
+
+#### Returns
+
+None
+
+### Remove all Branch Universal Objects from Spotlight if privately indexed
+
+All Privately indexed Branch Universal Objects can be removed from spotlight
+
+#### Methods
+
+###### Objective-C
+
+```objc
+[[Branch getInstance] removeAllPrivateContentFromSpotLightWithCallback:^(NSError *error) {
+    if (!error) {
+      NSLog(@"All branch privately indexed content removed from spotlight");
+    }
+}];
+```
+
+###### Swift
+
+```swift
+Branch.getInstance().removeAllPrivateContentFromSpotLight { (error) in
+    if (error == nil) {
+        print("All branch privately indexed content removed from spotlight")
+    }
+}
+```
+
+#### Parameters
+
+**Callback**: Will return once all Branch Universal Object is removed from spotlight.
+Note: SpotlightIdentifer would not be nil of all the Branch Universal Object been removed from spotlight as Branch SDK doesn't cache the Branch Universal Objects.
 
 #### Returns
 

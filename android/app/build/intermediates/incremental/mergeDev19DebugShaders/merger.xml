@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/evanbacon/Documents/GitHub/firetest/android/app/src/main/shaders"/></dataSet><dataSet config="dev19"><source path="/Users/evanbacon/Documents/GitHub/firetest/android/app/src/dev19/shaders"/></dataSet><dataSet config="debug"><source path="/Users/evanbacon/Documents/GitHub/firetest/android/app/src/debug/shaders"/></dataSet><dataSet config="dev19Debug"><source path="/Users/evanbacon/Documents/GitHub/firetest/android/app/src/dev19Debug/shaders"/></dataSet></merger>

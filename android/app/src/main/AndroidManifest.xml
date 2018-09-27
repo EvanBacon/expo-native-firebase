@@ -5,11 +5,11 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <permission
-    android:name="com.evanbacon.firetest.permission.C2D_MESSAGE"
+    android:name="com.evanbacon.demofirebasemodulesapp.permission.C2D_MESSAGE"
     android:protectionLevel="signature"/>
 
   <!-- These are required permissions to make the app run -->
-  <uses-permission android:name="com.evanbacon.firetest.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.evanbacon.demofirebasemodulesapp.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
@@ -24,21 +24,27 @@
   <uses-permission android:name="android.permission.USE_FINGERPRINT" />
   <uses-permission android:name="android.permission.VIBRATE" />
   <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
   <!-- These require runtime permissions on M -->
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.READ_CALENDAR" />
+  <uses-permission android:name="android.permission.WRITE_CALENDAR" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.RECORD_AUDIO" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="android.permission.READ_SMS" />
   <!-- END OPTIONAL PERMISSIONS -->
 
   <!-- ADD TEST PERMISSIONS HERE -->
 
   <uses-feature android:glEsVersion="0x00020000" android:required="false" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 
   <application
     android:name=".MainApplication"
@@ -53,14 +59,7 @@
       android:launchMode="singleTask"
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.Translucent.NoTitleBar">
-      <intent-filter>
-        <data android:scheme="expd447290bbddf43c6bae7b80a1b96a919"/>
-
-        <action android:name="android.intent.action.VIEW"/>
-
-        <category android:name="android.intent.category.DEFAULT"/>
-        <category android:name="android.intent.category.BROWSABLE"/>
-      </intent-filter>
+      <!-- ADD SHELL SCHEME HERE -->
     </activity>
 
     <activity
@@ -72,22 +71,34 @@
 
     <activity
       android:name=".MainActivity"
+      android:launchMode="singleTask"
       android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
       android:theme="@style/Theme.Exponent.Splash"
       android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <data android:scheme="exp4131ad20a44d475ca87c9cd251193578"/>
+
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+      <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
     </activity>
 
     <activity
       android:name=".experience.ShellAppActivity"
+      android:launchMode="singleTask"
       android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
       android:theme="@style/Theme.Exponent.Splash"
       android:windowSoftInputMode="adjustResize">
       <!-- ADD SHELL INTENT FILTERS HERE -->
+      <!-- ADD SHELL APP SPECIFIC INTENT FILTERS -->
     </activity>
 
     <activity
@@ -98,16 +109,28 @@
       android:theme="@style/Theme.Exponent.Light">
     </activity>
 
+    <activity
+      android:name=".experience.TvActivity"
+      android:label="@string/app_name"
+      android:theme="@style/Theme.Exponent.Light"
+      android:screenOrientation="landscape">
+     <intent-filter>
+       <action android:name="android.intent.action.MAIN" />
+       <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+     </intent-filter>
+   </activity>
+
+
+
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
     <!-- ADD DEV SETTINGS HERE -->
+    <activity android:name="abi30_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+    <activity android:name="abi29_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+    <activity android:name="abi28_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+    <activity android:name="abi27_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+    <activity android:name="abi26_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
+    <activity android:name="abi25_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
     <activity android:name="abi24_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi23_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi22_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi21_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi20_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi19_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi18_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
-    <activity android:name="abi17_0_0.com.facebook.react.devsupport.DevSettingsActivity"/>
 
     <activity
       android:name=".ExponentDevActivity"
@@ -131,13 +154,29 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.evanbacon.firetest" android:path="oauthredirect"/>
+        <data android:scheme="com.evanbacon.demofirebasemodulesapp" android:path="oauthredirect"/>
       </intent-filter>
     </activity>
 
     <activity
       android:name=".oauth.OAuthResultActivity">
     </activity>
+
+    <!-- START OF STRIPE SCHEMES -->
+    <activity
+        android:exported="true"
+        android:launchMode="singleTask"
+        android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="expo.modules.payments.stripe.80f6237d-7e8e-4fad-9f85-9af810905867" />
+        </intent-filter>
+    </activity>
+    <!-- Versioned Activity for Stripe -->
+    <!-- END OF STRIPE SCHEMES -->
 
     <activity
       android:name=".chrometabs.ChromeTabsManagerActivity">
@@ -209,7 +248,7 @@
         <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
         <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
 
-        <category android:name="com.evanbacon.firetest"/>
+        <category android:name="com.evanbacon.demofirebasemodulesapp"/>
       </intent-filter>
     </receiver>
 
@@ -228,7 +267,40 @@
       </intent-filter>
     </service>
     <service
-      android:name=".gcm.RegistrationIntentService"
+      android:name=".gcm.GcmRegistrationIntentService"
+      android:exported="false">
+    </service>
+
+      <service android:name="expo.modules.firebase.messaging.EXFirebaseMessagingService">
+          <intent-filter>
+              <action android:name="com.google.firebase.MESSAGING_EVENT" />
+          </intent-filter>
+      </service>
+      <!--Instance ID-->
+      <service android:name="expo.modules.firebase.messaging.EXFirebaseInstanceIdService">
+          <intent-filter>
+              <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+          </intent-filter>
+      </service>
+      <!--Background Messages-->
+      <service android:name="expo.modules.firebase.messaging.FirebaseBackgroundMessagingService" />
+
+
+      <!-- FCM -->
+    <!--<service-->
+      <!--android:name=".fcm.ExpoFcmMessagingService">-->
+      <!--<intent-filter>-->
+        <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+      <!--</intent-filter>-->
+    <!--</service>-->
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_icon"
+      android:resource="@drawable/shell_notification_icon" />
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_color"
+      android:resource="@color/colorAccent" />
+    <service
+      android:name=".fcm.FcmRegistrationIntentService"
       android:exported="false">
     </service>
 
@@ -257,6 +329,8 @@
 
     <!-- The Facebook SDK runs FacebookInitProvider on startup and crashes if there isn't an ID here -->
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb0"/>
+
+    <meta-data android:name="standaloneStripeScheme" android:value="80f6237d-7e8e-4fad-9f85-9af810905867" />
   </application>
 
 </manifest>

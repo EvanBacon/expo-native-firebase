@@ -46,7 +46,7 @@ specify it in your `Podfile`:
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '7.0'
+platform :ios, '8.0'
 target 'YOUR_APPLICATION_TARGET_NAME_HERE' do
   pod 'GoogleMaps'
 end

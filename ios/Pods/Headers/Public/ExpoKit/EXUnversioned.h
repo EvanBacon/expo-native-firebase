@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/EXUnversioned.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/EXUnversioned.h

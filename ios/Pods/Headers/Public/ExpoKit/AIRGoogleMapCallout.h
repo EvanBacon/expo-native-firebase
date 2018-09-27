@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/GoogleMaps/AIRGoogleMapCallout.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/GoogleMaps/AIRGoogleMapCallout.h

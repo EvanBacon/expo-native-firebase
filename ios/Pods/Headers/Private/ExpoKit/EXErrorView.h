@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Kernel/Errors/EXErrorView.h
+../../../ExpoKit/ios/Exponent/Kernel/Views/EXErrorView.h

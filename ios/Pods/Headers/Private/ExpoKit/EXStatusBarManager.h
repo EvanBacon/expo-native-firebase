@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXStatusBarManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXStatusBarManager.h

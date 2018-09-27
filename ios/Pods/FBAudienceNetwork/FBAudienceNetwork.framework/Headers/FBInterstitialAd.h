@@ -36,7 +36,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
 /**
   Typed access to the id of the ad placement.
  */
-@property (nonatomic, copy, readonly, nonnull) NSString *placementID;
+@property (nonatomic, copy, readonly) NSString *placementID;
 /**
   the delegate
  */

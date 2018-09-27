@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Lottie/EXAnimationViewManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Lottie/EXAnimationViewManager.h

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/DevSupport/EXDisabledRedBox.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/DevSupport/EXDisabledRedBox.h

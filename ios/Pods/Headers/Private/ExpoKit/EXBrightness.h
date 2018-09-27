@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXBrightness.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXBrightness.h

@@ -6,11 +6,15 @@
 //  Copyright © 2016 Branch Metrics. All rights reserved.
 //
 
+#if __has_feature(modules)
+@import Foundation;
+#else
 #import <Foundation/Foundation.h>
+#endif
 
 @interface BNCFabricAnswers : NSObject
 
++ (NSDictionary*) branchConfigurationDictionary;
 + (void)sendEventWithName:(NSString*)name andAttributes:(NSDictionary*)attributes;
-+ (NSDictionary *)prepareBranchDataForAnswers:(NSDictionary *)dictionary;
 
 @end

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXSQLite.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXSQLite.h

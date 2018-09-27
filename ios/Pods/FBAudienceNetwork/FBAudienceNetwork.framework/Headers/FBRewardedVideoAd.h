@@ -16,6 +16,7 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import <CoreMedia/CoreMedia.h>
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
@@ -36,6 +37,11 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
   Typed access to the id of the ad placement.
  */
 @property (nonatomic, copy, readonly) NSString *placementID;
+
+/**
+  The duration of the video, as a CMTime value.  Returns kCMTimeIndefinite if no video is loaded.
+ */
+@property (nonatomic, assign, readonly) CMTime duration;
 
 /**
   the delegate
@@ -69,20 +75,6 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
                          withUserID:(nullable NSString *)userID
                        withCurrency:(nullable NSString *)currency;
 
-/*!
- This is a method to initialize an FBRewardedVideoAd matching the given placement id and allows the publisher to set
- the reward to give to a user.
-
- - Parameter placementID The id of the ad placement. You can create your placement id from Facebook developers page.
- - Parameter userID the id of the user
- - Parameter currency reward currency type
- - Parameter amount reward amount
- */
-- (instancetype)initWithPlacementID:(NSString *)placementID
-                         withUserID:(nullable NSString *)userID
-                       withCurrency:(nullable NSString *)currency
-                         withAmount:(NSInteger)amount;
-
 /**
   Begins loading the FBRewardedVideoAd content.
 
@@ -100,6 +92,17 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
  of `FBRewardedVideoAdDelegate` if you would like to be notified as loading succeeds or fails.
  */
 - (void)loadAdWithBidPayload:(NSString *)bidPayload;
+
+/**
+ This method allows the publisher to set the reward to give to a user. Returns NO if it was not able
+ to set Reward Data.
+
+ - Parameter userID the id of the user
+ - Parameter currency reward currency type
+ */
+
+- (BOOL)setRewardDataWithUserID:(NSString *)userID
+                   withCurrency:(NSString *)currency;
 
 /**
   Presents the rewarded video ad modally from the specified view controller.
@@ -178,7 +181,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
 
  - Parameter rewardedVideoAd: An FBRewardedVideoAd object sending the message.
  */
-- (void)rewardedVideoAdComplete:(FBRewardedVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdVideoComplete:(FBRewardedVideoAd *)rewardedVideoAd;
 
 /**
   Sent immediately before the impression of an FBRewardedVideoAd object will be logged.

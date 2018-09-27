@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXDocumentPicker.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXDocumentPicker.h

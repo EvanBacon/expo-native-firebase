@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Headers/GMSPanoramaView.h
+../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/EXBlurViewManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/EXBlurViewManager.h

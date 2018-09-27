@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXScreenOrientation.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXScreenOrientation.h

@@ -68,7 +68,7 @@ FB_CLASS_EXPORT
  - Parameter stride: The frequency that native ads are to appear within the table view
  - Returns: An indexPath adjusted to what it would be in a table view with no ads
  */
-- (NSIndexPath *)adjustNonAdCellIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
+- (nullable NSIndexPath *)adjustNonAdCellIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
 
 /**
   Support for evenly distributed native ads within a table view. Adjusts the total count of cells within the table view to account for the ad cells.

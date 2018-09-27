@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/ScopedModule/EXScopedBridgeModule.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/ScopedModule/EXScopedBridgeModule.h

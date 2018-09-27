@@ -1,1 +1,0 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGTextAnchor.h

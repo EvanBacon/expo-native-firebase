@@ -1,1 +1,1 @@
-../../../Branch/Branch-SDK/Branch-SDK/Requests/BranchOpenRequest.h
+../../../Branch/Branch-SDK/Branch-SDK/Networking/Requests/BranchOpenRequest.h

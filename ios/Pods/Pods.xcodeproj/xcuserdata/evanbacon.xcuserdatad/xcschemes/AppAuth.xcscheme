@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '979C390326C5A95CE28D0C02056441C5'
-               BlueprintName = 'AppAuth'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libAppAuth.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "72A24BB4D6B33BFD33E4924AE89FEBC8"
+               BlueprintName = "AppAuth"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libAppAuth.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/DevSupport/EXDisabledDevLoadingView.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/DevSupport/EXDisabledDevLoadingView.h

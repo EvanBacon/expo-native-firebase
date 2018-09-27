@@ -19,7 +19,9 @@
 #import <UIKit/UIKit.h>
 
 #import <FBAudienceNetwork/FBAdDefines.h>
+#import <FBAudienceNetwork/FBAdIconView.h>
 #import <FBAudienceNetwork/FBMediaViewVideoRenderer.h>
+#import <FBAudienceNetwork/UIView+FBNativeAdViewTag.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
   The FBMediaView loads media content from a given FBNativeAd. This view takes the place of manually loading a cover image.
  */
 FB_CLASS_EXPORT
-@interface FBMediaView : UIView
+@interface FBMediaView : FBAdIconView
 
 /**
   the delegate
@@ -38,35 +40,30 @@ FB_CLASS_EXPORT
 @property (nonatomic, weak, nullable) id<FBMediaViewDelegate> delegate;
 
 /**
-  This is a method to create a media view using the given native ad.
- - Parameter nativeAd: The native ad to load media content from.
- */
-- (instancetype)initWithNativeAd:(FBNativeAd *)nativeAd;
-
-/**
-  the native ad, can be set again to reuse this view.
- */
-@property (nonatomic, strong, nonnull) FBNativeAd *nativeAd;
-
-/**
  A custom FBMediaViewVideoRenderer instance, used to override the default user experience of video ads.
+ The video renderer can only be set prior to registering the mediaView to a nativeAd
  */
-@property (nonatomic, strong, nonnull) FBMediaViewVideoRenderer *videoRenderer;
+@property (nonatomic, strong) FBMediaViewVideoRenderer *videoRenderer;
 
 /**
   The current volume of the media view, ranging from 0.0 through 1.0.
  */
-@property (nonatomic, assign, readonly) float volume FB_DEPRECATED;
+@property (nonatomic, assign, readonly) float volume;
 
 /**
-  Enables or disables autoplay for some types of media. Defaults to YES.
+  Shows if the video will autoplay or not
  */
-@property (nonatomic, assign, getter=isAutoplayEnabled) BOOL autoplayEnabled;
+@property (nonatomic, readonly, getter=isAutoplayEnabled) BOOL autoplayEnabled;
 
 /**
  The aspect ratio of the media view visual content. Returns a positive CGFloat, or 0.0 if no ad is currently loaded.
  */
 @property (nonatomic, assign, readonly) CGFloat aspectRatio;
+
+/**
+ The tag for media view. It always returns FBNativeAdViewTagMedia.
+ */
+@property (nonatomic, assign, readonly) FBNativeAdViewTag nativeAdViewTag;
 
 /**
  Changes the width of the FBMediaView's frame based on the current height, respecting aspectRatio.
@@ -77,9 +74,6 @@ FB_CLASS_EXPORT
  Changes the height of the FBMediaView's frame based on the current width, respecting aspectRatio.
  */
 - (void)applyNaturalHeight;
-
-// Setting autoplayEnabled in the SDK is deprecated. Migrate to using server-side control when available.
-- (void)setAutoplayEnabled:(BOOL)autoplayEnabled FB_DEPRECATED;
 
 @end
 

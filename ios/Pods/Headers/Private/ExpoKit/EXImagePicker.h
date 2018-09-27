@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXImagePicker.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXImagePicker.h

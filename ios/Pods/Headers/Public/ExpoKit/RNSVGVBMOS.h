@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGVBMOS.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Utils/RNSVGVBMOS.h

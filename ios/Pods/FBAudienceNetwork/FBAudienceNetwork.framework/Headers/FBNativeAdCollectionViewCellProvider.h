@@ -58,7 +58,7 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
 /**
   Helper method for implementors of UICollectionViewDelegate who would like to host native ad UICollectionViewCells in their collection view.
  */
-- (CGFloat)collectionView:(nonnull UICollectionView *)collectionView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath;
+- (CGFloat)collectionView:(UICollectionView *)collectionView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

@@ -8,6 +8,7 @@
 
 #import "BranchActivityItemProvider.h"
 #import "Branch.h"
+#import "BranchConstants.h"
 #import "BNCSystemObserver.h"
 #import "BNCDeviceInfo.h"
 
@@ -26,30 +27,71 @@
 
 @implementation BranchActivityItemProvider
 
-- (id)initWithParams:(NSDictionary *)params andTags:(NSArray *)tags andFeature:(NSString *)feature andStage:(NSString *)stage andAlias:(NSString *)alias {
+- (id)initWithParams:(NSDictionary *)params
+             andTags:(NSArray *)tags
+          andFeature:(NSString *)feature
+            andStage:(NSString *)stage
+            andAlias:(NSString *)alias {
     return [self initWithParams:params tags:tags feature:feature stage:stage campaign:nil alias:alias delegate:nil];
 }
 
-- (id)initWithParams:(NSDictionary *)params tags:(NSArray *)tags feature:(NSString *)feature stage:(NSString *)stage campaign:(NSString *)campaign alias:(NSString *)alias delegate:(id <BranchActivityItemProviderDelegate>)delegate {
-    NSString *url = [[Branch getInstance] getLongURLWithParams:params andChannel:nil andTags:tags andFeature:feature andStage:stage andAlias:alias];
-    
-    if (self = [super initWithPlaceholderItem:[NSURL URLWithString:url]]) {
-        _params = params;
-        _tags = tags;
-        _feature = feature;
-        _stage = stage;
-        _campaign = campaign;
-        _alias = alias;
-        _userAgentString = [BNCDeviceInfo userAgentString];
-        _delegate = delegate;
+- (id)initWithParams:(NSDictionary *)params
+                tags:(NSArray *)tags
+             feature:(NSString *)feature
+               stage:(NSString *)stage
+            campaign:(NSString *)campaign
+               alias:(NSString *)alias
+            delegate:(id <BranchActivityItemProviderDelegate>)delegate {
+
+    NSString *url =
+        [[Branch getInstance]
+         getLongURLWithParams:params
+         andChannel:nil
+         andTags:tags
+         andFeature:feature
+         andStage:stage
+         andAlias:alias];
+
+    if (self.returnURL) {
+        if ((self = [super initWithPlaceholderItem:[NSURL URLWithString:url]])) {
+            _params = params;
+            _tags = tags;
+            _feature = feature;
+            _stage = stage;
+            _campaign = campaign;
+            _alias = alias;
+            _userAgentString = [BNCDeviceInfo userAgentString];
+            _delegate = delegate;
+        }
+    } else {
+        if ((self = [super initWithPlaceholderItem:url])) {
+            _params = params;
+            _tags = tags;
+            _feature = feature;
+            _stage = stage;
+            _campaign = campaign;
+            _alias = alias;
+            _userAgentString = [BNCDeviceInfo userAgentString];
+            _delegate = delegate;
+        }
     }
-    
     return self;
+}
+
+- (BOOL) returnURL {
+    BOOL returnURL = YES;
+    if ([UIDevice currentDevice].systemVersion.doubleValue >= 11.0 &&
+        [UIDevice currentDevice].systemVersion.doubleValue  < 11.2 &&
+        [self.activityType isEqualToString:UIActivityTypeCopyToPasteboard]) {
+        returnURL = NO;
+    }
+    return returnURL;
 }
 
 - (id)item {
     NSString *channel = [BranchActivityItemProvider humanReadableChannelWithActivityType:self.activityType];
-    
+
+
     // Allow for overrides specific to channel
     NSDictionary *params = [self paramsForChannel:channel];
     NSArray *tags = [self tagsForChannel:channel];
@@ -57,20 +99,78 @@
     NSString *stage = [self stageForChannel:channel];
     NSString *campaign = [self campaignForChannel:channel];
     NSString *alias = [self aliasForChannel:channel];
-    
+
     // Allow the channel param to be overridden, perhaps they want "fb" instead of "facebook"
     if ([self.delegate respondsToSelector:@selector(activityItemOverrideChannelForChannel:)]) {
         channel = [self.delegate activityItemOverrideChannelForChannel:channel];
     }
     
-    // Because Facebook et al immediately scrape URLs, we add an additional parameter to the existing list, telling the backend to ignore the first click
-    NSArray *scrapers = @[@"Facebook", @"Twitter", @"Slack", @"Apple Notes"];
+    // Because Facebook et al immediately scrape URLs, we add an additional parameter to the
+    // existing list, telling the backend to ignore the first click
+    NSArray *scrapers = @[
+        @"Facebook",
+        @"Twitter",
+        @"Slack",
+        @"Apple Notes",
+        @"Skype",
+        @"SMS"
+    ];
     for (NSString *scraper in scrapers) {
-        if ([channel isEqualToString:scraper])
-            return [NSURL URLWithString:[[Branch getInstance] getShortURLWithParams:params andTags:tags andChannel:channel andFeature:feature andStage:stage andCampaign:campaign andAlias:alias ignoreUAString:self.userAgentString forceLinkCreation:YES]];
+        if ([channel isEqualToString:scraper]) {
+            NSURL *URL = [NSURL URLWithString:[[Branch getInstance]
+                getShortURLWithParams:params
+                andTags:tags
+                andChannel:channel
+                andFeature:feature
+                andStage:stage
+                andCampaign:campaign
+                andAlias:alias
+                ignoreUAString:self.userAgentString
+                forceLinkCreation:YES]];
+            return (self.returnURL) ? URL : URL.absoluteString;
+        }
     }
-    return [NSURL URLWithString:[[Branch getInstance] getShortURLWithParams:params andTags:tags andChannel:channel andFeature:feature andStage:stage andCampaign:campaign andAlias:alias ignoreUAString:nil forceLinkCreation:YES]];
 
+    // Wrap the link in HTML content
+    if (self.activityType == UIActivityTypeMail &&
+        [params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_HEADER] &&
+        [params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_FOOTER]) {
+        NSURL *link = [NSURL URLWithString:[[Branch getInstance]
+            getShortURLWithParams:params
+            andTags:tags
+            andChannel:channel
+            andFeature:feature
+            andStage:stage
+            andCampaign:campaign
+            andAlias:alias
+            ignoreUAString:nil
+            forceLinkCreation:YES]];
+        NSString *emailLink;
+        if ([params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_LINK_TEXT]) {
+            emailLink = [NSString stringWithFormat:@"<a href=\"%@\">%@</a>",
+                link, [params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_LINK_TEXT]];
+        } else {
+            emailLink = link.absoluteString;
+        }
+
+        return [NSString stringWithFormat:@"<html>%@%@%@</html>",
+            [params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_HEADER],
+            emailLink,
+            [params objectForKey:BRANCH_LINK_DATA_KEY_EMAIL_HTML_FOOTER]];
+    }
+
+    NSURL *URL =
+        [NSURL URLWithString:[[Branch getInstance]
+            getShortURLWithParams:params
+            andTags:tags
+            andChannel:channel
+            andFeature:feature
+            andStage:stage
+            andCampaign:campaign
+            andAlias:alias
+            ignoreUAString:nil
+            forceLinkCreation:YES]];
+    return (self.returnURL) ? URL : URL.absoluteString;
 }
 
 #pragma mark - Internals
@@ -95,6 +195,7 @@
         @"WeChat",      @"com.tencent.xin.sharetimeline",
         @"LINE",        @"jp.naver.line.Share",
 		@"Pinterest",   @"pinterest.ShareExtension",
+        @"Skype",       @"com.skype.skype.sharingextension",
 
         //  Keys for older app versions --
 
@@ -111,28 +212,39 @@
 }
 
 - (NSDictionary *)paramsForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemParamsForChannel:)]) ? [self.delegate activityItemParamsForChannel:channel] : self.params;
+    return ([self.delegate respondsToSelector:@selector(activityItemParamsForChannel:)])
+        ? [self.delegate activityItemParamsForChannel:channel]
+        : self.params;
 }
 
 - (NSArray *)tagsForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemTagsForChannel:)]) ? [self.delegate activityItemTagsForChannel:channel] : self.tags;
+    return ([self.delegate respondsToSelector:@selector(activityItemTagsForChannel:)])
+        ? [self.delegate activityItemTagsForChannel:channel]
+        : self.tags;
 }
 
 - (NSString *)featureForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemFeatureForChannel:)]) ? [self.delegate activityItemFeatureForChannel:channel] : self.feature;
+    return ([self.delegate respondsToSelector:@selector(activityItemFeatureForChannel:)])
+        ? [self.delegate activityItemFeatureForChannel:channel]
+        : self.feature;
 }
 
 - (NSString *)stageForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemStageForChannel:)]) ? [self.delegate activityItemStageForChannel:channel] : self.stage;
+    return ([self.delegate respondsToSelector:@selector(activityItemStageForChannel:)])
+        ? [self.delegate activityItemStageForChannel:channel]
+        : self.stage;
 }
 
 - (NSString *)campaignForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemCampaignForChannel:)]) ? [self.delegate activityItemCampaignForChannel:channel] : self.campaign;
+    return ([self.delegate respondsToSelector:@selector(activityItemCampaignForChannel:)])
+        ? [self.delegate activityItemCampaignForChannel:channel]
+        : self.campaign;
 }
 
-
 - (NSString *)aliasForChannel:(NSString *)channel {
-    return ([self.delegate respondsToSelector:@selector(activityItemAliasForChannel:)]) ? [self.delegate activityItemAliasForChannel:channel] : self.alias;
+    return ([self.delegate respondsToSelector:@selector(activityItemAliasForChannel:)])
+        ? [self.delegate activityItemAliasForChannel:channel]
+        : self.alias;
 }
 
 @end

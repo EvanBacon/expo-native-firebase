@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Headers/GMSPolygon.h
+../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h

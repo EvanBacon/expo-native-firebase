@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7041A0F2C1BA3C5C4F52B42611E681CE'
-               BlueprintName = 'ExpoKit'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libExpoKit.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4A6ABC4D60423A3053EA0EC278A1B71D"
+               BlueprintName = "ExpoKit"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libExpoKit.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

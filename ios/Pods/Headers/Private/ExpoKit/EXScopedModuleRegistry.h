@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXScopedModuleRegistry.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXScopedModuleRegistry.h

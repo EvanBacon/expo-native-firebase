@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/AV/Video/EXVideoView.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/AV/Video/EXVideoView.h

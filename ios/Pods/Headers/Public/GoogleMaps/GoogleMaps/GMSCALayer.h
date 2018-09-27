@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Headers/GMSCALayer.h
+../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h

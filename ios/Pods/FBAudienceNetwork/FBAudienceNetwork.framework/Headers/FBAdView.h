@@ -41,7 +41,7 @@ FB_CLASS_EXPORT
  */
 - (instancetype)initWithPlacementID:(NSString *)placementID
                              adSize:(FBAdSize)adSize
-                 rootViewController:(nullable UIViewController *)viewController NS_DESIGNATED_INITIALIZER;
+                 rootViewController:(nullable UIViewController *)rootViewController NS_DESIGNATED_INITIALIZER;
 
 /**
   Begins loading the FBAdView content.
@@ -64,18 +64,9 @@ FB_CLASS_EXPORT
 - (void)loadAdWithBidPayload:(NSString *)bidPayload;
 
 /**
-  This is a method to disable auto refresh for the FBAdView instance
-
-
- By default, we read the refresh interval from the placement setting in your Facebook
- developers page. Once you call this method, the auto refresh will be disabled for this FBAdView
- instance, and you cannot re-enable the refresh for this instance. A new created FBAdView will still
- use the default behavior.
-
- This method is designed for ad network mediation. We still recommend you to set the placement
- refresh interval as 'None' if you're using one of the ad network mediation.
+  There is no reason to call this method anymore. Autorefresh is disabled by default.
  */
-- (void)disableAutoRefresh;
+- (void)disableAutoRefresh FB_DEPRECATED;
 
 /**
   Typed access to the id of the ad placement.
@@ -85,6 +76,10 @@ FB_CLASS_EXPORT
   Typed access to the app's root view controller.
  */
 @property (nonatomic, weak, readonly, nullable) UIViewController *rootViewController;
+/**
+ Call isAdValid to check whether ad is valid
+ */
+@property (nonatomic, getter=isAdValid, readonly) BOOL adValid;
 /**
   the delegate
  */
@@ -142,7 +137,7 @@ FB_CLASS_EXPORT
 
  - Returns: A view controller that is used to present modal content.
  */
-@property (nonatomic, readonly, strong, nonnull) UIViewController *viewControllerForPresentingModalView;
+@property (nonatomic, readonly, strong) UIViewController *viewControllerForPresentingModalView;
 
 @end
 

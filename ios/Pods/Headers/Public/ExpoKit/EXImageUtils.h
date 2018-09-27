@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXImageUtils.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXImageUtils.h

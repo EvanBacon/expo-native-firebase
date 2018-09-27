@@ -1,3 +1,70 @@
+Version 2.5.0 - October 2017
+============================
+Features:
+  - Added the paddingAdjustmentBehavior property to GMSMapView. This property
+    controls how safe area insets interact with padding.
+
+Improvements:
+  - Improved iOS 11 & iPhone X support.
+  - GMSMapView and GMSPanoramaView managed subviews are now positioned within
+    iPhone X device safe areas by default.
+
+Resolved Issues:
+  - Fixed an issue where Xcode 9's Main Thread Checker warns that [UIApplication
+    applicationState] is being called on a background thread.
+  - Fixed an issue where setting either navigationLinksHidden or
+    streetNamesHidden to YES still resulted in the navigation links and street
+    names appearing.
+
+Note:
+  - Support for Xcode 7.3 has been dropped. The new minimum is Xcode 8.0.
+
+Version 2.4.0 - August 2017
+===========================
+Note:
+  - The armv7s architecture in the frameworks has been removed. Devices which
+    previously used armv7s are still supported using the armv7 architecture.
+    All applications using the default architecture settings in any supported
+    version of Xcode should not notice any change.
+  - The layout of the static frameworks has changed. There is no longer a
+    Versions directory. The contents of Versions/A has been moved to the root
+    directory of the framework. Developers who manually integrate frameworks
+    with their project should take additional care during the upgrade.
+  - Support for Xcode 7.3 will be dropped with 2.5.0.
+
+Resolved Issues:
+  - Addressed a crash when using GMSPanoramaView with an application moving to
+    the background state.
+
+Version 2.3.1 - June 2017
+========================
+Resolved Issues:
+  - Fixed an issue where navigating between panoramas did not consistently raise
+    GMSPanoramaView delegate events.
+  - Fixed an issue resulting in a crash when UIWebView and GMSPanoramaView are
+    both in the view hierarchy at the same time.
+  - Reinstated the tap-drag zoom gesture for GMSPanoramaView.
+
+Version 2.3.0 - May 2017
+========================
+Improvements:
+  - The internals of the GMSPanoramaView and associated classes have had a
+    significant overhaul. These changes should generally give improved
+    performance.
+  - Dropped support for iOS 7, which enabled the use of modern core data
+    threading models. This means that applications should be able to use
+    -com.apple.CoreData.ConcurrencyDebug 1 when debugging with iOS 10 devices.
+
+Resolved Issues:
+  - Fixed case sensitivity issues with imports in GMSTileLayer.h and
+    GMSPolyline.h.
+
+Note:
+  - The armv7s architecture in the frameworks will be removed in 2.4. Devices
+    which previously used armv7s can continue to be supported using the armv7
+    architecture. All applications using the default architecture settings
+    in any supported version of Xcode shouldn't notice any change.
+
 Version 2.2.0 - February 2017
 =============================
 Features:

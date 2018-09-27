@@ -68,7 +68,7 @@ FB_CLASS_EXPORT
  - Parameter stride: The frequency that native ads are to appear within the collection view
  - Returns: An indexPath adjusted to what it would be in a collection view with no ads
  */
-- (NSIndexPath *)adjustNonAdCellIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
+- (nullable NSIndexPath *)adjustNonAdCellIndexPath:(NSIndexPath *)indexPath forStride:(NSUInteger)stride;
 
 /**
   Support for evenly distributed native ads within a collection view. Adjusts the total count of cells within the collection view to account for the ad cells.

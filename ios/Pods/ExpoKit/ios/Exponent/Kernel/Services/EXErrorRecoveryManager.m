@@ -4,10 +4,10 @@
 #import "EXErrorRecoveryManager.h"
 #import "EXKernel.h"
 
+#import <React/RCTAssert.h>
+
 // if the app crashes and it has not yet been 5 seconds since it loaded, don't auto refresh.
 #define EX_AUTO_REFRESH_BUFFER_BASE_SECONDS 5.0
-
-NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecoverySetPropsNotification";
 
 @interface EXErrorRecoveryRecord : NSObject
 
@@ -38,17 +38,8 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
     _reloadBufferDepth = 0;
     _dtmAnyExperienceLoaded = [NSDate date];
     _experienceInfo = [NSMutableDictionary dictionary];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(_handleRecoveryPropsNotification:)
-                                                 name:kEXErrorRecoverySetPropsNotification
-                                               object:nil];
   }
   return self;
-}
-
-- (void)dealloc
-{
-  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)setDeveloperInfo:(NSDictionary *)developerInfo forExperienceid:(NSString *)experienceId
@@ -95,11 +86,19 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
       }
     }
     // mark this experience id as having loading problems, so future attempts will bust the cache.
-    // this flag never gets unset until the record is removed, even if the error is nullified.
+    // this flag never gets unset until the app loads successfully, even if the error is nullified.
     record.isRecovering = YES;
   }
   if (record) {
-    record.error = error;
+    // if this record already shows an error,
+    // and the new error is about AppRegistry,
+    // don't override the previous error message.
+    if (record.error &&
+        [error.localizedDescription rangeOfString:@"AppRegistry is not a registered callable module"].length != 0) {
+      DDLogWarn(@"Ignoring misleading error: %@", error);
+    } else {
+      record.error = error;
+    }
   }
 }
 
@@ -114,11 +113,29 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
   }
   for (NSString *experienceId in experienceIds) {
     EXErrorRecoveryRecord *record = [self _recordForExperienceId:experienceId];
-    if ([record.error isEqual:error]) {
+    if ([self isJSError:record.error equalToOtherJSError:error]) {
       return YES;
     }
   }
   return NO;
+}
+
+- (EXKernelAppRecord *)appRecordForError:(NSError *)error
+{
+  if (!error) {
+    return nil;
+  }
+  NSArray<NSString *> *experienceIds;
+  @synchronized (_experienceInfo) {
+    experienceIds = _experienceInfo.allKeys;
+  }
+  for (NSString *experienceId in experienceIds) {
+    EXErrorRecoveryRecord *record = [self _recordForExperienceId:experienceId];
+    if ([self isJSError:record.error equalToOtherJSError:error]) {
+      return [[EXKernel sharedInstance].appRegistry newestRecordWithExperienceId:experienceId];
+    }
+  }
+  return nil;
 }
 
 - (void)experienceFinishedLoadingWithId:(NSString *)experienceId
@@ -131,6 +148,7 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
     }
   }
   record.dtmLastLoaded = [NSDate date];
+  record.isRecovering = NO;
 
   // maintain a global record of when anything last loaded, used to calculate autoreload backoff.
   _dtmAnyExperienceLoaded = [NSDate date];
@@ -151,8 +169,9 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
   if (record) {
     return ([record.dtmLastLoaded timeIntervalSinceNow] < -[self reloadBufferSeconds]);
   }
-  // if we have no knowledge of this experience, sure, try reloading right away.
-  return YES;
+  // if we have no knowledge of this experience, this is probably a manifest loading error
+  // so we should assume we'd just hit the same issue again next time. don't try to autoreload.
+  return NO;
 }
 
 - (void)increaseAutoReloadBuffer
@@ -160,17 +179,19 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
   _reloadBufferDepth++;
 }
 
-#pragma mark - kernel service
-
-- (void)kernelDidRegisterBridgeWithRecord:(EXKernelBridgeRecord *)record
-{
-  @synchronized (_experienceInfo) {
-    // if this experience had a loading error previously, consider it recovered now
-    [_experienceInfo removeObjectForKey:record.experienceId];
-  }
-}
-
 #pragma mark - internal
+
+- (BOOL)isJSError:(NSError *)error1 equalToOtherJSError: (NSError *)error2
+{
+  // use rangeOfString: to catch versioned RCTErrorDomain
+  if ([error1.domain rangeOfString:RCTErrorDomain].length > 0 && [error2.domain rangeOfString:RCTErrorDomain].length > 0) {
+    NSDictionary *userInfo1 = error1.userInfo;
+    NSDictionary *userInfo2 = error2.userInfo;
+    // could also possibly compare ([userInfo1[RCTJSStackTraceKey] isEqual:userInfo2[RCTJSStackTraceKey]]) if this isn't enough
+    return ([userInfo1[NSLocalizedDescriptionKey] isEqualToString:userInfo2[NSLocalizedDescriptionKey]]);
+  }
+  return [error1 isEqual:error2];
+}
 
 - (EXErrorRecoveryRecord *)_recordForExperienceId: (NSString *)experienceId;
 {
@@ -181,12 +202,6 @@ NSNotificationName const kEXErrorRecoverySetPropsNotification = @"EXErrorRecover
     }
   }
   return result;
-}
-
-- (void)_handleRecoveryPropsNotification:(NSNotification *)notif
-{
-  NSDictionary *params = notif.userInfo;
-  [self setDeveloperInfo:params[@"props"] forExperienceid:params[@"experienceId"]];
 }
 
 - (NSTimeInterval)reloadBufferSeconds

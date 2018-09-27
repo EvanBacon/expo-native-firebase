@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/GestureHandler/RNGestureHandlerButton.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/GestureHandler/RNGestureHandlerButton.h

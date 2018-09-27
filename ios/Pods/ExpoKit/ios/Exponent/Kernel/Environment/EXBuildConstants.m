@@ -46,9 +46,13 @@
     // dev published kernel. use published manifest.
     _kernelManifestJsonString = config[@"DEV_PUBLISHED_KERNEL_MANIFEST"];
   }
+  _apiServerEndpoint = [NSURL URLWithString:config[@"API_SERVER_ENDPOINT"]];
   _temporarySdkVersion = config[@"TEMPORARY_SDK_VERSION"];
   if (config[@"EXPO_RUNTIME_VERSION"]) {
     _expoRuntimeVersion = config[@"EXPO_RUNTIME_VERSION"];
+  }
+  if (config[@"DEFAULT_API_KEYS"]) {
+    _defaultApiKeys = config[@"DEFAULT_API_KEYS"];
   }
   _expoKitDevelopmentUrl = config[@"developmentUrl"]; // TODO: make legacy name consistent with the rest of this file
 }

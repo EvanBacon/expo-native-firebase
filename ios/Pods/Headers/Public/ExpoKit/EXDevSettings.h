@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/DevSupport/EXDevSettings.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/DevSupport/EXDevSettings.h

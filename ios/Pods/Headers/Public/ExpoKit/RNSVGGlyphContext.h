@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGGlyphContext.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Text/RNSVGGlyphContext.h

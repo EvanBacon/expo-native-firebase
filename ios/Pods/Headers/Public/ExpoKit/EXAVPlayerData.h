@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/AV/EXAVPlayerData.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/AV/EXAVPlayerData.h

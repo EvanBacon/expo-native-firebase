@@ -30,6 +30,7 @@
 #import "GoogleMapsDemos/Samples/MapTypesViewController.h"
 #import "GoogleMapsDemos/Samples/MapZoomViewController.h"
 #import "GoogleMapsDemos/Samples/MyLocationViewController.h"
+#import "GoogleMapsDemos/Samples/PaddingBehaviorViewController.h"
 #import "GoogleMapsDemos/Samples/SnapshotReadyViewController.h"
 #import "GoogleMapsDemos/Samples/StyledMapViewController.h"
 #import "GoogleMapsDemos/Samples/TrafficMapViewController.h"
@@ -111,6 +112,9 @@
    andDescription:nil],
     [self newDemo:[FrameRateViewController class]
         withTitle:@"Frame Rate"
+   andDescription:nil],
+    [self newDemo:[PaddingBehaviorViewController class]
+        withTitle:@"Padding Behavior"
    andDescription:nil],
   ];
 

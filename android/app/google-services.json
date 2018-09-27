@@ -1,50 +1,87 @@
 {
   "project_info": {
-    "project_number": "628588079444",
-    "firebase_url": "https://keira-knightley-51df6.firebaseio.com",
-    "project_id": "keira-knightley-51df6",
-    "storage_bucket": "keira-knightley-51df6.appspot.com"
+    "project_number": "284332687128",
+    "firebase_url": "https://expo-demo-2e1be.firebaseio.com",
+    "project_id": "expo-demo-2e1be",
+    "storage_bucket": "expo-demo-2e1be.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:628588079444:android:b1fe07df634af189",
+        "mobilesdk_app_id": "1:284332687128:android:1dc83e5683e4ed30",
         "android_client_info": {
-          "package_name": "com.evanbacon.firetest",
-          "certificate_hash": ""
-        },
-        "client_id": "android:host.exp.exponent",
-        "client_type": 1
+          "package_name": "com.evanbacon.demofirebasemodulesapp"
+        }
       },
       "oauth_client": [
         {
-          "client_id":
-            "628588079444-0383ss2jlcmhnrvgk69ptrjedhk88olo.apps.googleusercontent.com",
+          "client_id": "284332687128-b8njdajlnvdrdv4ove617ojuvgm6ve3f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBlyka6ObrCc8BZ8cdDte6gMObyAlrJfIY"
+          "current_key": "AIzaSyBl_6yxl5SZrmjapDD1-3rJvUOVz50ro3c"
         }
       ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-76673608-1"
-          }
-        },
-        "cloud_messaging_service": {
-          "status": 2,
-          "apns_config": []
+          "status": 1
         },
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
         },
-        "google_signin_service": {
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284332687128:android:0a39df54a288adff",
+        "android_client_info": {
+          "package_name": "host.exp.Exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284332687128-pmvib4j66kj57hoe43dittba3olphvof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "host.exp.Exponent",
+            "certificate_hash": "19d8e98daf9754a48f10713212b173622a9984e0"
+          }
+        },
+        {
+          "client_id": "284332687128-b8njdajlnvdrdv4ove617ojuvgm6ve3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl_6yxl5SZrmjapDD1-3rJvUOVz50ro3c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
           "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284332687128-b8njdajlnvdrdv4ove617ojuvgm6ve3f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "284332687128-je9h9j3r5gnhojb34j4f6rnu93kgp344.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.evanbacon.demofirebasemodulesapp"
+              }
+            }
+          ]
         },
         "ads_service": {
           "status": 2
@@ -52,6 +89,5 @@
       }
     }
   ],
-  "client_info": [],
-  "ARTIFACT_VERSION": "1"
+  "configuration_version": "1"
 }

@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXViewShot.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXViewShot.h

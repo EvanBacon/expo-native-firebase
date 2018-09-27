@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Api/EXApiUtil.h
+../../../ExpoKit/ios/Exponent/Kernel/AppLoader/EXApiUtil.h

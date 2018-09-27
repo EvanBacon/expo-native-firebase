@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXErrorRecovery.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXErrorRecovery.h

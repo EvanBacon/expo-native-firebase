@@ -1,1 +1,0 @@
-../../../ExpoKit/ios/Exponent/Kernel/Core/EXKernelBridgeRegistry.h

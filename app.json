@@ -1,14 +1,12 @@
 {
   "expo": {
-    "name": "firetest",
+    "name": "demo-firebase",
     "description": "This project is really great.",
-    "slug": "firetest",
+    "slug": "demofirebase",
     "privacy": "public",
-    "sdkVersion": "24.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "sdkVersion": "30.0.0",
+    "platforms": ["ios", "android"],
+    "facebookAppId": "1918195841818851",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,20 +15,26 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.evanbacon.firetest",
-      "publishBundlePath": "ios/firetest/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/firetest/Supporting/shell-app-manifest.json"
-    },
-    "android": {
-      "package": "com.evanbacon.firetest"
+      "bundleIdentifier": "com.evanbacon.demofirebasemodulesapp",
+      "publishBundlePath": "ios/demofirebasemodulesapp/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/demofirebasemodulesapp/Supporting/shell-app-manifest.json"
     },
     "isDetached": true,
     "detach": {
-      "scheme": "expd447290bbddf43c6bae7b80a1b96a919",
-      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.2.1-sdk24.0.0-36ff2264-629d-44df-a819-8c982454e5e8.tar.gz",
-      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.2.0-sdk24.0.0-16620828-4df4-4e2d-b0af-5dc1352b82cb.tar.gz"
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.8.2-sdk30.0.0-769da6d6-27c8-479e-91c7-0d33fcac97c8.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.8.0-sdk30.0.0-db6a79cf-9009-4580-a743-d8279d600773.tar.gz"
+    },
+    "scheme": "exp4131ad20a44d475ca87c9cd251193578",
+    "android": {
+      "package": "com.evanbacon.demofirebasemodulesapp",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     }
   }
 }

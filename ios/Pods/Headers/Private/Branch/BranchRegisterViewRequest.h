@@ -1,1 +1,1 @@
-../../../Branch/Branch-SDK/Branch-SDK/Requests/BranchRegisterViewRequest.h
+../../../Branch/Branch-SDK/Branch-SDK/Networking/Requests/BranchRegisterViewRequest.h

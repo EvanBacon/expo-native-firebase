@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGLinearGradient.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Elements/RNSVGLinearGradient.h

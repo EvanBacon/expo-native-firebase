@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXSpeech.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXSpeech.h

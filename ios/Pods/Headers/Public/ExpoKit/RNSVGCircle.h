@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGCircle.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Shapes/RNSVGCircle.h

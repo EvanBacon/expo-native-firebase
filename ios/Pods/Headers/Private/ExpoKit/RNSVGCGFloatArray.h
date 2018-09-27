@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGCGFloatArray.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Utils/RNSVGCGFloatArray.h

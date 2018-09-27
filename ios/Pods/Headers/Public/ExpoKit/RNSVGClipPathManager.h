@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGClipPathManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/ViewManagers/RNSVGClipPathManager.h

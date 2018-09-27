@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Versions/A/Headers/GMSCompatabilityMacros.h
+../../../../GoogleMaps/Base/Frameworks/GoogleMapsBase.framework/Headers/GMSCompatabilityMacros.h

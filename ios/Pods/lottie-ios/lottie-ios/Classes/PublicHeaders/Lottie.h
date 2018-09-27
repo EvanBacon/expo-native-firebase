@@ -4,7 +4,7 @@
 //
 //  Created by brandon_withrow on 1/27/17.
 //
-//
+//  Dream Big.
 
 #if __has_feature(modules)
 @import Foundation;
@@ -36,5 +36,9 @@ FOUNDATION_EXPORT const unsigned char LottieVersionString[];
 #import "LOTAnimationView.h"
 #import "LOTAnimationCache.h"
 #import "LOTComposition.h"
+#import "LOTBlockCallback.h"
+#import "LOTInterpolatorCallback.h"
+#import "LOTValueCallback.h"
+#import "LOTValueDelegate.h"
 
 #endif /* Lottie_h */

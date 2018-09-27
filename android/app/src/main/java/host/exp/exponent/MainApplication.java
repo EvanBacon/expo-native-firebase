@@ -2,23 +2,25 @@ package host.exp.exponent;
 
 
 import com.facebook.react.ReactPackage;
+import com.facebook.soloader.SoLoader;
 
 import java.util.Arrays;
 import java.util.List;
 
+import expolib_v1.okhttp3.OkHttpClient;
+
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
-import io.invertase.firebase.RNFirebasePackage;
-import io.invertase.firebase.analytics.RNFirebaseAnalyticsPackage;
-import io.invertase.firebase.auth.RNFirebaseAuthPackage;
-import io.invertase.firebase.config.RNFirebaseRemoteConfigPackage;
-import io.invertase.firebase.crash.RNFirebaseCrashPackage;
-import io.invertase.firebase.database.RNFirebaseDatabasePackage;
-import io.invertase.firebase.links.RNFirebaseLinksPackage;
-import io.invertase.firebase.messaging.RNFirebaseMessagingPackage;
-import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 
 public class MainApplication extends ExpoApplication {
+
+
+  @Override
+  public void onCreate() {
+    super.onCreate();
+    // Include for Background tasks
+    SoLoader.init(this, /* native exopackage */ false); // <-- Check this line exists within the block
+  }
 
   @Override
   public boolean isDebug() {
@@ -32,19 +34,7 @@ public class MainApplication extends ExpoApplication {
         // TODO: add native modules!
 
         // Needed for `react-native link`
-        // new MainReactPackage(),
-            new RNFirebasePackage(),
-            new RNFirebaseAnalyticsPackage(),
-            new RNFirebaseAuthPackage(),
-            new RNFirebaseMessagingPackage(),
-            new RNFirebaseCrashPackage(),
-            new RNFirebaseDatabasePackage(),
-            new RNFirebaseLinksPackage(),
-            new RNFirebaseRemoteConfigPackage(),
-            new RNFirebaseStoragePackage()
-//            new RNFirebaseFirestorePackage(),
-//            new RNFirebasePerformancePackage()
-
+        // new MainReactPackage()
     );
   }
 
@@ -56,5 +46,10 @@ public class MainApplication extends ExpoApplication {
   @Override
   public boolean shouldUseInternetKernel() {
     return BuildVariantConstants.USE_INTERNET_KERNEL;
+  }
+
+  public static OkHttpClient.Builder okHttpClientBuilder(OkHttpClient.Builder builder) {
+    // Customize/override OkHttp client here
+    return builder;
   }
 }

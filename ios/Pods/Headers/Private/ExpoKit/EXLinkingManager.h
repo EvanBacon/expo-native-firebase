@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXLinkingManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXLinkingManager.h

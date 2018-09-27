@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Maps/AIRMapCoordinate.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Maps/AIRMapCoordinate.h

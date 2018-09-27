@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/OAuthViewController/EXOAuthViewController.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/OAuthViewController/EXOAuthViewController.h

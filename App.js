@@ -1,161 +1,102 @@
 import React from 'react';
-import { StyleSheet, Platform, Text, View, CameraRoll } from 'react-native';
+import { AppRegistry } from 'react-native';
 
-import AssetUtils from 'expo-asset-utils';
-import firebase from 'react-native-firebase';
-import Expo from 'expo';
+import firebase from 'expo-firebase-app';
+import 'expo-firebase-analytics';
+import 'expo-firebase-auth';
+import 'expo-firebase-crashlytics';
+import 'expo-firebase-database';
+import 'expo-firebase-firestore';
+import 'expo-firebase-functions';
+import 'expo-firebase-instance-id';
+// import 'expo-firebase-invites';
+// import 'expo-firebase-links';
+import 'expo-firebase-messaging';
+import 'expo-firebase-notifications';
+import 'expo-firebase-performance';
+import 'expo-firebase-remote-config';
+import 'expo-firebase-storage';
 
-function setScreenName(name) {
-  const { OS } = Platform;
-  if (OS === 'android') {
-    firebase.analytics().setCurrentScreen(name, 'MainActivity');
-  } else {
-    firebase.analytics().setCurrentScreen(name, 'EXViewController');
-  }
-}
+import Navigation from './navigation';
 
-async function basicImageUpload(uri, uploadUri) {
-  try {
-    await firebase
-      .storage()
-      .ref(uploadUri)
-      .putFile(uri);
-  } catch (error) {
-    console.error(error);
-  }
-}
+import bgMessaging from './bgMessaging';
 
-async function advancedImageUpload(uri, uploadUri) {
-  return new Promise((res, rej) => {
-    const unsubscribe = firebase
-      .storage()
-      .ref(uploadUri)
-      .putFile(uri)
-      .on(
-        'state_changed',
-        nState => {
-          const {
-            metadata,
-            bytesTransferred,
-            downloadUrl,
-            ref,
-            task,
-            totalBytes,
-            state,
-          } = nState;
+import Gate from './rematch/Gate';
+import { dispatch } from '@rematch/core';
 
-          const progress = (bytesTransferred || 0) / totalBytes;
-          console.log('State Change', progress);
-          //Current upload state
+import NavigationService from './navigation/NavigationService';
 
-          switch (state) {
-            case 'running': // or 'running'
-              console.log('Upload is resumed');
-              // resumed && resumed();
-              break;
-            case 'success': // or 'running'
-              console.log('Upload is done');
-              // var _progress = (bytesTransferred / totalBytes);
-              // onProgress && onProgress(_progress);
-              break;
-          }
-        },
-        err => {
-          //Error
-          console.log("Error: Couldn't upload image");
-          console.error(err);
-          unsubscribe();
-          rej(err);
-        },
-        uploadedFile => {
-          //Success
-          // console.log('Image uploaded!', uploadedFile);
-          unsubscribe();
-          res(uploadedFile);
-        },
-      );
-  });
-}
-
-//// Go crazy: https://rnfirebase.io/docs/v3.2.x/getting-started
+import { Permissions } from 'expo';
 
 export default class App extends React.Component {
-  state = {
-    uid: null,
-  };
-  observeAuth = () =>
-    firebase.auth().onAuthStateChanged(this.onAuthStateChanged);
-
-  onAuthStateChanged = user => {
-    if (!user) {
-      try {
-        firebase.auth().signInAnonymously();
-      } catch ({ message }) {
-        alert(message);
-      }
-    } else {
-      this.startDoingStuff();
-    }
-  };
-
-  startDoingStuff = async () => {
-    const uid = firebase.auth().currentUser.uid;
-    this.setState({ uid });
-
-    this.doAnalyticsStuff(uid);
-    this.doStorageStuff();
-  };
-
-  doAnalyticsStuff = uid => {
-    firebase.analytics().setAnalyticsCollectionEnabled(true); // This is default I think...
-    firebase.analytics().setUserId(uid);
-    firebase.analytics().setUserProperty('least_favorite_actor', 'Ben Affleck');
-
-    setScreenName('Home');
-  };
-
-  doStorageStuff = async () => {
-    const imageUri = await this.getImageFromGallery();
-    const uploadUri = 'images/image.png';
-    // basicImageUpload(imageUri, uploadUri)
-    // advancedImageUpload(imageUri, uploadUri);
-  };
-
-  getImageFromGallery = async () => {
-    const { status } = await Expo.Permissions.askAsync(
-      Expo.Permissions.CAMERA_ROLL,
-    );
-    if (status !== 'granted') {
-      alert('failed to get library asset, please enable and restart demo');
-      return;
-    }
-
-    const { edges } = await CameraRoll.getPhotos({ first: 1 });
-    const assetLibraryImage = edges.map(
-      ({ node: { image, timestamp } }, index) => image.uri,
-    )[0];
-
-    return assetLibraryImage;
-  };
-
+  state = { isReady: true };
   async componentDidMount() {
-    this.observeAuth();
+    firebase.auth().onAuthStateChanged(user => {
+      if (!user) {
+        NavigationService.navigate('Auth');
+      } else {
+        NavigationService.navigate('App');
+      }
+    });
+  }
+
+  _setupNotifications = async () => {
+    let { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+    if (status !== 'granted') {
+      throw new Error('ERR: Need permission for notifications');
+    }
+
+    this.notificationDisplayedListener = firebase
+      .notifications()
+      .onNotificationDisplayed(notification => {
+        // Process your notification as required
+        // ANDROID: Remote notifications do not contain the channel ID. You will have to specify this manually if you'd like to re-display the notification.
+        console.log('onNotificationDisplayed', notification);
+      });
+    this.notificationListener = firebase
+      .notifications()
+      .onNotification(notification => {
+        // Process your notification as required
+        console.log('onNotification', notification);
+      });
+    this.notificationOpenedListener = firebase
+      .notifications()
+      .onNotificationOpened(notificationOpen => {
+        // Get the action triggered by the notification being opened
+        const action = notificationOpen.action;
+        // Get information about the notification that was opened
+        const notification = notificationOpen.notification;
+        console.log('onNotificationOpened', notificationOpen);
+      });
+
+    this.messageListener = firebase.messaging().onMessage(message => {
+      // Process your message as required
+      console.log('onMessage', message);
+    });
+    this.onTokenRefreshListener = firebase
+      .messaging()
+      .onTokenRefresh(fcmToken => {
+        // Process your token as required
+      });
+  };
+  componentWillUnmount() {
+    this.notificationDisplayedListener();
+    this.notificationListener();
+    this.notificationOpenedListener();
+    this.messageListener();
   }
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text>{this.state.uid || 'loading...'}</Text>
-      </View>
+      <Gate>
+        <Navigation />
+      </Gate>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// New task registration
+AppRegistry.registerHeadlessTask(
+  'EXFirebaseBackgroundMessage',
+  () => bgMessaging,
+);

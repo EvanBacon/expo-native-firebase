@@ -1,1 +1,0 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Sensors/EXPedometer.h

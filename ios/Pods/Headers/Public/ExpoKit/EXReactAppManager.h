@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/ReactAppManager/EXReactAppManager.h
+../../../ExpoKit/ios/Exponent/Kernel/ReactAppManager/EXReactAppManager.h

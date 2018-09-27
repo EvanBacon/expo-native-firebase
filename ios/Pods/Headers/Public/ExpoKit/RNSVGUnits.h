@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGUnits.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Utils/RNSVGUnits.h

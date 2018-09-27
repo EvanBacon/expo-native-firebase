@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Api/EXCachedResource.h
+../../../ExpoKit/ios/Exponent/Kernel/AppLoader/CachedResource/EXCachedResource.h

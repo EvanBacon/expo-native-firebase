@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/FBAds/EXNativeAdManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/FBAds/EXNativeAdManager.h

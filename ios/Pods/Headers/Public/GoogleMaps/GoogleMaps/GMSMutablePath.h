@@ -1,1 +1,1 @@
-../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Headers/GMSMutablePath.h
+../../../../GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h

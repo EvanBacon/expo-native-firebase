@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/EXNotifications.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/EXNotifications.h

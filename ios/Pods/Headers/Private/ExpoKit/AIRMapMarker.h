@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Maps/AIRMapMarker.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Maps/AIRMapMarker.h

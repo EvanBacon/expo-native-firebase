@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXNativeModuleIntrospection.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXNativeModuleIntrospection.h

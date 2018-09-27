@@ -144,6 +144,13 @@ typedef NS_ENUM(NSInteger, OIDErrorCode) {
    */
   OIDErrorCodeJSONSerializationError = -13,
 
+  /*! @brief The ID Token did not parse.
+   */
+  OIDErrorCodeIDTokenParsingError = -14,
+
+  /*! @brief The ID Token did not pass validation (e.g. issuer, audience checks).
+   */
+  OIDErrorCodeIDTokenFailedValidationError = -15,
 };
 
 /*! @brief Enum of all possible OAuth error codes as defined by RFC6749
@@ -377,5 +384,10 @@ typedef NS_ENUM(NSInteger, OIDErrorCodeOAuthRegistration) {
         @c OIDAuthorizationFlowSession receives a message after it has already completed.
  */
 extern NSString *const OIDOAuthExceptionInvalidAuthorizationFlow;
+
+/*! @brief The text for the exception which occurs when a Token Request is constructed
+        with a null redirectURL for a grant_type that requires a nonnull Redirect
+ */
+extern NSString *const OIDOAuthExceptionInvalidTokenRequestNullRedirectURL;
 
 NS_ASSUME_NONNULL_END

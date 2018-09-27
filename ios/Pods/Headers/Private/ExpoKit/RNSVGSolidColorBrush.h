@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGSolidColorBrush.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Brushes/RNSVGSolidColorBrush.h

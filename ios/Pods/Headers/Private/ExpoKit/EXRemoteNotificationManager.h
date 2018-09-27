@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Kernel/Services/EXRemoteNotificationManager.h
+../../../ExpoKit/ios/Exponent/Kernel/Services/Notifications/EXRemoteNotificationManager.h

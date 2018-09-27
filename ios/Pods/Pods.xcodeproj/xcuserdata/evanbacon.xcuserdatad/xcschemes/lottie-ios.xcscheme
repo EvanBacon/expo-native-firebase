@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '87DD683FD58D0B264357E9FC9A6037BD'
-               BlueprintName = 'lottie-ios'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'liblottie-ios.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D6D2992177526CFD84B35B674773195"
+               BlueprintName = "lottie-ios"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "liblottie-ios.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

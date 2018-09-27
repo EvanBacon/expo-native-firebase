@@ -1,1 +1,0 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RNSVGBezierTransformer.h

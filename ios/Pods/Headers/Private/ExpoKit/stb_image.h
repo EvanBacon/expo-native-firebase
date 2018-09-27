@@ -1,1 +1,0 @@
-../../../ExpoKit/cpp/stb_image.h

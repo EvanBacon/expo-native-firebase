@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Svg/RCTConvert+RNSVG.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Utils/RCTConvert+RNSVG.h

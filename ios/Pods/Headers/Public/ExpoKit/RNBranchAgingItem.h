@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Standalone/Branch/RNBranchAgingItem.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Standalone/Branch/RNBranchAgingItem.h

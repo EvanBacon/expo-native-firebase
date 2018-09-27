@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/EXAppState.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/EXAppState.h

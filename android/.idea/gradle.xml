@@ -9,7 +9,22 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/../node_modules/react-native-firebase/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-core/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-analytics/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-app/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-auth/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-crashlytics/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-database/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-firestore/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-functions/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-instance-id/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-invites/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-links/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-messaging/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-notifications/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-performance/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-remote-config/android" />
+            <option value="$PROJECT_DIR$/../node_modules/expo-firebase-storage/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

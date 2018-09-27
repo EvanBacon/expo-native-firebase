@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/EXLinearGradientManager.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/EXLinearGradientManager.h

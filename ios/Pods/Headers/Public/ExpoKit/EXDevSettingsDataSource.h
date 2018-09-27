@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Internal/DevSupport/EXDevSettingsDataSource.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Internal/DevSupport/EXDevSettingsDataSource.h

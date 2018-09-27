@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Modules/Api/Components/Lottie/EXContainerView.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Lottie/EXContainerView.h

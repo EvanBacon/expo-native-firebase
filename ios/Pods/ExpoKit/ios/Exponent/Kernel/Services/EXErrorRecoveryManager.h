@@ -7,7 +7,7 @@
 #import "EXErrorRecovery.h"
 #import "EXKernelService.h"
 
-FOUNDATION_EXPORT NSNotificationName const kEXErrorRecoverySetPropsNotification DEPRECATED_ATTRIBUTE;
+@class EXKernelAppRecord;
 
 @interface EXErrorRecoveryManager : NSObject
   <EXKernelService, EXErrorRecoveryScopedModuleDelegate>
@@ -40,6 +40,12 @@ FOUNDATION_EXPORT NSNotificationName const kEXErrorRecoverySetPropsNotification 
  *  True if this error object (by `isEqual:`) has been registered for any experience id.
  */
 - (BOOL)errorBelongsToExperience: (NSError *)error;
+
+/**
+ *  Returns any existing app record for this error. Since error state persists between reloads until cleared,
+ *  it's possible that there is no app record for this error.
+ */
+- (EXKernelAppRecord *)appRecordForError: (NSError *)error;
 
 /**
  *  Whether we want to auto-reload this experience if it encounters a fatal error.
