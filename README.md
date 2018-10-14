@@ -39,6 +39,7 @@ This is a **detached ExpoKit** app with Expo Firebase modules installed. Tutoria
  6. Setup advanced services, this will require that you add some extra native code. 
     * On iOS: 
       * [`AppDelegate.m`](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
+      * [`Podfile`](https://github.com/EvanBacon/expo-native-firebase/blob/1e34866074390d8a8705646b152bdce77d335cb1/ios/Podfile#L71-L100)
     * On Android
       * [`settings.gradle`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/settings.gradle#L6-L49)
       * [`app/build.gradle`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/android/app/build.gradle#L188-L203)
@@ -50,6 +51,9 @@ This is a **detached ExpoKit** app with Expo Firebase modules installed. Tutoria
       * [`expo-firebase-links`](https://www.npmjs.com/package/expo-firebase-links)
       * [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
       * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
+
+* [`package.json`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/package.json#L15-L29)
+
 
 # Bugs
 
