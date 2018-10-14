@@ -1,5 +1,7 @@
 # expo-firebase example
 
+Read more: **[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+
 This is a **detached ExpoKit** app with Expo Firebase modules installed. Tutorial below 👇👇👇
 
 ![Hey there](https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif)
