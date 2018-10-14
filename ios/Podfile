@@ -70,8 +70,6 @@ target 'demofirebasemodulesapp' do
   
   pod 'EXFirebaseApp', 
     path: '../node_modules/expo-firebase-app/ios'
-  pod 'Firebase/Analytics'
-
   pod 'EXFirebaseAnalytics', 
     path: '../node_modules/expo-firebase-analytics/ios'
   pod 'EXFirebaseAuth', 
@@ -86,7 +84,6 @@ target 'demofirebasemodulesapp' do
     path: '../node_modules/expo-firebase-functions/ios'
   pod 'EXFirebaseInstanceID',
     path: '../node_modules/expo-firebase-instance-id/ios'
-
   pod 'EXFirebaseLinks',
     path: '../node_modules/expo-firebase-links/ios'
   # pod 'EXFirebaseInvites',
