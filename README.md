@@ -53,7 +53,7 @@ This is a **detached ExpoKit** app with Expo Firebase modules installed. Tutoria
       * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
 * [`package.json`](https://github.com/EvanBacon/expo-native-firebase/blob/d8f9ada15d58a1c2c028bbc96c76a543dfd5302f/package.json#L15-L29)
-
+* Importing all libs in JS: [`App.js`](https://github.com/EvanBacon/expo-native-firebase/blob/1c5785813e835ca7263289c96f71eb279d49e319/App.js#L4-L18)
 
 # Bugs
 
