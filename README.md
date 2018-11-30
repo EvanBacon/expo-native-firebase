@@ -1,12 +1,21 @@
-# expo-firebase
+<h1 align="center">
 
-Read more: **[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+<p align="center">
+  <img src="https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif"/>
+</p>
 
-This is an **ExpoKit** app with all the Expo Firebase modules installed!! 🔥 Tutorial below 👇👇👇
+    Expo Firebase 🔥
 
-![Hey there](https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif)
+**ExpoKit** with Native Firebase Tutorial / Boiler Plate
+</h1>
 
-# Tutorial
+# 📔 Posts
+
+Follow exposition for updates on `expo-firebase`
+
+**[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+
+# 📖Tutorial
 
 This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5`
 
@@ -479,3 +488,4 @@ console.ignoreYellowBox = ["...start of the warning"];
 * Expand `EXFaceDetector` and turn it into **`firebase.vision()`**
 * [Subscribe to the youtube channel 😉](https://www.youtube.com/c/exposition?sub_confirmation=1)
 * Document how to use the experimental notification features on iOS.
+* Stars help me know what to focus 🌟
