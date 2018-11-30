@@ -18,7 +18,7 @@ export default class App extends React.Component {
   state = { isReady: true };
   async componentDidMount() {
     this._setupNotifications();
-    firebase.auth().onAuthStateChanged(user => {
+    this.unsubFromAuthState = firebase.auth().onAuthStateChanged(user => {
       if (!user) {
         NavigationService.navigate('Auth');
       } else {
@@ -93,6 +93,7 @@ export default class App extends React.Component {
   };
 
   componentWillUnmount() {
+    this.unsubFromAuthState();
     this.notificationDisplayedListener();
     this.notificationListener();
     this.notificationOpenedListener();
