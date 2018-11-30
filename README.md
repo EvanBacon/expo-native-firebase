@@ -1,4 +1,4 @@
-# expo-firebase example
+# expo-firebase
 
 Read more: **[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
 
@@ -8,7 +8,7 @@ This is an **ExpoKit** app with all the Expo Firebase modules installed!! 🔥 T
 
 # Tutorial
 
-> This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5``
+This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5`
 
 ## Project Setup
 
@@ -444,6 +444,20 @@ Crafted with care ☺️
 * [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
 * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
+# Video Tutorials
+
+I put together some videos that you may find helpful 💙 Give them a like if they helped you at all 😇
+
+<div align="center" style="align-items:center; display: flex;justify-content:space-around;">
+  <a href="https://www.youtube.com/watch?v=XYTKeFVy7xg"><img width="350" src="https://img.youtube.com/vi/XYTKeFVy7xg/0.jpg" alt="iOS setup"></a>
+  
+  <a href="https://www.youtube.com/watch?v=VtxBNM8NIO4"><img width="350" src="https://img.youtube.com/vi/VtxBNM8NIO4/0.jpg" alt="Android setup"></a>
+  
+  <a href="https://www.youtube.com/watch?v=pbHlXa3sCPw"><img width="350" src="https://img.youtube.com/vi/pbHlXa3sCPw/0.jpg" alt="Android Messages"></a>
+    
+  <a href="https://www.youtube.com/watch?v=61u3vZFerb0"><img width="350" src="https://img.youtube.com/vi/61u3vZFerb0/0.jpg" alt="iOS Messages"></a>
+      
+</div>
 
 # TODO
 
