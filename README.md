@@ -58,6 +58,11 @@ First, drag your **`GoogleService-Info.plist`** into your XCode project.
 
 Then if your app has `Google Sign-In` or `expo-firebase-invites` installed, you will need to copy your Firebase **`REVERSE_CLIENT_ID`** in to a new URL Scheme.
 
+![Setup URL Type in Expo Firebase](https://github.com/EvanBacon/expo-native-firebase/blob/master/demo/ExpoFirebaseUrlTypeSetup.png?raw=true)
+
+
+Time to write some Objective-C! 
+
 > Writing native code sucks, hopefully in the future we can find a way to just link this. Please message me if you have troubles setting this up 🧡
 
 [**`ios/**/AppDelegate.m`**](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
