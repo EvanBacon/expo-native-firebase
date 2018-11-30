@@ -351,7 +351,6 @@ public List<Package> expoPackages() {
 
 ```
 
-
 # Usage
 
 After you are all setup, use the library anywhere like so:
@@ -396,6 +395,30 @@ import { Notification } from 'expo-firebase-notifications';
 const notification = new Notification();
 ```
 
+# Upgrading
+
+Because expo-firebase is still in RC (Not officially stable) you should expect breaking changes / improvements.
+
+When upgrading, you should check back here to see if the `AppDelegate`, or `AndroidManifest` code has changed. So far it's changed every time 🙃
+
+## JS Upgrade
+
+```sh
+yarn; yarn upgrade
+```
+
+## iOS Upgrade
+
+```sh
+cd ios; pod install
+```
+
+## Android Upgrade
+
+```sh
+cd android; ./gradlew build
+```
+
 # Libraries
 
 Crafted with care ☺️
@@ -417,7 +440,7 @@ Crafted with care ☺️
 * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
 
-# TODO:
+# TODO
 
 * Add a unified package which makes setup easier.
 * Background Tasks aren't in Expo yet: [Background Tasks PR](https://github.com/expo/expo/pull/2338). After this is merged we can complete all of the Notification features.
