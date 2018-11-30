@@ -1,4 +1,4 @@
-# Expo Client [![Forums](https://img.shields.io/badge/expo-forum-blue.svg)](https://forums.expo.io)
+# Expo Client [![CircleCI](https://circleci.com/gh/expo/expo.svg?style=svg)](https://circleci.com/gh/expo/expo) [![Forums](https://img.shields.io/badge/expo-forum-blue.svg)](https://forums.expo.io)
 
 The Expo client app for Android and iOS.
 
@@ -8,7 +8,7 @@ The Expo client app for Android and iOS.
 
 This is the source code for the Expo client app used to view experiences published to the Expo service. If you want to build and install the Expo client directly onto a device, you're in the right place. Note that if you just want to install the Expo client app on a simulator, you do not need to build it from source. Instead, you should [follow the instructions here](https://docs.expo.io/versions/latest/introduction/installation.html).
 
-To build the Expo client app, follow the instructions in the [Set Up](#set-up) section below. You'll be able to use [XDE](https://github.com/expo/xde) or [exp](https://github.com/expo/exp) and the rest of Expo's infrastructure with the app you build.
+To build the Expo client app, follow the instructions in the [Set Up](#set-up) section below. Use the [expo-cli](https://docs.expo.io/versions/latest/workflow/expo-cli) command line to use Expo's infrastructure to build your app.
 
 Please ask us on the [forums](https://forums.expo.io/) if you get stuck.
 
@@ -16,28 +16,30 @@ Please ask us on the [forums](https://forums.expo.io/) if you get stuck.
 
 If you want to build a standalone app that has a custom icon and name, see [our documentation here](https://docs.expo.io/versions/latest/guides/building-standalone-apps.html). You're in the wrong place, you shouldn't need to build the Expo clients from source.
 
-If you need to make native code changes to your Expo project, such as adding custom native modules, we can [generate a native project for you](https://docs.expo.io/versions/latest/guides/changing-native-code.html). You're in the wrong place, you shouldn't need to build the Expo clients from source.
+If you need to make native code changes to your Expo project, such as adding custom native modules, we can [generate a native project for you](https://docs.expo.io/versions/latest/expokit/eject). You're in the wrong place, you shouldn't need to build the Expo clients from source.
 
 ## Set Up
 
 Please use Node 8+ and npm 4. We recommend installing Node using [nvm](https://github.com/creationix/nvm). We support building the clients only on macOS.
 
+- Install the [`git-lfs`](https://git-lfs.github.com/) command line extension for `git`.
 - Install [the Gulp CLI](http://gulpjs.com/) globally: `npm install gulp-cli -g`.
-- Run `npm install` in the `home` and `tools-public` directories.
+- Clone this repo; we recommend cloning it to a directory whose full path does not include any spaces.
+- Run `yarn` in the `tools-public` directory.
 
 #### iOS
 - Make sure you have latest non-beta Xcode installed.
 - Install [Cocoapods](https://cocoapods.org/): `gem install cocoapods --no-ri --no-rdoc`
-- Run `pod install` in the `ios` directory.
+- Run `git lfs pull`.
+- Run `./generate-files-ios.sh` in the `tools-public` directory.
 - Open and run `ios/Exponent.xcworkspace` in Xcode.
 
 #### Android
 - Make sure you have Android Studio 3 and the [Android NDK](https://facebook.github.io/react-native/docs/building-from-source.html#download-links-for-android-ndk) version `r10e` installed.
+- Run `./generate-dynamic-macros-android.sh` in the `tools-public` directory.
 - Build and install Android with `cd android; ./run.sh; cd ..`. It might fail the first time. If so just run `./run.sh` again.
 
 If you are running on an phone with Android 5 you might have to use `./run.sh installDev19Debug`. There is a bug running multidex applications in debug mode on Android 5 devices: https://code.google.com/p/android/issues/detail?id=79826.
-
-**These instructions are different if you are using Expo's internal monorepo.** In that case, read the `__internal__` instructions instead.
 
 ## Running on a Device
 
@@ -67,8 +69,8 @@ The Android standalone app script creates a new directory `android-shell-app` wi
 Here are the steps to build a standalone Android app:
 - Publish your experience from `XDE` or `exp`. Note the published url.
 - `cd tools-public`.
-- If you want a signed `.apk`, run `gulp android-shell-app --url [the published experience url] --sdkVersion [sdk version of your experience] --keystore [path to keystore] --alias [keystore alias] --keystorePassword [keystore password] --keyPassword [key password]`.
-- If you don't want a signed `.apk`, run `gulp android-shell-app --url [the published experience url] --sdkVersion [sdk version of your experience]`.
+- If you want a signed `.apk`, run `gulp android-shell-app --url [the published experience url] --sdkVersion [sdk version of your experience] --keystore [path to keystore] --alias [keystore alias] --keystorePassword [keystore password] --keyPassword [key password] --workingDir=../`.
+- If you don't want a signed `.apk`, run `gulp android-shell-app --url [the published experience url] --sdkVersion [sdk version of your experience] --workingDir=../`.
 - The `.apk` file will be at `/tmp/shell-signed.apk` for a signed `.apk` or at `/tmp/shell-debug.apk` for an unsigned `.apk`.
 - `adb install` the `.apk` file to test it.
 - Upload to the Play Store!
@@ -89,9 +91,9 @@ Here are the steps to build a standalone iOS app:
 ## Modifying JS Code
 The Expo client apps run a root Expo project in addition to native code. By default this will use a published version of the project, so any changes made in the `home` directory will not show up without some extra work.
 
-Serve this project locally by running `exp start` from the `home` directory. On iOS, you'll additionally need to set `DEV_KERNEL_SOURCE` to `LOCAL` in `EXBuildConstants.plist` (the default is `PUBLISHED`).
+Serve this project locally by running `expo start` from the `home` directory. On iOS, you'll additionally need to set `DEV_KERNEL_SOURCE` to `LOCAL` in `EXBuildConstants.plist` (the default is `PUBLISHED`).
 
-The native Android Studio and XCode projects have a build hook which will find this if `exp start` is running. Keep this running and rebuild the app on each platform.
+The native Android Studio and XCode projects have a build hook which will find this if `expo start` is running. Keep this running and rebuild the app on each platform.
 
 ## Project Layout
 

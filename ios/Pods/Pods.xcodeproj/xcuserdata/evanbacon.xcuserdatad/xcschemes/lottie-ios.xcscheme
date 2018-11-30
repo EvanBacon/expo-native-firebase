@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D6D2992177526CFD84B35B674773195"
+               BlueprintIdentifier = "911F982FC5945A01459F2C53E38B5F40"
                BlueprintName = "lottie-ios"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "liblottie-ios.a">

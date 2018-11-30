@@ -271,28 +271,13 @@
       android:exported="false">
     </service>
 
-      <service android:name="expo.modules.firebase.messaging.EXFirebaseMessagingService">
-          <intent-filter>
-              <action android:name="com.google.firebase.MESSAGING_EVENT" />
-          </intent-filter>
-      </service>
-      <!--Instance ID-->
-      <service android:name="expo.modules.firebase.messaging.EXFirebaseInstanceIdService">
-          <intent-filter>
-              <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-          </intent-filter>
-      </service>
-      <!--Background Messages-->
-      <service android:name="expo.modules.firebase.messaging.FirebaseBackgroundMessagingService" />
-
-
-      <!-- FCM -->
-    <!--<service-->
-      <!--android:name=".fcm.ExpoFcmMessagingService">-->
-      <!--<intent-filter>-->
-        <!--<action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
-      <!--</intent-filter>-->
-    <!--</service>-->
+     <!-- FCM -->
+    <service
+      android:name="expo.modules.firebase.messaging.EXFirebaseMessagingService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
     <meta-data
       android:name="com.google.firebase.messaging.default_notification_icon"
       android:resource="@drawable/shell_notification_icon" />
@@ -303,6 +288,15 @@
       android:name=".fcm.FcmRegistrationIntentService"
       android:exported="false">
     </service>
+
+    <!-- Expo Firebase Instance ID -->
+    <service android:name="expo.modules.firebase.messaging.EXFirebaseInstanceIdService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+        </intent-filter>
+    </service>
+    <!-- Expo Firebase Background Messages -->
+    <service android:name="expo.modules.firebase.messaging.FirebaseBackgroundMessagingService" />
 
     <!-- ImagePicker native module -->
     <activity

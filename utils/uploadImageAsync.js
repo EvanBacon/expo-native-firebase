@@ -1,5 +1,4 @@
 import firebase from 'expo-firebase-app';
-import 'expo-firebase-storage';
 
 async function uploadImageAsync(uri, uploadUri, onProgress) {
   const onStateChanged = ({ bytesTransferred, totalBytes, state }) => {

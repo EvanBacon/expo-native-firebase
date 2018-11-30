@@ -2,7 +2,6 @@ import React from 'react';
 
 import AppNavigator from './AppNavigator';
 import firebase from 'expo-firebase-app';
-import 'expo-firebase-analytics';
 import NavigationService from './NavigationService';
 
 // gets the current screen from navigation state

@@ -1,6 +1,6 @@
 {
   "name": "ExpoKit",
-  "version": "2.8.2",
+  "version": "2.9.0",
   "summary": "ExpoKit",
   "description": "ExpoKit allows native projects to integrate with the Expo SDK.",
   "homepage": "http://docs.expo.io",
@@ -8,7 +8,7 @@
   "authors": "650 Industries, Inc.",
   "requires_arc": true,
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "default_subspecs": "Core",
   "source": {
@@ -46,19 +46,19 @@
           "4.99.0"
         ],
         "FBSDKCoreKit": [
-          "~> 4.28"
+          "4.37.0"
         ],
         "FBSDKLoginKit": [
-          "~> 4.28"
+          "4.37.0"
         ],
         "FBSDKShareKit": [
-          "~> 4.28"
+          "4.37.0"
         ],
         "Fabric": [
           "~> 1.6"
         ],
         "GoogleSignIn": [
-          "~> 3.0"
+          "~> 4.1"
         ],
         "GoogleMaps": [
           "~> 2.5.0"

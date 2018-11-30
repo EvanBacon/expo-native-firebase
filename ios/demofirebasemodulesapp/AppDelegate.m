@@ -30,6 +30,7 @@
 
 static NSString *const EXLinkingUrlScheme = @"";
 
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) EXViewController *rootViewController;
@@ -44,7 +45,9 @@ static NSString *const EXLinkingUrlScheme = @"";
     // If the app contains the GoogleService-Info.plist then use it.
     if ([FIROptions defaultOptions] != nil) {
 #if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
-        if (![EXLinkingUrlScheme isEqualToString:@""]) [FIROptions defaultOptions].deepLinkURLScheme = EXLinkingUrlScheme;
+        if (![EXLinkingUrlScheme isEqualToString:@""]) {
+            [FIROptions defaultOptions].deepLinkURLScheme = EXLinkingUrlScheme;
+        }
 #endif
         [FIRApp configure];
 #if __has_include(<EXFirebaseDatabase/EXFirebaseDatabase.h>)
@@ -55,6 +58,7 @@ static NSString *const EXLinkingUrlScheme = @"";
 #endif
     }
 #endif
+
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     [[ExpoKit sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
@@ -62,6 +66,7 @@ static NSString *const EXLinkingUrlScheme = @"";
     _window.rootViewController = _rootViewController;
 
     [_window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -69,28 +74,33 @@ static NSString *const EXLinkingUrlScheme = @"";
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
+    id annotation = options[UIApplicationOpenURLOptionsAnnotationKey];
+    NSString *sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
 #if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
 #if __has_include(<EXFirebaseInvites/EXFirebaseInvites.h>)
-    if ([[EXFirebaseInvites instance] application:app openURL:url options:options]) return YES;
+    if ([[EXFirebaseInvites instance] application:app openURL:url options:options]) {
+        return YES;
+    }
 #else
-    if ([[EXFirebaseLinks instance] application:app openURL:url options:options]) return YES;
+    if ([[EXFirebaseLinks instance] application:app openURL:url options:options]) {
+        return YES;
+    }
 #endif
 #endif
-    return NO;
+    return [[ExpoKit sharedInstance] application:app openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
-{
-    return [[ExpoKit sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
-}
-
-- (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
 {
 #if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
 #if __has_include(<EXFirebaseInvites/EXFirebaseInvites.h>)
-    if ([[EXFirebaseInvites instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) return YES;
+    if ([[EXFirebaseInvites instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
+      return YES;
+    }
 #else
-    if ([[EXFirebaseLinks instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) return YES;
+    if ([[EXFirebaseLinks instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
+      return YES;
+    }
 #endif
 #endif
     return [[ExpoKit sharedInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
@@ -108,28 +118,31 @@ static NSString *const EXLinkingUrlScheme = @"";
     [[ExpoKit sharedInstance] application:application didFailToRegisterForRemoteNotificationsWithError:err];
 }
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
-fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler{
-#if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
-    [[EXFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
-#endif
-    [[ExpoKit sharedInstance] application:application didReceiveRemoteNotification:userInfo];
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)notification
+{
+    [[ExpoKit sharedInstance] application:application didReceiveRemoteNotification:notification];
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(nonnull UILocalNotification *)notification
 {
-#if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
-    [[EXFirebaseNotifications instance] didReceiveLocalNotification:notification];
-#endif
     [[ExpoKit sharedInstance] application:application didReceiveLocalNotification:notification];
 }
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(nonnull UIUserNotificationSettings *)notificationSettings
 {
-#if __has_include(<EXFirebaseMessaging/EXFirebaseMessaging.h>)
-    [[EXFirebaseMessaging instance] didRegisterUserNotificationSettings:notificationSettings];
-#endif
     [[ExpoKit sharedInstance] application:application didRegisterUserNotificationSettings:notificationSettings];
+}
+
+// TODO: Bacon: There are two didReceiveRemoteNotification, which is correct?
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+     #if __has_include(<EXFirebaseMessaging/EXFirebaseMessaging.h>)
+         #if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
+            [[EXFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+         #else
+            [[EXFirebaseMessaging instance] didReceiveRemoteNotification:userInfo];
+         #endif
+     #endif
 }
 
 @end

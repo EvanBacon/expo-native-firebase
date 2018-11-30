@@ -1,1 +1,1 @@
-../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/Brushes/RNSVGPattern.h
+../../../ExpoKit/ios/Exponent/Versioned/Core/Api/Components/Svg/RNSVGPattern.h

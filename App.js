@@ -2,20 +2,6 @@ import React from 'react';
 import { AppRegistry } from 'react-native';
 
 import firebase from 'expo-firebase-app';
-import 'expo-firebase-analytics';
-import 'expo-firebase-auth';
-import 'expo-firebase-crashlytics';
-import 'expo-firebase-database';
-import 'expo-firebase-firestore';
-import 'expo-firebase-functions';
-import 'expo-firebase-instance-id';
-// import 'expo-firebase-invites';
-// import 'expo-firebase-links';
-import 'expo-firebase-messaging';
-import 'expo-firebase-notifications';
-import 'expo-firebase-performance';
-import 'expo-firebase-remote-config';
-import 'expo-firebase-storage';
 
 import Navigation from './navigation';
 
@@ -23,14 +9,15 @@ import bgMessaging from './bgMessaging';
 
 import Gate from './rematch/Gate';
 import { dispatch } from '@rematch/core';
-
 import NavigationService from './navigation/NavigationService';
-
 import { Permissions } from 'expo';
+
+console.ignoredYellowBox = ['Require', 'Class', 'Warning'];
 
 export default class App extends React.Component {
   state = { isReady: true };
   async componentDidMount() {
+    this._setupNotifications();
     firebase.auth().onAuthStateChanged(user => {
       if (!user) {
         NavigationService.navigate('Auth');
@@ -77,8 +64,34 @@ export default class App extends React.Component {
       .messaging()
       .onTokenRefresh(fcmToken => {
         // Process your token as required
+        console.log('onTokenRefresh', fcmToken);
       });
+
+    // expo-firebase-notifications: 1.0.0-rc.5
+    const initial = await firebase.notifications().getInitialNotification();
+    if (initial) {
+      const { notification, action } = initial;
+      console.log('Got Initial Notification:', { notification, action });
+    }
+
+    /*
+     * You can have either Links or Invites, but you can't observe both at the same time.
+     * (Invites basically observes both)
+     */
+
+    // const deepLink = await firebase.links().getInitialLink();
+    // if (deepLink) {
+    //   // Do something linky...
+    //   console.log('Got Initial Link:', { deepLink });
+    // }
+
+    const invite = await firebase.invites().getInitialInvitation();
+    if (invite) {
+      const { deepLink, invitationId } = invite;
+      console.log('Got Initial Invite:', { deepLink, invitationId });
+    }
   };
+
   componentWillUnmount() {
     this.notificationDisplayedListener();
     this.notificationListener();

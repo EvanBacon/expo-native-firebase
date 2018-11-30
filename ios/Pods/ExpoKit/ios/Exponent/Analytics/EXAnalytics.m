@@ -8,8 +8,6 @@
 
 #import "Amplitude.h"
 
-NSString * const kEXAnalyticsDisabledConfigKey = @"EXAnalyticsDisabled";
-
 @import UIKit;
 
 @interface EXAnalytics ()
@@ -52,7 +50,11 @@ NSString * const kEXAnalyticsDisabledConfigKey = @"EXAnalyticsDisabled";
 
 + (BOOL)_isAnalyticsDisabled
 {
-  return [[[NSBundle mainBundle].infoDictionary objectForKey:kEXAnalyticsDisabledConfigKey] boolValue];
+#ifdef EX_DETACHED
+  return YES;
+#else
+  return NO;
+#endif
 }
 
 - (instancetype)init
