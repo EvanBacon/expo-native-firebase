@@ -15,7 +15,7 @@ Follow exposition for updates on `expo-firebase`
 
 **[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
 
-# 📖Tutorial
+# 📖 Tutorial
 
 This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5`
 
@@ -365,7 +365,7 @@ public List<Package> expoPackages() {
 
 ```
 
-# Usage
+# 💻 Usage
 
 After you are all setup, use the library anywhere like so:
 
@@ -409,7 +409,7 @@ import { Notification } from 'expo-firebase-notifications';
 const notification = new Notification();
 ```
 
-# Upgrading
+# ⭐️ Upgrading
 
 Because expo-firebase is still in RC (Not officially stable) you should expect breaking changes / improvements.
 
@@ -433,7 +433,7 @@ cd ios; pod install
 cd android; ./gradlew build
 ```
 
-# Libraries
+# 📚 Libraries
 
 Crafted with care ☺️
 
@@ -453,7 +453,7 @@ Crafted with care ☺️
 * [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
 * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
-# Video Tutorials
+# 🎬 Video Tutorials
 
 I put together some videos that you may find helpful 💙 Give them a like if they helped you at all 😇
 
@@ -476,7 +476,7 @@ I put together some videos that you may find helpful 💙 Give them a like if th
     </div>
 </div>
 
-# TODO
+# 📝 TODO
 
 * Add a unified package which makes setup easier.
 * Background Tasks aren't in Expo yet: [Background Tasks PR](https://github.com/expo/expo/pull/2338). After this is merged we can complete all of the Notification features.
