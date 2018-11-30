@@ -453,8 +453,6 @@ I put together some videos that you may find helpful 💙 Give them a like if th
         <a href="https://www.youtube.com/watch?v=XYTKeFVy7xg">
             <img width="350" src="https://img.youtube.com/vi/XYTKeFVy7xg/0.jpg" alt="iOS setup">
         </a>
-    </div>
-    <div>
         <a href="https://www.youtube.com/watch?v=VtxBNM8NIO4">
             <img width="350" src="https://img.youtube.com/vi/VtxBNM8NIO4/0.jpg" alt="Android setup">
         </a>
@@ -463,8 +461,6 @@ I put together some videos that you may find helpful 💙 Give them a like if th
         <a href="https://www.youtube.com/watch?v=pbHlXa3sCPw">
             <img width="350" src="https://img.youtube.com/vi/pbHlXa3sCPw/0.jpg" alt="Android Messages">
         </a>
-    </div>
-    <div>
         <a href="https://www.youtube.com/watch?v=61u3vZFerb0">
             <img width="350" src="https://img.youtube.com/vi/61u3vZFerb0/0.jpg" alt="iOS Messages">
         </a>
