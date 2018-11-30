@@ -448,7 +448,7 @@ Crafted with care ☺️
 
 I put together some videos that you may find helpful 💙 Give them a like if they helped you at all 😇
 
-<div align="center" style="align-items:center; display: flex;justify-content:space-around;">
+<div align="center" style="display:flex; flex-wrap:wrap; justify-content:space-around;">
   <a href="https://www.youtube.com/watch?v=XYTKeFVy7xg"><img width="350" src="https://img.youtube.com/vi/XYTKeFVy7xg/0.jpg" alt="iOS setup"></a>
   
   <a href="https://www.youtube.com/watch?v=VtxBNM8NIO4"><img width="350" src="https://img.youtube.com/vi/VtxBNM8NIO4/0.jpg" alt="Android setup"></a>
