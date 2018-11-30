@@ -1,14 +1,23 @@
-# expo-firebase example
+<h1 align="center">
 
-Read more: **[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+<p align="center">
+  <img src="https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif"/>
+</p>
 
-This is an **ExpoKit** app with all the Expo Firebase modules installed!! 🔥 Tutorial below 👇👇👇
+    Expo Firebase 🔥
 
-![Hey there](https://media.giphy.com/media/Wy6BauP5Ztlmu7zvs8/giphy.gif)
+**ExpoKit** with Native Firebase Tutorial / Boiler Plate
+</h1>
 
-# Tutorial
+# 📔 Posts
 
-> This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5``
+Follow exposition for updates on `expo-firebase`
+
+**[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+
+# 📖 Tutorial
+
+This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5`
 
 ## Project Setup
 
@@ -57,6 +66,11 @@ yarn add expo-firebase-storage expo-firebase-analytics expo-firebase-app expo-fi
 First, drag your **`GoogleService-Info.plist`** into your XCode project.
 
 Then if your app has `Google Sign-In` or `expo-firebase-invites` installed, you will need to copy your Firebase **`REVERSE_CLIENT_ID`** in to a new URL Scheme.
+
+![Setup URL Type in Expo Firebase](https://github.com/EvanBacon/expo-native-firebase/blob/master/demo/ExpoFirebaseUrlTypeSetup.png?raw=true)
+
+
+Time to write some Objective-C! 
 
 > Writing native code sucks, hopefully in the future we can find a way to just link this. Please message me if you have troubles setting this up 🧡
 
@@ -351,7 +365,7 @@ public List<Package> expoPackages() {
 
 ```
 
-# Usage
+# 💻 Usage
 
 After you are all setup, use the library anywhere like so:
 
@@ -395,7 +409,7 @@ import { Notification } from 'expo-firebase-notifications';
 const notification = new Notification();
 ```
 
-# Upgrading
+# ⭐️ Upgrading
 
 Because expo-firebase is still in RC (Not officially stable) you should expect breaking changes / improvements.
 
@@ -419,7 +433,7 @@ cd ios; pod install
 cd android; ./gradlew build
 ```
 
-# Libraries
+# 📚 Libraries
 
 Crafted with care ☺️
 
@@ -439,8 +453,30 @@ Crafted with care ☺️
 * [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
 * [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
 
+# 🎬 Video Tutorials
 
-# TODO
+I put together some videos that you may find helpful 💙 Give them a like if they helped you at all 😇
+
+<div style="text-align:center; display:flex; flex-wrap:wrap; justify-content:space-around;">
+    <div>
+        <a href="https://www.youtube.com/watch?v=XYTKeFVy7xg">
+            <img width="350" src="https://img.youtube.com/vi/XYTKeFVy7xg/0.jpg" alt="iOS setup">
+        </a>
+        <a href="https://www.youtube.com/watch?v=VtxBNM8NIO4">
+            <img width="350" src="https://img.youtube.com/vi/VtxBNM8NIO4/0.jpg" alt="Android setup">
+        </a>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/watch?v=pbHlXa3sCPw">
+            <img width="350" src="https://img.youtube.com/vi/pbHlXa3sCPw/0.jpg" alt="Android Messages">
+        </a>
+        <a href="https://www.youtube.com/watch?v=61u3vZFerb0">
+            <img width="350" src="https://img.youtube.com/vi/61u3vZFerb0/0.jpg" alt="iOS Messages">
+        </a>
+    </div>
+</div>
+
+# 📝 TODO
 
 * Add a unified package which makes setup easier.
 * Background Tasks aren't in Expo yet: [Background Tasks PR](https://github.com/expo/expo/pull/2338). After this is merged we can complete all of the Notification features.
@@ -452,3 +488,4 @@ console.ignoreYellowBox = ["...start of the warning"];
 * Expand `EXFaceDetector` and turn it into **`firebase.vision()`**
 * [Subscribe to the youtube channel 😉](https://www.youtube.com/c/exposition?sub_confirmation=1)
 * Document how to use the experimental notification features on iOS.
+* Stars help me know what to focus 🌟
