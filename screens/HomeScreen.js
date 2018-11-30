@@ -19,24 +19,26 @@ export default class HomeScreen extends Component {
           style={styles.text}
           onPress={() => {
             const notification = new Notification()
-              .setNotificationId('ParkByMyHouse-notification')
-              .setTitle('OMG Location stuff!')
-              .setBody('Firebase RC.5 Experimental')
+              .setNotificationId('some-notification')
+              .setTitle('OMG Notification!')
+              .setBody('Firebase RC.5')
               .setData({
                 key1: 'value1',
                 key2: 'value2',
               })
               .ios.setBadge(Math.round(Date.now() % 400));
 
-            const date = new Date();
-            date.setSeconds(date.getSeconds() + 10);
-
+            // const date = new Date();
+            // date.setSeconds(date.getSeconds() + 10);
             // firebase.notifications().scheduleNotification(notification, {
             //   fireDate: date.getTime(),
             // });
-            await Permissions.askAsync(Permissions.LOCATION);
 
+            firebase.notifications().displayNotification(notification);
+
+            /*
             // Experimental location notifications
+            await Permissions.askAsync(Permissions.LOCATION);
             firebase.notifications().nativeModule.displayNotification({
               ...notification.build(),
               repeats: true,
@@ -49,6 +51,7 @@ export default class HomeScreen extends Component {
                 id: 'ParkByMyHouse',
               },
             });
+            */
           }}
         >
           Start Demo
