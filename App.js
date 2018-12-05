@@ -17,14 +17,16 @@ console.ignoredYellowBox = ['Require', 'Class', 'Warning'];
 export default class App extends React.Component {
   state = { isReady: true };
   async componentDidMount() {
-    this._setupNotifications();
-    this.unsubFromAuthState = firebase.auth().onAuthStateChanged(user => {
-      if (!user) {
-        NavigationService.navigate('Auth');
-      } else {
-        NavigationService.navigate('App');
-      }
-    });
+    console.log(firebase.app());
+    console.log(firebase.analytics());
+    // this._setupNotifications();
+    // this.unsubFromAuthState = firebase.auth().onAuthStateChanged(user => {
+    //   if (!user) {
+    //     NavigationService.navigate('Auth');
+    //   } else {
+    //     NavigationService.navigate('App');
+    //   }
+    // });
   }
 
   _setupNotifications = async () => {
