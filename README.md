@@ -370,7 +370,7 @@ public List<Package> expoPackages() {
 After you are all setup, use the library anywhere like so:
 
 ```js
-import firebase 'expo-firebase-app'
+import firebase from 'expo-firebase-app'
 ```
 
 ## Using Services
