@@ -476,6 +476,14 @@ I put together some videos that you may find helpful 💙 Give them a like if th
     </div>
 </div>
 
+# 😭 Trouble Shooting
+
+Here is a list of Q/A from around cyber-space:
+
+* [iOS push notifications not working](https://forums.expo.io/t/expo-firebase-notifications-on-ios-fcm-expokit/17672)
+
+it's kinda a short list at the moment 😏
+
 # 📝 TODO
 
 * Add a unified package which makes setup easier.
