@@ -76,6 +76,10 @@ Time to write some Objective-C!
 
 [**`ios/**/AppDelegate.m`**](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
 
+<details><summary>👉 Expand Code</summary>
+
+### Source
+
 ```objc      
 
 // At the top of the file:
@@ -187,7 +191,15 @@ static NSString *const EXLinkingUrlScheme = @"";
 }
 ```
 
+</details>
+
+
 **`ios/Podfile`**
+
+
+<details><summary>👉 Expand Code</summary>
+
+### Source
 
 ```rb
 # Bacon: Start Custom Modules (Firebase)
@@ -224,11 +236,19 @@ pod 'EXFirebaseStorage',
 # Bacon: End Custom Modules
 ```
 
+</details>
+
+
 ## Android Setup
 
 First, copy & paste the contents of your **`google-services.json`** into the Expo generated version located at: **`android/app/google-services.json`**
 
 **`android/settings.gradle`**
+
+<details><summary>👉 Expand Code</summary>
+
+### Source
+
 
 ```gradle
 
@@ -259,7 +279,15 @@ include ':app'
 
 ```
 
+</details>
+
+
 **`android/app/build.gradle`**
+
+<details><summary>👉 Expand Code</summary>
+
+### Source
+
 
 ```gradle
 
@@ -286,7 +314,15 @@ dependencies {
 }
 ```
 
+</details>
+
+
 **`android/app/src/main/AndroidManifest.xml`**
+
+<details><summary>👉 Expand Code</summary>
+
+### Source
+
 
 ```xml
 <!-- FCM -->
@@ -316,8 +352,15 @@ dependencies {
 <service android:name="expo.modules.firebase.messaging.FirebaseBackgroundMessagingService" />
 ```
 
+</details>
+
 
 **`android/app/src/main/java/host/exp/MainActivity.java`**
+
+<details><summary>👉 Expand Code</summary>
+
+### Source
+
 
 ```java
 
@@ -364,6 +407,9 @@ public List<Package> expoPackages() {
 }
 
 ```
+
+</details>
+
 
 # 💻 Usage
 
