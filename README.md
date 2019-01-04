@@ -193,9 +193,9 @@ static NSString *const EXLinkingUrlScheme = @"";
 
 </details>
 
+<br/>
 
-**`ios/Podfile`**
-
+**`ios/Podfile`** 
 
 <details><summary>👉 Expand Code</summary>
 
@@ -281,6 +281,7 @@ include ':app'
 
 </details>
 
+<br/>
 
 **`android/app/build.gradle`**
 
@@ -316,6 +317,7 @@ dependencies {
 
 </details>
 
+<br/>
 
 **`android/app/src/main/AndroidManifest.xml`**
 
@@ -354,6 +356,7 @@ dependencies {
 
 </details>
 
+<br/>
 
 **`android/app/src/main/java/host/exp/MainActivity.java`**
 
@@ -410,6 +413,7 @@ public List<Package> expoPackages() {
 
 </details>
 
+<br/>
 
 # 💻 Usage
 
