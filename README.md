@@ -1,3 +1,10 @@
+
+## [Expo _Native_ Firebase is now deprecated](https://gist.github.com/brentvatne/9038b16b4f42a21cea40ad5c35fdb74c)
+
+You can still use the JavaScript SDK, which has more native features added to it all the time.
+
+---
+
 <h1 align="center">
 
 <p align="center">
