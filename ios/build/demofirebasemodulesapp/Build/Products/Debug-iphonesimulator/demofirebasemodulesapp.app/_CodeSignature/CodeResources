@@ -6,11 +6,11 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib/objects-13.0+.nib</key>
 		<data>
-		lhwu7FvWo5M3rbVZpUrX4DnlBw8=
+		nEh97BgoEiTFzoNAD+NLmsxgQ7M=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<data>
-		n3QRJbM9g5SMC4LWaEp8rKMdHSk=
+		KX/owTfB9ScVtBGc3QZYoEN/yx0=
 		</data>
 		<key>FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>
 		<dict>
@@ -414,7 +414,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		38hWt8QfWqnZyhBJ+4vk40yygWY=
+		dH4wYorCjhpYIfQFBC6vkFtCosI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -427,22 +427,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lhwu7FvWo5M3rbVZpUrX4DnlBw8=
+			nEh97BgoEiTFzoNAD+NLmsxgQ7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			g1z54PgM6bXXzftEq7gT7yXjyXmiH76muQtSIyk6kQw=
+			qZD8FQA3w6eblEsRbXLnRnlcbyqaBAkzV91A/0Ta5g0=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n3QRJbM9g5SMC4LWaEp8rKMdHSk=
+			KX/owTfB9ScVtBGc3QZYoEN/yx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			0nF3rLkVIyP9ve7tAud4h1+dRq0FGIwessNw85VvA+c=
+			6k4fYokYdR/Tv+9gITk19iTLIM4S0aNJa6KPfC+XGwM=
 			</data>
 		</dict>
 		<key>FacebookSDKStrings.bundle/Resources/af.lproj/FacebookSDK.strings</key>

@@ -1,10 +1,3 @@
-
-## [Expo _Native_ Firebase is now deprecated](https://gist.github.com/brentvatne/9038b16b4f42a21cea40ad5c35fdb74c)
-
-You can still use the JavaScript SDK, which has more native features added to it all the time.
-
----
-
 <h1 align="center">
 
 <p align="center">
@@ -13,504 +6,114 @@ You can still use the JavaScript SDK, which has more native features added to it
 
     Expo Firebase 🔥
 
-**ExpoKit** with Native Firebase Tutorial / Boiler Plate
+**Bare-Workflow** with Native Firebase Tutorial / Boiler Plate
 </h1>
 
 # 📔 Posts
 
-Follow exposition for updates on `expo-firebase`
+[Follow me on Twitter](https://twitter.com/baconbrix) for updates on native Firebase changes coming to Expo.
 
-**[Using Firebase In Expo](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
+Deprecated: **[~~Using Firebase In Expo~~](https://blog.expo.io/using-firebase-in-expo-e13844061832)**
 
 # 📖 Tutorial
 
-This tutorial is targeted at **Expo v31** and `expo-firebase-* 1.0.0-rc.5`
+This tutorial is targeted at **Expo v36** and `react-native-firebase` v6.
 
 ## Project Setup
 
-Simply create an Expo project. In the future we hope to make these very simple to use outside of ExpoKit. 
-
-> No one likes lock-in, especially the Expo team 😘 but native code is a big mess, so it's taking it's sweet time 😭
-
-* Download the Expo-CLI `npm i -g expo-cli`
-* Create a new project `expo init expo-firebase-example`
-* Select any template.
-* Enter the project `cd expo-firebase-example`
-
-## Upgrade to ExpoKit! 🔥
-
-This would be a good time to commit your code in git 😀
-
-> If you have a native Firebase project setup already, make sure the bundle ID / Android Package you are about to enter, match what is in your project 🧡
-
-* In your root directory (in the termminal) run: `expo eject`
-* Select the option: `ExpoKit: I'll create or log in with an Expo account to use React Native and the Expo SDK.`
-* Add a bundle ID. ex: `com.whoareyou.expofirebaseexample`
-* Add an Android Package. (usually the same as bundle ID) ex: `com.whoareyou.expofirebaseexample`
-
-## JS Setup
-
-Simply install the services you want to use in your project.
-
-### JS Setup Examples
-
-#### I want Firestore
-
-```sh
-yarn add expo-firebase-firestore
-```
-
-#### I WANT IT ALL 😈🤤
-
-I usually do this, then remove stuff later...
-
-```sh
-yarn add expo-firebase-storage expo-firebase-analytics expo-firebase-app expo-firebase-auth expo-firebase-crashlytics expo-firebase-database expo-firebase-firestore expo-firebase-functions expo-firebase-instance-id expo-firebase-invites expo-firebase-links expo-firebase-messaging expo-firebase-notifications expo-firebase-performance expo-firebase-remote-config
-```
-
-## iOS Setup 
-
-First, drag your **`GoogleService-Info.plist`** into your XCode project.
-
-Then if your app has `Google Sign-In` or `expo-firebase-invites` installed, you will need to copy your Firebase **`REVERSE_CLIENT_ID`** in to a new URL Scheme.
-
-![Setup URL Type in Expo Firebase](https://github.com/EvanBacon/expo-native-firebase/blob/master/demo/ExpoFirebaseUrlTypeSetup.png?raw=true)
-
-
-Time to write some Objective-C! 
-
-> Writing native code sucks, hopefully in the future we can find a way to just link this. Please message me if you have troubles setting this up 🧡
-
-[**`ios/**/AppDelegate.m`**](https://github.com/EvanBacon/expo-native-firebase/blob/master/ios/demofirebasemodulesapp/AppDelegate.m)
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-```objc      
-
-// At the top of the file:
-
-#if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
-#import <EXFirebaseNotifications/EXFirebaseNotifications.h>
-#endif
-
-#if __has_include(<EXFirebaseMessaging/EXFirebaseMessaging.h>)
-#import <EXFirebaseMessaging/EXFirebaseMessaging.h>
-#endif
-#if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
-#if __has_include(<EXFirebaseInvites/EXFirebaseInvites.h>)
-#import <EXFirebaseInvites/EXFirebaseInvites.h>
-#else
-#import <EXFirebaseLinks/EXFirebaseLinks.h>
-#endif
-#endif
-
-#if __has_include(<FirebaseCore/FIRApp.h>)
-#import <FirebaseCore/FIROptions.h>
-#import <FirebaseCore/FIRApp.h>
-#endif
-
-#if __has_include(<FirebaseDatabase/FIRDatabase.h>)
-#import <FirebaseDatabase/FIRDatabase.h>
-#endif
-
-static NSString *const EXLinkingUrlScheme = @"";
-
-// Later...
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-#if __has_include(<FirebaseCore/FIRApp.h>)
-    // If the app contains the GoogleService-Info.plist then use it.
-    if ([FIROptions defaultOptions] != nil) {
-#if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
-        if (![EXLinkingUrlScheme isEqualToString:@""]) {
-            [FIROptions defaultOptions].deepLinkURLScheme = EXLinkingUrlScheme;
-        }
-#endif
-        [FIRApp configure];
-#if __has_include(<EXFirebaseDatabase/EXFirebaseDatabase.h>)
-        [FIRDatabase database].persistenceEnabled = YES;
-#endif
-#if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
-        [EXFirebaseNotifications configure];
-#endif
-    }
-#endif
-
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.backgroundColor = [UIColor whiteColor];
-    [[ExpoKit sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    _rootViewController = [ExpoKit sharedInstance].rootViewController;
-    _window.rootViewController = _rootViewController;
-
-    [_window makeKeyAndVisible];
-    
-    return YES;
-}
-
-#pragma mark - Handling URLs
-
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
-{
-    id annotation = options[UIApplicationOpenURLOptionsAnnotationKey];
-    NSString *sourceApplication = options[UIApplicationOpenURLOptionsSourceApplicationKey];
-#if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
-#if __has_include(<EXFirebaseInvites/EXFirebaseInvites.h>)
-    if ([[EXFirebaseInvites instance] application:app openURL:url options:options]) {
-        return YES;
-    }
-#else
-    if ([[EXFirebaseLinks instance] application:app openURL:url options:options]) {
-        return YES;
-    }
-#endif
-#endif
-    return [[ExpoKit sharedInstance] application:app openURL:url sourceApplication:sourceApplication annotation:annotation];
-}
-
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
-{
-#if __has_include(<EXFirebaseLinks/EXFirebaseLinks.h>)
-#if __has_include(<EXFirebaseInvites/EXFirebaseInvites.h>)
-    if ([[EXFirebaseInvites instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
-      return YES;
-    }
-#else
-    if ([[EXFirebaseLinks instance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler]) {
-      return YES;
-    }
-#endif
-#endif
-    return [[ExpoKit sharedInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
-{
-     #if __has_include(<EXFirebaseMessaging/EXFirebaseMessaging.h>)
-         #if __has_include(<EXFirebaseNotifications/EXFirebaseNotifications.h>)
-            [[EXFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
-         #else
-            [[EXFirebaseMessaging instance] didReceiveRemoteNotification:userInfo];
-         #endif
-     #endif
-}
-```
-
-</details>
-
-<br/>
-
-**`ios/Podfile`** 
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-```rb
-# Bacon: Start Custom Modules (Firebase)
-pod 'EXFirebaseApp', 
-  path: '../node_modules/expo-firebase-app/ios'
-pod 'EXFirebaseAnalytics', 
-  path: '../node_modules/expo-firebase-analytics/ios'
-pod 'EXFirebaseAuth', 
-  path: '../node_modules/expo-firebase-auth/ios'
-pod 'EXFirebaseCrashlytics',
-  path: '../node_modules/expo-firebase-crashlytics/ios'
-pod 'EXFirebaseDatabase',
-  path: '../node_modules/expo-firebase-database/ios'
-pod 'EXFirebaseFirestore',
-  path: '../node_modules/expo-firebase-firestore/ios'
-pod 'EXFirebaseFunctions',
-  path: '../node_modules/expo-firebase-functions/ios'
-pod 'EXFirebaseInstanceID',
-  path: '../node_modules/expo-firebase-instance-id/ios'
-pod 'EXFirebaseLinks',
-  path: '../node_modules/expo-firebase-links/ios'
-pod 'EXFirebaseInvites',
-  path: '../node_modules/expo-firebase-invites/ios'
-pod 'EXFirebaseMessaging',
-  path: '../node_modules/expo-firebase-messaging/ios'
-pod 'EXFirebaseNotifications',
-  path: '../node_modules/expo-firebase-notifications/ios'
-pod 'EXFirebasePerformance',
-  path: '../node_modules/expo-firebase-performance/ios'
-pod 'EXFirebaseRemoteConfig',
-  path: '../node_modules/expo-firebase-remote-config/ios'
-pod 'EXFirebaseStorage',
-  path: '../node_modules/expo-firebase-storage/ios'
-# Bacon: End Custom Modules
-```
-
-</details>
-
-
-## Android Setup
-
-First, copy & paste the contents of your **`google-services.json`** into the Expo generated version located at: **`android/app/google-services.json`**
-
-**`android/settings.gradle`**
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-
-```gradle
-
-include ':app'
- def modulesDir = new File(rootDir, "../node_modules")
- def includeUniversalModule = { name ->
-  include ":$name"
-  project(":$name").projectDir = new File(modulesDir, "$name/android")
-}
- [
-    'expo-core',
-    'expo-firebase-app',
-    'expo-firebase-analytics',
-    'expo-firebase-auth',
-    'expo-firebase-crashlytics',
-    'expo-firebase-database',
-    'expo-firebase-firestore',
-    'expo-firebase-functions',
-    'expo-firebase-instance-id',
-    'expo-firebase-invites',
-    'expo-firebase-links',
-    'expo-firebase-messaging',
-    'expo-firebase-notifications',
-    'expo-firebase-performance',
-    'expo-firebase-remote-config',
-    'expo-firebase-storage'  ,
-].forEach({ moduleName -> includeUniversalModule(moduleName) })
-
-```
-
-</details>
-
-<br/>
-
-**`android/app/build.gradle`**
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-
-```gradle
-
-dependencies {
-
-  // ...
-
-  api project(':expo-core')
-  api project(':expo-firebase-analytics')
-  api project(':expo-firebase-app')
-  api project(':expo-firebase-auth')
-  api project(':expo-firebase-crashlytics')
-  api project(':expo-firebase-database')
-  api project(':expo-firebase-firestore')
-  api project(':expo-firebase-functions')
-  api project(':expo-firebase-instance-id')
-  api project(':expo-firebase-invites')
-  api project(':expo-firebase-links')
-  api project(':expo-firebase-messaging')
-  api project(':expo-firebase-notifications')
-  api project(':expo-firebase-performance')
-  api project(':expo-firebase-remote-config')
-  api project(':expo-firebase-storage')  
-}
-```
-
-</details>
-
-<br/>
-
-**`android/app/src/main/AndroidManifest.xml`**
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-
-```xml
-<!-- FCM -->
-<service
-  android:name="expo.modules.firebase.messaging.EXFirebaseMessagingService">
-  <intent-filter>
-    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-  </intent-filter>
-</service>
-<meta-data
-  android:name="com.google.firebase.messaging.default_notification_icon"
-  android:resource="@drawable/shell_notification_icon" />
-<meta-data
-  android:name="com.google.firebase.messaging.default_notification_color"
-  android:resource="@color/colorAccent" />
-<service
-  android:name=".fcm.FcmRegistrationIntentService"
-  android:exported="false">
-</service>
- <!-- Expo Firebase Instance ID -->
-<service android:name="expo.modules.firebase.messaging.EXFirebaseInstanceIdService">
-    <intent-filter>
-        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-    </intent-filter>
-</service>
-<!-- Expo Firebase Background Messages -->
-<service android:name="expo.modules.firebase.messaging.FirebaseBackgroundMessagingService" />
-```
-
-</details>
-
-<br/>
-
-**`android/app/src/main/java/host/exp/MainActivity.java`**
-
-<details><summary>👉 Expand Code</summary>
-
-### Source
-
-
-```java
-
-// At the top of the file
-
-import expo.modules.firebase.analytics.FirebaseAnalyticsPackage;
-import expo.modules.firebase.app.FirebaseAppPackage;
-import expo.modules.firebase.auth.FirebaseAuthPackage;
-import expo.modules.firebase.fabric.crashlytics.FirebaseCrashlyticsPackage;
-import expo.modules.firebase.database.FirebaseDatabasePackage;
-import expo.modules.firebase.firestore.FirebaseFirestorePackage;
-import expo.modules.firebase.functions.FirebaseFunctionsPackage;
-import expo.modules.firebase.instanceid.FirebaseInstanceIDPackage;
-import expo.modules.firebase.invites.FirebaseInvitesPackage;
-import expo.modules.firebase.links.FirebaseLinksPackage;
-import expo.modules.firebase.messaging.FirebaseMessagingPackage;
-import expo.modules.firebase.notifications.FirebaseNotificationsPackage;
-import expo.modules.firebase.performance.FirebasePerformancePackage;
-import expo.modules.firebase.remoteconfig.FirebaseRemoteConfigPackage;
-import expo.modules.firebase.storage.FirebaseStoragePackage;
-
-// Later...
-
-@Override
-public List<Package> expoPackages() {
-  // Here you can add your own packages.
-  return Arrays.<Package>asList(
-          new FirebaseAppPackage(),
-          new FirebaseAnalyticsPackage(),
-          new FirebaseAuthPackage(),
-          new FirebaseCrashlyticsPackage(),
-          new FirebaseDatabasePackage(),
-          new FirebaseFirestorePackage(),
-          new FirebaseFunctionsPackage(),
-          new FirebaseInstanceIDPackage(),
-          new FirebaseInvitesPackage(),
-          new FirebaseLinksPackage(),
-          new FirebaseMessagingPackage(),
-          new FirebaseNotificationsPackage(),
-          new FirebasePerformancePackage(),
-          new FirebaseRemoteConfigPackage(),
-          new FirebaseStoragePackage()
-  );
-}
-
-```
-
-</details>
-
-<br/>
+- Create a new [**Bare-workflow** project](https://docs.expo.io/versions/v36.0.0/bare/exploring-bare-workflow/)
+  - Native Firebase isn't supported in the custom Expo workflow yet.
+- Ensure your `ios/Podfile` has the following lines:
+  ```rb
+  # At the top of the file
+  require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+  require_relative '../node_modules/react-native-unimodules/cocoapods'
+
+  # ...
+
+  # Automatically detect installed unimodules
+  use_unimodules!
+
+  # The community version of use_unimodules (used for react-native-firebase)
+  use_native_modules!
+  ```
+- Setup React Native firebase for iOS: [guide](https://invertase.io/oss/react-native-firebase/quick-start/ios-firebase-credentials)
+- Setup React Native firebase for Android: [guide](https://invertase.io/oss/react-native-firebase/quick-start/android-firebase-credentials)
 
 # 💻 Usage
 
-After you are all setup, use the library anywhere like so:
+Now you should be able to use all of React Native Firebase with Expo Unimodules. You can run this project in the client with `expo start` but the native code for Firebase won't be available, so it won't work as expected.
+
+# 🍎 Guides
+
+> Note: These aren't great guides 😅
+
+## Sign-In with Facebook
+
+- Install the packages:
+  - Install the Firebase auth package with `yarn add @react-native-firebase/auth`
+  - Install the native package with `expo install expo-facebook` or `yarn add expo-facebook`
+  - Then run `cd ios && pod install`
+  - Start the project again with `npx react-native run-ios`
+- Setup the project in your Facebook developer console: [Guide](https://docs.expo.io/versions/v36.0.0/sdk/facebook/#configuration)
+- Go to the Firebase console and open the "Auth" tab, then toggle the Facebook authentication and fill in the values with your FB auth credentials.
+- Now you can use the following to authenticate with Facebook:
 
 ```js
-import firebase from 'expo-firebase-app'
+// Import a firebase auth package
+import auth from '@react-native-firebase/auth';
+// Import the universal Facebook package
+import * as Facebook from 'expo-facebook';
+import { Alert } from 'react-native';
+
+async function signInAsync() {
+  try {
+    // Setup the app
+    await Facebook.initializeAsync('YOUR_ID')
+
+    // Open the Facebook redirect...
+    const {
+      type,
+      token,
+    } = await Facebook.logInWithReadPermissionsAsync({
+      permissions: ['public_profile'],
+    });
+
+    if (type === 'success') {
+      // create a new firebase credential with the token
+      const credential = auth.FacebookAuthProvider.credential(token);
+      // login with credential
+      await auth().signInWithCredential(credential);
+      // Get the user's name using Facebook's Graph API
+      // const response = await fetch(`https://graph.facebook.com/me?access_token=${token}`);
+    } else {
+      // type === 'cancel'
+      // The user cancelled, usually you'll do nothing but sometimes you might want to post this to your analytics
+    }
+  } catch ({ message }) {
+    Alert.alert(message);
+  }
+}
 ```
 
-## Using Services
+## Uploading Images
 
-My day-1 users know that in pre rc.5, you needed to import the services before using them:
+- Install the packages:
+  - Install the Firebase auth package with `yarn add @react-native-firebase/storage`
+  - Install the native permissions package with `expo install expo-permissions` or `yarn add expo-permissions`
+  - Install the native media package with `expo install expo-image-picker` or `yarn add expo-image-picker`
+  - Optionally: I like to reduce the size of my images to save money on server charges. You can do that by installing `expo install expo-image-manipulator`
+  - Then run `cd ios && pod install`
+  - Start the project again with `npx react-native run-ios`
+- All of the relevant code for uploading, downloading, checking permissions, etc.. can be found in the [Profile Image Component](./components/ProfileImage.js) (Please open an issue if you require more information about this process!)
 
-```js
-// ❌
-import 'expo-firebase-database';
+# 📝 Notes
 
-firebase.database()
-```
-
-But now in `1.0.0-rc.5` and greater, you can just use the service directly, and `expo-firebase` will attempt to auto import the library. If the library isn't installed properly you'll get a (hopefully) helpful error message.
-
-```js
-// ✅
-firebase.database()
-```
-
-## Using Types
-
-`expo-firebase` is based on RNFirebase, and in RNFirebase you can use types like so:
-
-```js
-// ❌
-const notification = new Firebase.notifications.Notification();
-```
-
-But I've removed this as it doesn't play nicely with TypeScript, so now you should import your types from their library. This will create a much better dev experience and help a ton with debugging.
-
-```js
-// ✅
-import { Notification } from 'expo-firebase-notifications';
-
-const notification = new Notification();
-```
-
-# ⭐️ Upgrading
-
-Because expo-firebase is still in RC (Not officially stable) you should expect breaking changes / improvements.
-
-When upgrading, you should check back here to see if the `AppDelegate`, or `AndroidManifest` code has changed. So far it's changed every time 🙃
-
-## JS Upgrade
-
-```sh
-yarn; yarn upgrade
-```
-
-## iOS Upgrade
-
-```sh
-cd ios; pod install
-```
-
-## Android Upgrade
-
-```sh
-cd android; ./gradlew build
-```
-
-# 📚 Libraries
-
-Crafted with care ☺️
-
-* [`expo-firebase-app`](https://www.npmjs.com/package/expo-firebase-app)
-* [`expo-firebase-analytics`](https://www.npmjs.com/package/expo-firebase-analytics)
-* [`expo-firebase-database`](https://www.npmjs.com/package/expo-firebase-database)
-* [`expo-firebase-storage`](https://www.npmjs.com/package/expo-firebase-storage)
-* [`expo-firebase-firestore`](https://www.npmjs.com/package/expo-firebase-firestore)
-* [`expo-firebase-performance`](https://www.npmjs.com/package/expo-firebase-performance)
-* [`expo-firebase-auth`](https://www.npmjs.com/package/expo-firebase-auth)
-* [`expo-firebase-instance-id`](https://www.npmjs.com/package/expo-firebase-instance-id)
-* [`expo-firebase-remote-config`](https://www.npmjs.com/package/expo-firebase-remote-config)
-* [`expo-firebase-functions`](https://www.npmjs.com/package/expo-firebase-functions)
-* [`expo-firebase-crashlytics`](https://www.npmjs.com/package/expo-firebase-crashlytics)
-* [`expo-firebase-invites`](https://www.npmjs.com/package/expo-firebase-invites)
-* [`expo-firebase-links`](https://www.npmjs.com/package/expo-firebase-links)
-* [`expo-firebase-messaging`](https://www.npmjs.com/package/expo-firebase-messaging)
-* [`expo-firebase-notifications`](https://www.npmjs.com/package/expo-firebase-notifications)
+- `react-native-firebase` v6 doesn't support Notifications.
 
 # 🎬 Video Tutorials
+
+> 🚨 Deprecated: These videos are for `ExpoKit` and not the **Bare-Workflow**, you can still watch them if you wanna see me being awkward though 😅
 
 I put together some videos that you may find helpful 💙 Give them a like if they helped you at all 😇
 
@@ -532,25 +135,3 @@ I put together some videos that you may find helpful 💙 Give them a like if th
         </a>
     </div>
 </div>
-
-# 😭 Trouble Shooting
-
-Here is a list of Q/A from around cyber-space:
-
-* [iOS push notifications not working](https://forums.expo.io/t/expo-firebase-notifications-on-ios-fcm-expokit/17672)
-
-it's kinda a short list at the moment 😏
-
-# 📝 TODO
-
-* Add a unified package which makes setup easier.
-* Background Tasks aren't in Expo yet: [Background Tasks PR](https://github.com/expo/expo/pull/2338). After this is merged we can complete all of the Notification features.
-* Fix require cycles in `expo-firebase-database`, `expo-firebase-storage`, & `expo-firebase-firestore`. You can ignore these with:
-```js
-console.ignoreYellowBox = ["...start of the warning"];
-```
-* Make the experimental Notification features offical!
-* Expand `EXFaceDetector` and turn it into **`firebase.vision()`**
-* [Subscribe to the youtube channel 😉](https://www.youtube.com/c/exposition?sub_confirmation=1)
-* Document how to use the experimental notification features on iOS.
-* Stars help me know what to focus 🌟

@@ -101,6 +101,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>firebase_crashlytics_collection_enabled</key>
+	<false/>
 	<key>firebase_json_raw</key>
 	<string>e30=</string>
 </dict>

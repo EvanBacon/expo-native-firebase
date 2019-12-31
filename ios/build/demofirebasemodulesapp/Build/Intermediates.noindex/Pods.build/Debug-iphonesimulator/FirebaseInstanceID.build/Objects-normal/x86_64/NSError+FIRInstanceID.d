@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/evanbacon/Documents/GitHub/template-tests/demofirebasemodulesapp/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.m \
-  /Users/evanbacon/Documents/GitHub/template-tests/demofirebasemodulesapp/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.h
+  /Users/evanbacon/Documents/GitHub/expo-native-firebase/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.m \
+  /Users/evanbacon/Documents/GitHub/expo-native-firebase/ios/Pods/FirebaseInstanceID/Firebase/InstanceID/NSError+FIRInstanceID.h

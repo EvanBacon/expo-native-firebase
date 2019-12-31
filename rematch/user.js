@@ -1,7 +1,7 @@
-import { Alert } from 'react-native';
-import Constants from 'expo-constants';
 import auth from '@react-native-firebase/auth';
-import * as Facebook from 'expo-facebook'
+import * as Facebook from 'expo-facebook';
+import { Alert } from 'react-native';
+
 const user = {
   state: null,
   reducers: {
@@ -20,7 +20,7 @@ const user = {
     },
     signInAnonymously: () => {
       try {
-        auth().signInAnonymouslyAndRetrieveData();
+        auth().signInAnonymously();
       } catch ({ message }) {
         console.log('Error: user.signInAnonymously', message);
         Alert.alert(message);

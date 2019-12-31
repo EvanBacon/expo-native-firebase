@@ -1,7 +1,7 @@
-import * as Permissions from 'expo-permissions';
-import * as ImagePicker from 'expo-image-picker';
-import storage from '@react-native-firebase/storage';
 import auth from '@react-native-firebase/auth';
+import storage from '@react-native-firebase/storage';
+import * as ImagePicker from 'expo-image-picker';
+import * as Permissions from 'expo-permissions';
 import React, { Component } from 'react';
 import { Alert, StyleSheet, TouchableOpacity, View } from 'react-native';
 
