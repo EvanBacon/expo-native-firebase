@@ -1,40 +1,18 @@
 {
+  "name": "demofirebasemodulesapp",
+  "displayName": "demofirebasemodulesapp",
   "expo": {
     "name": "demofirebasemodulesapp",
-    "description": "This project is really great.",
-    "slug": "demofirebase",
-    "privacy": "public",
-    "sdkVersion": "31.0.0",
-    "platforms": ["ios", "android"],
+    "slug": "expo-template-bare",
+    "privacy": "unlisted",
+    "sdkVersion": "36.0.0",
     "facebookAppId": "1918195841818851",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.evanbacon.demofirebasemodulesapp",
-      "publishBundlePath": "ios/demofirebasemodulesapp/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/demofirebasemodulesapp/Supporting/shell-app-manifest.json"
-    },
-    "isDetached": true,
-    "detach": {
-      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.8.2-sdk30.0.0-769da6d6-27c8-479e-91c7-0d33fcac97c8.tar.gz",
-      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.8.0-sdk30.0.0-db6a79cf-9009-4580-a743-d8279d600773.tar.gz"
-    },
-    "scheme": "exp4131ad20a44d475ca87c9cd251193578",
-    "android": {
-      "package": "com.evanbacon.demofirebasemodulesapp",
-      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
-      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
-    }
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-import firebase from 'expo-firebase-app';
+import storage from '@react-native-firebase/storage';
 
 async function uploadImageAsync(uri, uploadUri, onProgress) {
   const onStateChanged = ({ bytesTransferred, totalBytes, state }) => {
@@ -20,8 +20,7 @@ async function uploadImageAsync(uri, uploadUri, onProgress) {
   };
 
   return new Promise((res, rej) => {
-    const unsubscribe = firebase
-      .storage()
+    const unsubscribe = storage()
       .ref(uploadUri)
       .putFile(uri)
       .on(

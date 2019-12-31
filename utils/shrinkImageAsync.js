@@ -1,8 +1,8 @@
-import { ImageManipulator } from 'expo';
+import * as ImageManipulator from 'expo-image-manipulator';
 import Settings from '../constants/Settings';
 
 function reduceImageAsync(uri) {
-  return ImageManipulator.manipulate(
+  return ImageManipulator.manipulateAsync(
     uri,
     [{ resize: { width: Settings.avatarSize } }],
     {

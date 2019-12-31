@@ -1,5 +1,7 @@
-import { ImagePicker, Permissions } from 'expo';
-import firebase from 'expo-firebase-app';
+import * as Permissions from 'expo-permissions';
+import * as ImagePicker from 'expo-image-picker';
+import storage from '@react-native-firebase/storage';
+import auth from '@react-native-firebase/auth';
 import React, { Component } from 'react';
 import { Alert, StyleSheet, TouchableOpacity, View } from 'react-native';
 
@@ -25,8 +27,7 @@ export default class ProfileImage extends React.Component {
     if (!storagePath) return;
 
     try {
-      const uri = await firebase
-        .storage()
+      const uri = await storage()
         .ref(storagePath)
         .getDownloadURL();
       this.setState({ image: uri });
@@ -61,7 +62,7 @@ export default class ProfileImage extends React.Component {
   }
 
   get currentUser() {
-    const { currentUser } = firebase.auth();
+    const { currentUser } = auth();
     if (!currentUser) {
       return;
     }

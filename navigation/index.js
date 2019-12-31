@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AppNavigator from './AppNavigator';
-import firebase from 'expo-firebase-app';
+import analytics from '@react-native-firebase/analytics';
 import NavigationService from './NavigationService';
 
 // gets the current screen from navigation state
@@ -27,7 +27,7 @@ export default () => (
       const prevScreen = getActiveRouteName(prevState);
       if (prevScreen !== currentScreen) {
         console.log('New Screen', currentScreen);
-        firebase.analytics().setCurrentScreen(currentScreen);
+        analytics().setCurrentScreen(currentScreen);
       }
     }}
   />
