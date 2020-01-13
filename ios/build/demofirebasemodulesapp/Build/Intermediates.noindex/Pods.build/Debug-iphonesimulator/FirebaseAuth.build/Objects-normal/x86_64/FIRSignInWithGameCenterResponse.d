@@ -1,4 +1,0 @@
-dependencies: \
-  /Users/evanbacon/Documents/GitHub/expo-native-firebase/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRSignInWithGameCenterResponse.m \
-  /Users/evanbacon/Documents/GitHub/expo-native-firebase/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRSignInWithGameCenterResponse.h \
-  /Users/evanbacon/Documents/GitHub/expo-native-firebase/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCResponse.h
